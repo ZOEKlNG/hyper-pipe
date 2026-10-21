@@ -1,0 +1,12 @@
+PACED target=50000 rep=0 recv=50000 accepted=50000 schedule_missed=0 p99_planned_us=43.907 p99_sendlate_us=10.785
+PACED target=50000 rep=1 recv=50000 accepted=50000 schedule_missed=0 p99_planned_us=39.205 p99_sendlate_us=13.289
+PACED target=50000 rep=2 recv=50000 accepted=50000 schedule_missed=0 p99_planned_us=40.55 p99_sendlate_us=13.255
+PACED target=200000 rep=0 recv=200000 accepted=200000 schedule_missed=0 p99_planned_us=235.059 p99_sendlate_us=141.473
+PACED target=200000 rep=1 recv=200000 accepted=200000 schedule_missed=0 p99_planned_us=306.906 p99_sendlate_us=286.032
+PACED target=200000 rep=2 recv=200000 accepted=200000 schedule_missed=0 p99_planned_us=649.283 p99_sendlate_us=358.769
+PACED target=500000 rep=0 recv=297552 accepted=297552 schedule_missed=202448 p99_planned_us=400796 p99_sendlate_us=400791
+PACED target=500000 rep=1 recv=294150 accepted=294150 schedule_missed=205850 p99_planned_us=407295 p99_sendlate_us=407290
+PACED target=500000 rep=2 recv=295984 accepted=295984 schedule_missed=204016 p99_planned_us=402516 p99_sendlate_us=402508
+PACED target=1000000 rep=0 recv=284205 accepted=284205 schedule_missed=715795 p99_planned_us=709148 p99_sendlate_us=709144
+PACED target=1000000 rep=1 recv=292739 accepted=292739 schedule_missed=707261 p99_planned_us=700636 p99_sendlate_us=700632
+PACED target=1000000 rep=2 recv=293387 accepted=293387 schedule_missed=706613 p99_planned_us=699857 p99_sendlate_us=699853

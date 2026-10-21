@@ -1,0 +1,4 @@
+runtime,codec,mode,parallelism,payload_bytes,repeat,records,job_runtime_ms,wall_ms,data_window_ms,data_window_mps,checksum
+flink2.1.0,protobuf,nokeyby,2,64,0,3000000,588,1129.8169,499.4505,6.006601,18435158343682764464
+flink2.1.0,protobuf,nokeyby,2,64,1,3000000,500,1006.7017,422.5118,7.100393,18435158343682764464
+flink2.1.0,protobuf,nokeyby,2,64,2,3000000,387,885.5182,305.3099,9.826082,18435158343682764464

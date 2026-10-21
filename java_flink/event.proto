@@ -1,0 +1,10 @@
+syntax = "proto3";
+package bench;
+message Event {
+ uint64 id=1; uint64 seq=2; uint64 timestamp=3; uint64 value0=4; uint64 value1=5;
+ uint32 producer=6; uint32 stream=7; uint32 type=8; uint32 flags=9; bytes payload=10;
+}
+message FixedEvent {
+ fixed64 id=1; fixed64 seq=2; fixed64 timestamp=3; fixed64 value0=4; fixed64 value1=5;
+ fixed32 producer=6; fixed32 stream=7; fixed32 type=8; fixed32 flags=9; bytes payload=10;
+}

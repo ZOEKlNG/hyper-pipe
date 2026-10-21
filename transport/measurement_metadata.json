@@ -1,0 +1,51 @@
+{
+  "baseline": {
+    "start": {
+      "utc": "2026-10-21T06:16:15.485857+00:00",
+      "cpu_stat": "usage_usec 350006070\nuser_usec 334703065\nsystem_usec 15303004\nnice_usec 0\nnr_periods 3859\nnr_throttled 4\nthrottled_usec 38912\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "400000 100000\n"
+    },
+    "argv": [
+      "/workspace/work/transport/transport",
+      "--out",
+      "/workspace/work/transport/results",
+      "--seconds",
+      "0.6",
+      "--repeats",
+      "5",
+      "--rounds",
+      "5000"
+    ],
+    "end": {
+      "utc": "2026-10-21T06:17:13.124693+00:00",
+      "cpu_stat": "usage_usec 424941182\nuser_usec 350500729\nsystem_usec 74440453\nnice_usec 0\nnr_periods 4435\nnr_throttled 4\nthrottled_usec 38912\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "400000 100000\n"
+    },
+    "wall_seconds": 57.638855543999966,
+    "exit_code": 0
+  },
+  "paced": {
+    "start": {
+      "utc": "2026-10-21T06:17:13.125133+00:00",
+      "cpu_stat": "usage_usec 424941182\nuser_usec 350500729\nsystem_usec 74440453\nnice_usec 0\nnr_periods 4435\nnr_throttled 4\nthrottled_usec 38912\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "400000 100000\n"
+    },
+    "argv": [
+      "/workspace/work/transport/transport",
+      "--out",
+      "/workspace/work/transport/results",
+      "--paced",
+      "--seconds",
+      "1",
+      "--repeats",
+      "3"
+    ],
+    "end": {
+      "utc": "2026-10-21T06:17:25.621431+00:00",
+      "cpu_stat": "usage_usec 440492995\nuser_usec 355987416\nsystem_usec 84505578\nnice_usec 0\nnr_periods 4560\nnr_throttled 4\nthrottled_usec 38912\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "400000 100000\n"
+    },
+    "wall_seconds": 12.496401404999915,
+    "exit_code": 0
+  }
+}

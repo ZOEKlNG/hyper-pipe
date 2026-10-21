@@ -1,0 +1,31 @@
+{
+  "initial_run": "ipc_initial_results.csv",
+  "final_run": "ipc_results.csv",
+  "validation_reason": "Any configuration with at least one initial timed run below 0.30 seconds was remeasured in full; final retains all five validation runs for each such configuration. All raw initial/validation files retained. Retrying below-minimum runs is calibration, not reported results.",
+  "target_s": 0.35,
+  "min_adaptive_s": 0.2975,
+  "validation_configurations": [
+    [
+      "fork_mmap",
+      "inplace_pool",
+      "64",
+      "1"
+    ],
+    [
+      "fork_mmap",
+      "scratch_then_copy",
+      "256",
+      "1"
+    ],
+    [
+      "threads",
+      "scratch_then_copy",
+      "64",
+      "1"
+    ]
+  ],
+  "final_rows": 120,
+  "all_checksum_errors": 0,
+  "min_final_run_s": 0.314813172,
+  "warning": "Bimodal throughput remains for some configurations even at sufficient duration; report ranges and do not infer process IPC inherently faster than threads."
+}

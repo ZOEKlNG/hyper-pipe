@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://deb.debian.org/debian/pool/main/p/protobuf/libprotobuf-dev_3.21.12-11+deb13u1_amd64.deb",
+    "filename": "libprotobuf-dev_3.21.12-11+deb13u1_amd64.deb",
+    "sha256": "c0328550b6ccd7b09d4e50bc2b325a43638bf8fa5f74148ab6e63d49af7543f3"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/p/protobuf/libprotoc32t64_3.21.12-11+deb13u1_amd64.deb",
+    "filename": "libprotoc32t64_3.21.12-11+deb13u1_amd64.deb",
+    "sha256": "8a96715498f10f8e166411248164448c9a892fa1d5b25f1e02a93ea668fa72aa"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/p/protobuf/protobuf-compiler_3.21.12-11+deb13u1_amd64.deb",
+    "filename": "protobuf-compiler_3.21.12-11+deb13u1_amd64.deb",
+    "sha256": "62c6085aeeb8cbcb16747fcf7170aaddcff344874a3aa60a272e423cbeb89b3a"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/f/flatbuffers/flatbuffers-compiler_23.5.26+dfsg-4+b2_amd64.deb",
+    "filename": "flatbuffers-compiler_23.5.26+dfsg-4+b2_amd64.deb",
+    "sha256": "66e7c6a9668074f34b00cdf66e47fce69b962ec25f861bd4c527ebdfbcda2d75"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/f/flatbuffers/libflatbuffers-dev_23.5.26+dfsg-4+b2_amd64.deb",
+    "filename": "libflatbuffers-dev_23.5.26+dfsg-4+b2_amd64.deb",
+    "sha256": "0a436d8ca65903b5bf2835436465ef5ac054206b7280b0125c5e119cf1d8cd0d"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/z/zeromq3/libzmq3-dev_4.3.5-1+b3_amd64.deb",
+    "filename": "libzmq3-dev_4.3.5-1+b3_amd64.deb",
+    "sha256": "9f1dfe9c5862a342fc11b226f0e8487f7ad1144cb9db57098a9a5461abe6f815"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/l/lz4/liblz4-dev_1.10.0-4_amd64.deb",
+    "filename": "liblz4-dev_1.10.0-4_amd64.deb",
+    "sha256": "b56779767ce81a4648f9b78a5ebce8264f14af2ac28dccd6896eb0402c685b2a"
+  }
+]

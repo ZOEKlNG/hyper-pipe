@@ -1,0 +1,78 @@
+{
+  "measurement_kind": "functional_and_overload_workload_validation",
+  "location": "single_VM_loopback",
+  "jvm_warmup": "none; separate fresh JVM per repeat",
+  "source_protocol": "72B fixed LE header + 256B tail = 328B UDP payload",
+  "conservation_passed": true,
+  "summaries": [
+    {
+      "case": "low_20k",
+      "repeats": 3,
+      "offered_each": 40000,
+      "received_each": [
+        40000,
+        40000,
+        40000
+      ],
+      "queue_drop_each": [
+        0,
+        0,
+        0
+      ],
+      "processed_each": [
+        40000,
+        40000,
+        40000
+      ],
+      "queue_drop_pct_median": 0.0,
+      "queue_drop_pct_min": 0.0,
+      "queue_drop_pct_max": 0.0
+    },
+    {
+      "case": "normal_100k",
+      "repeats": 3,
+      "offered_each": 200000,
+      "received_each": [
+        200000,
+        200000,
+        200000
+      ],
+      "queue_drop_each": [
+        1907,
+        1916,
+        1526
+      ],
+      "processed_each": [
+        198093,
+        198084,
+        198474
+      ],
+      "queue_drop_pct_median": 0.9535,
+      "queue_drop_pct_min": 0.763,
+      "queue_drop_pct_max": 0.958
+    },
+    {
+      "case": "overload_100k_delay50us",
+      "repeats": 3,
+      "offered_each": 200000,
+      "received_each": [
+        200000,
+        200000,
+        200000
+      ],
+      "queue_drop_each": [
+        182324,
+        182485,
+        182042
+      ],
+      "processed_each": [
+        17676,
+        17515,
+        17958
+      ],
+      "queue_drop_pct_median": 91.16199999999999,
+      "queue_drop_pct_min": 91.021,
+      "queue_drop_pct_max": 91.2425
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+pin_cpu0=0 SBE=1.35.0 generator=official_java_jar header=8 root=56 payload_length=4
+done sbe_generated_trusted payload=0
+done sbe_generated_trusted payload=64
+done sbe_generated_trusted payload=256
+done sbe_generated_trusted payload=1024
+validation=passed

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbe:messageSchema xmlns:sbe="http://fixprotocol.io/2016/sbe"
+    package="sbebench" id="61" version="1" semanticVersion="1.0" byteOrder="littleEndian">
+  <types>
+    <composite name="messageHeader" description="Standard SBE message header">
+      <type name="blockLength" primitiveType="uint16"/>
+      <type name="templateId" primitiveType="uint16"/>
+      <type name="schemaId" primitiveType="uint16"/>
+      <type name="version" primitiveType="uint16"/>
+    </composite>
+    <composite name="varDataEncoding">
+      <type name="length" primitiveType="uint32" maxValue="1073741824"/>
+      <type name="varData" primitiveType="uint8" length="0"/>
+    </composite>
+  </types>
+  <sbe:message name="Event" id="1" blockLength="56">
+    <field name="id" id="1" type="uint64"/>
+    <field name="seq" id="2" type="uint64"/>
+    <field name="timestamp" id="3" type="uint64"/>
+    <field name="value0" id="4" type="uint64"/>
+    <field name="value1" id="5" type="uint64"/>
+    <field name="producer" id="6" type="uint32"/>
+    <field name="stream" id="7" type="uint32"/>
+    <field name="type" id="8" type="uint32"/>
+    <field name="flags" id="9" type="uint32"/>
+    <data name="payload" id="10" type="varDataEncoding"/>
+  </sbe:message>
+</sbe:messageSchema>

@@ -1,0 +1,6 @@
+namespace fbbench;
+table Event {
+ id:ulong; seq:ulong; timestamp:ulong; value0:ulong; value1:ulong;
+ producer:uint; stream:uint; type:uint; flags:uint; payload:[ubyte];
+}
+root_type Event;

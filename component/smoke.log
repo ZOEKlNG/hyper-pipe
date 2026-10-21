@@ -1,0 +1,38 @@
+{
+  "kind": "functional_smoke_not_benchmark",
+  "ready": "READY port=19091 queue=16 socket_rcvbuf=4194304",
+  "normal_sender": {
+    "offered": 100,
+    "kernel_accepted": 100,
+    "local_send_drop": 0,
+    "syscalls": 100,
+    "elapsed_s": 0.0991477,
+    "payload_bytes": 256,
+    "wire_bytes": 328,
+    "buckets": 4096,
+    "session": 123
+  },
+  "malformed_sender": {
+    "offered": 3,
+    "kernel_accepted": 3,
+    "local_send_drop": 0,
+    "syscalls": 3,
+    "elapsed_s": 0.00208601,
+    "payload_bytes": 256,
+    "wire_bytes": 328,
+    "buckets": 4096,
+    "session": 1792563765036058365
+  },
+  "receiver": {
+    "received": 103,
+    "invalid": 3,
+    "queued": 100,
+    "queue_drop": 0,
+    "pool_empty_observed": 0,
+    "processed": 100,
+    "checksum": 116985894018032,
+    "elapsed_s": 2.015583567,
+    "socket_rcvbuf": 4194304,
+    "queue_capacity": 16
+  }
+}

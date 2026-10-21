@@ -1,0 +1,18 @@
+{
+  "seed": 20261021,
+  "duration_s": 1,
+  "producers": 4,
+  "total_base_rate_msg_s": 600000,
+  "consumers": 4,
+  "consumer_capacity_msg_s": 200000,
+  "queue_capacity_includes_in_service": true,
+  "queue_policy": "drop_new",
+  "service": "deterministic 5us per record",
+  "routing": "id & 4095 -> bucket_owner, 4 consumers round robin",
+  "pauses": "consumer0 only at 0.4s, 10 or 50ms; stops service including in-flight work",
+  "burst": "2x total rate during [0.4,0.42)s",
+  "hotspot": "30% records forced to id0; remaining uniform",
+  "queue_metrics": "accepted records drained after arrivals stop; percentiles exclude dropped records",
+  "batch_model": "Poisson arrivals, no processing/transport; batch formation only; final partial flushed",
+  "warning": "SIMULATION ASSUMPTIONS, NOT MEASURED HARDWARE CAPACITY"
+}

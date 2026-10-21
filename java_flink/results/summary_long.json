@@ -1,0 +1,60 @@
+{
+  "flink_local": [
+    {
+      "codec": "fixed",
+      "mode": "nokeyby",
+      "parallelism": 2,
+      "payload_bytes": 64,
+      "records_per_repeat": 30000000,
+      "repetitions": 3,
+      "median_mps": 23.16373,
+      "min_mps": 22.77388,
+      "max_mps": 24.344001,
+      "median_data_window_ms": 1295.1282,
+      "median_wall_ms": 1901.8834,
+      "median_job_ms": 1381.0
+    },
+    {
+      "codec": "fixed",
+      "mode": "keyby",
+      "parallelism": 2,
+      "payload_bytes": 64,
+      "records_per_repeat": 30000000,
+      "repetitions": 3,
+      "median_mps": 11.069747,
+      "min_mps": 10.481968,
+      "max_mps": 12.866216,
+      "median_data_window_ms": 2710.089,
+      "median_wall_ms": 3307.9655,
+      "median_job_ms": 2794.0
+    },
+    {
+      "codec": "protobuf",
+      "mode": "nokeyby",
+      "parallelism": 2,
+      "payload_bytes": 64,
+      "records_per_repeat": 30000000,
+      "repetitions": 3,
+      "median_mps": 11.147363,
+      "min_mps": 10.948816,
+      "max_mps": 11.162912,
+      "median_data_window_ms": 2691.2193,
+      "median_wall_ms": 3331.8122,
+      "median_job_ms": 2775.0
+    },
+    {
+      "codec": "protobuf",
+      "mode": "keyby",
+      "parallelism": 2,
+      "payload_bytes": 64,
+      "records_per_repeat": 30000000,
+      "repetitions": 3,
+      "median_mps": 7.153448,
+      "min_mps": 7.058501,
+      "max_mps": 7.945062,
+      "median_data_window_ms": 4193.7819,
+      "median_wall_ms": 4821.044,
+      "median_job_ms": 4299.0
+    }
+  ]
+}

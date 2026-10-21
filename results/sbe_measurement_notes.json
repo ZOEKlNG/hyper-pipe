@@ -1,0 +1,82 @@
+{
+  "benchmark": "official_generated_sbe_cpp",
+  "run_status": "completed_valid_after_calibration_fix",
+  "measurement_date": "2026-10-21",
+  "sbe_version": "1.35.0",
+  "generator": {
+    "artifact_url": "https://repo.maven.apache.org/maven2/uk/co/real-logic/sbe-all/1.35.0/sbe-all-1.35.0.jar",
+    "sha256": "d11f4bb7c71322e3538613b2da18b11625be400465b29a09db80bc9785cea3ab",
+    "maven_published_sha1_verified": true,
+    "java": "OpenJDK 21.0.12.1",
+    "cpp_compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+    "compiler_flags": ["-O3", "-DNDEBUG", "-std=c++20", "-march=native"],
+    "schema": "work/sbe/event.xml",
+    "generated_headers": "work/sbe/generated/sbebench/"
+  },
+  "inputs": {
+    "source": "Same fixed64_offset_trusted random corpus exported by the C++ codec benchmark",
+    "records_per_payload_size": 4096,
+    "changing_scalar_fields": "5*u64 + 4*u32",
+    "payload_pattern": "random",
+    "payload_bytes": [0, 64, 256, 1024],
+    "wire_bytes": [68, 132, 324, 1092],
+    "wire_size_formula": "8-byte standard SBE header + 56-byte fixed block + 4-byte varData length + payload"
+  },
+  "valid_outputs": {
+    "sbe_validated_raw.csv": 80,
+    "sbe_trusted_raw.csv": 80,
+    "total_raw_rows": 160,
+    "sbe_summary.csv_groups": 32,
+    "repeats_per_group": 5,
+    "correctness": "All corpus records validated against independent checksums; validated decoder also rejects short header, incorrect schema, and incorrect payload-length smoke cases",
+    "operations": ["encode", "decode_all", "decode_few", "roundtrip"]
+  },
+  "measurement": {
+    "single_thread": true,
+    "requested_cpu_affinity": 0,
+    "sched_setaffinity_result": 0,
+    "affinity_failure_policy": "abort",
+    "warmup_operations_per_repetition": 8192,
+    "initial_timed_operations": 4096,
+    "target_batch_duration_ns": 20000000,
+    "operation_count_cap": 16777216,
+    "calibration": "Double the operation count until the target duration or the cap; execute and time the cap itself; return the actual last timed count",
+    "trusted_raw_rows_reaching_actual_operation_cap": 25,
+    "validated_raw_rows_reaching_actual_operation_cap": 0,
+    "reported_statistics": "Median/minimum/maximum of five batch mean ns/op values, not per-message latency percentiles",
+    "decode_all": "All scalar fields plus payload length and first/last payload bytes; not a complete payload scan",
+    "decode_few": "id + seq + type; validated mode additionally verifies frame metadata and payload bounds",
+    "encode": "Generated field setters plus putPayload copy into a reused output string",
+    "observability": "Checksums consumed, output escaped via compiler memory barrier, encode/decode entrypoints noinline",
+    "virtual_dispatch_caveat": "A single concrete codec in this supplementary executable may permit compiler devirtualization; tiny differences from other executables are not format guarantees"
+  },
+  "validation_modes": {
+    "sbe_generated_validated": "Generated bounds checks enabled plus application wrapper checks for minimum length, schema/template/version, root block length and exact payload bounds; benchmark schema v1 only",
+    "sbe_generated_trusted": "Compiled with SBE_NO_BOUNDS_CHECK; no application frame validation; valid/prevalidated wires required",
+    "production_verifier": false
+  },
+  "isolation": {
+    "valid_run_sequence": "After transport measurements and the clean Java/Flink rerun had completed and explicitly released the CPU",
+    "cgroup": {
+      "status": "not_recorded",
+      "before": null,
+      "after": null,
+      "throttling_conclusion": "unknown; no before/after cgroup snapshot was captured for this SBE run"
+    }
+  },
+  "initial_run_exclusion": {
+    "reason": "The original adaptive timer incremented count after timing 8388608 operations and could exit at 16777216 without executing that count, then divide the previous elapsed time by the doubled count",
+    "impact": "Fast cells reaching that guard could report half the correct ns/op",
+    "action": "Quarantined the entire first SBE run and reran all 160 raw rows after fixing the timer; final results contain only the corrected rerun",
+    "quarantine_directory": "work/sbe/invalid_initial/",
+    "include_quarantined_files_in_delivery": false,
+    "related_cpp_codec_data": "The codec benchmark owner inspected all 1780 existing codec/flat_direct/compression/compression_reuse raw rows and found no iterations>=2^24, so their existing raw data did not trigger this boundary bug; its source timer was separately corrected"
+  },
+  "scope_limits": [
+    "Pure CPU/memory codec microbenchmark; no real NIC, DPDK, DMA, kernel socket or network path is measured",
+    "No JVM or Flink processing is part of these SBE timing rows",
+    "Hot reusable corpus and buffer capacities; not allocation pressure, cold-cache, NUMA or contention testing",
+    "No live schema rollout or general hostile-input fuzzing",
+    "Do not describe results as zero nanoseconds, end-to-end latency or production message-rate capacity"
+  ]
+}

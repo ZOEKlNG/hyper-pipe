@@ -1,0 +1,5 @@
+target_msg_s,repeats,median_received_msg_s,median_received_of_offered_pct,median_schedule_missed_pct,median_accepted_missing_pct,median_arrival_minus_planned_p50_us,median_arrival_minus_planned_p99_us,median_actual_send_to_arrival_p99_us,median_sender_lateness_p99_us
+50000,3,50000.4327537,100.0,0.0,0.0,11.255,40.55,25.038,13.255
+200000,3,199999.658801,100.0,0.0,0.0,7.895,306.906,32.048,286.032
+500000,3,295982.494633,59.1968,40.8032,0.0,203804.611,402516.077,28.022,402508.375
+1000000,3,292738.213412,29.2739,70.7261,0.0,358520.842,700635.539,28.738,700631.701

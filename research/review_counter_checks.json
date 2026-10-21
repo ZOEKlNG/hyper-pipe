@@ -1,0 +1,50 @@
+{
+  "ipc_sim/results/batch_simulation.csv": {
+    "rows": 18,
+    "issues": []
+  },
+  "ipc_sim/results/ipc_initial_results.csv": {
+    "rows": 120,
+    "issues": []
+  },
+  "ipc_sim/results/ipc_results.csv": {
+    "rows": 120,
+    "issues": []
+  },
+  "ipc_sim/results/ipc_summary.csv": {
+    "rows": 24,
+    "issues": []
+  },
+  "ipc_sim/results/ipc_validation_process_copy256_b1.csv": {
+    "rows": 5,
+    "issues": []
+  },
+  "ipc_sim/results/ipc_validation_process_inplace64_b1.csv": {
+    "rows": 5,
+    "issues": []
+  },
+  "ipc_sim/results/ipc_validation_thread_copy64_b1.csv": {
+    "rows": 5,
+    "issues": []
+  },
+  "ipc_sim/results/queue_simulation.csv": {
+    "rows": 75,
+    "issues": []
+  },
+  "ipc_sim/results/route_simulation.csv": {
+    "rows": 2,
+    "issues": []
+  },
+  "ipc_sim/results/smoke_only_not_benchmark.csv": {
+    "rows": 24,
+    "issues": []
+  },
+  "transport/smoke_throughput.csv": {
+    "rows": 15,
+    "issues": []
+  },
+  "transport/results_throughput.csv": {
+    "rows": 58,
+    "issues": []
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "java_codec": [
+    {
+      "payload_bytes": 0,
+      "mode": "heap",
+      "median_ns_per_op": 7.5119,
+      "min_ns": 6.8966,
+      "max_ns": 9.0368,
+      "repetitions": 5
+    },
+    {
+      "payload_bytes": 0,
+      "mode": "direct",
+      "median_ns_per_op": 15.1609,
+      "min_ns": 15.0135,
+      "max_ns": 21.8748,
+      "repetitions": 5
+    },
+    {
+      "payload_bytes": 0,
+      "mode": "protobuf",
+      "median_ns_per_op": 100.266,
+      "min_ns": 99.2713,
+      "max_ns": 106.3259,
+      "repetitions": 5
+    },
+    {
+      "payload_bytes": 64,
+      "mode": "heap",
+      "median_ns_per_op": 16.3921,
+      "min_ns": 16.2141,
+      "max_ns": 16.5456,
+      "repetitions": 5
+    },
+    {
+      "payload_bytes": 64,
+      "mode": "direct",
+      "median_ns_per_op": 16.3696,
+      "min_ns": 16.2619,
+      "max_ns": 16.4493,
+      "repetitions": 5
+    },
+    {
+      "payload_bytes": 64,
+      "mode": "protobuf",
+      "median_ns_per_op": 114.3666,
+      "min_ns": 112.7617,
+      "max_ns": 115.8295,
+      "repetitions": 5
+    },
+    {
+      "payload_bytes": 256,
+      "mode": "heap",
+      "median_ns_per_op": 17.752,
+      "min_ns": 17.6184,
+      "max_ns": 17.8301,
+      "repetitions": 5
+    },
+    {
+      "payload_bytes": 256,
+      "mode": "direct",
+      "median_ns_per_op": 18.5055,
+      "min_ns": 18.2851,
+      "max_ns": 19.3513,
+      "repetitions": 5
+    },
+    {
+      "payload_bytes": 256,
+      "mode": "protobuf",
+      "median_ns_per_op": 119.2346,
+      "min_ns": 115.6361,
+      "max_ns": 120.251,
+      "repetitions": 5
+    },
+    {
+      "payload_bytes": 1024,
+      "mode": "heap",
+      "median_ns_per_op": 18.8932,
+      "min_ns": 18.719,
+      "max_ns": 19.2679,
+      "repetitions": 5
+    },
+    {
+      "payload_bytes": 1024,
+      "mode": "direct",
+      "median_ns_per_op": 19.314,
+      "min_ns": 19.0757,
+      "max_ns": 20.2925,
+      "repetitions": 5
+    },
+    {
+      "payload_bytes": 1024,
+      "mode": "protobuf",
+      "median_ns_per_op": 153.8499,
+      "min_ns": 151.0272,
+      "max_ns": 169.7184,
+      "repetitions": 5
+    }
+  ],
+  "flink_local": [
+    {
+      "codec": "fixed",
+      "mode": "nokeyby",
+      "parallelism": 2,
+      "payload_bytes": 64,
+      "records_per_repeat": 3000000,
+      "repetitions": 3,
+      "median_mps": 19.92649,
+      "min_mps": 13.899177,
+      "max_mps": 20.295213,
+      "median_data_window_ms": 150.5534,
+      "median_wall_ms": 765.4435,
+      "median_job_ms": 243.0
+    },
+    {
+      "codec": "fixed",
+      "mode": "keyby",
+      "parallelism": 2,
+      "payload_bytes": 64,
+      "records_per_repeat": 3000000,
+      "repetitions": 3,
+      "median_mps": 6.814983,
+      "min_mps": 6.538688,
+      "max_mps": 7.351025,
+      "median_data_window_ms": 440.2065,
+      "median_wall_ms": 1053.7578,
+      "median_job_ms": 528.0
+    },
+    {
+      "codec": "protobuf",
+      "mode": "nokeyby",
+      "parallelism": 2,
+      "payload_bytes": 64,
+      "records_per_repeat": 3000000,
+      "repetitions": 3,
+      "median_mps": 7.100393,
+      "min_mps": 6.006601,
+      "max_mps": 9.826082,
+      "median_data_window_ms": 422.5118,
+      "median_wall_ms": 1006.7017,
+      "median_job_ms": 500.0
+    },
+    {
+      "codec": "protobuf",
+      "mode": "keyby",
+      "parallelism": 2,
+      "payload_bytes": 64,
+      "records_per_repeat": 3000000,
+      "repetitions": 3,
+      "median_mps": 6.091455,
+      "min_mps": 5.498001,
+      "max_mps": 6.66074,
+      "median_data_window_ms": 492.4932,
+      "median_wall_ms": 1072.4123,
+      "median_job_ms": 575.0
+    }
+  ]
+}

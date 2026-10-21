@@ -1,0 +1,14 @@
+{
+  "throughput_trials": 75,
+  "rtt_trials": 45,
+  "paced_trials": 12,
+  "throughput_missing_total": 0,
+  "rtt_timeout_total": 0,
+  "accounting_invariants": "pass",
+  "no_reliable_sequence_gaps": "pass",
+  "record_size_body_bytes_including_sequence": [
+    64,
+    256,
+    1024
+  ]
+}

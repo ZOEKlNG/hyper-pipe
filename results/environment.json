@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-21T06:09:13.481080+00:00",
+  "kernel": {
+    "system": "Linux",
+    "node": "621471a346a1",
+    "release": "6.18.55",
+    "version": "#1 SMP Wed Oct 14 19:45:18 UTC 2026",
+    "machine": "x86_64",
+    "processor": ""
+  },
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cpu_max": "400000 100000",
+  "memory_max": "17179869184",
+  "cpu.stat": "usage_usec 65998382\nuser_usec 58049821\nsystem_usec 7948560\nnice_usec 0\nnr_periods 1444\nnr_throttled 2\nthrottled_usec 24732\nnr_bursts 0\nburst_usec 0\n",
+  "cpuset.cpus.effective": "0-4\n",
+  "cap_eff": [
+    "CapEff:\t0000000000000000"
+  ],
+  "net": {
+    "eth0": {
+      "type": "1",
+      "device": "/sys/devices/pci0000:00/0000:00:02.0/virtio1"
+    },
+    "docker0": {
+      "type": "1",
+      "device": "/sys/devices/virtual/net/docker0/device"
+    },
+    "lo": {
+      "type": "772",
+      "device": "/sys/devices/virtual/net/lo/device"
+    },
+    "eth1": {
+      "type": "1",
+      "device": "/sys/devices/pci0000:00/0000:00:03.0/virtio2"
+    }
+  }
+}
