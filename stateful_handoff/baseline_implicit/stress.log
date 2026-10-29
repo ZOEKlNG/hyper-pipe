@@ -1,0 +1,6 @@
+L1_shared_lossless return 0 seconds 114.32
+L2_return_lossless return 0 seconds 104.14
+L3_piggyback_lossless return 0 seconds 99.44
+L3_piggyback_drop return 0 seconds 12.81
+H6_versioned_lossless return 0 seconds 101.66
+{"status": "PASS", "runs": 5, "offered": 50000000, "accepted_and_fully_verified": 41172110, "dropped": 8827890, "full_payload_errors": 0, "asan_options": "detect_leaks=1:halt_on_error=1", "ubsan_options": "halt_on_error=1", "sanitized_binary_sha256": "f616e5db6a142cf85a0960833adbad72cc91eeb2a37a559950fb516ca5e7e27a", "note": "Poisoned recycle, complete decoded field/content checks, one real Worker and Logger. Finite stress is empirical evidence, not universal proof; ASan/UBSan are not race detectors."}

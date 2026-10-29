@@ -1,0 +1,9 @@
+{
+  "protoc_version": "3.21.12",
+  "regenerated_files_match": true,
+  "sha256": {
+    "events.pb.cc": "781e125fad2967545abae7808193b15a1213cacf2a2f209bdb72bfd9d1390615",
+    "events.pb.h": "630b3746a9d5ed4ae0c7efbf8372c4a1d8e56bff7faa627e1ea6a128c9f1647c"
+  },
+  "note": "Original run snapshots freeze schema and executable but do not enumerate .pb.cc/.pb.h. This post-run deterministic regeneration check is recorded separately, not represented as an original before/after source capture."
+}

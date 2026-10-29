@@ -1,0 +1,10 @@
+{
+  "rows": 110,
+  "configurations": 22,
+  "repeats": 5,
+  "seed": 20261030,
+  "ended_utc": "2026-10-29T10:38:46.547612+00:00",
+  "wall_seconds": 62.18304495499979,
+  "binary_sha256_before_after": "c3eecf938c1eaf3d9f50050ad65c132e0afc72358cdd3e5096999c4cc739ee47",
+  "order": "outer repeat shuffles all paired configurations; each retained sample is in an independently launched process"
+}

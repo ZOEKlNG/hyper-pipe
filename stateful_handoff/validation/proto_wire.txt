@@ -1,0 +1,1 @@
+PASS single_detail_wire_equivalence=2313 mixed_oneof_discards_tls=true parallel_preserves_both=true

@@ -1,0 +1,11 @@
+{
+  "build_command": "CMAKE=$HOME/.local/bin/cmake DEP_ROOT=/workspace/work/deps/root bash build.sh",
+  "build_exit_code": 0,
+  "smoke_results": {
+    "stateful_relocated_h5.txt": "pipeline,0,49171,49171,0,49171,0,0.039110814,1257222.61879,39108081,33983137,22810,61334,22419240,29147445,12307,12286,2,4096,4096,0,0,10749216,6341382,3932160,131072,29856",
+    "stateful_relocated_h6.txt": "pipeline,0,49171,49171,0,49171,0,0.036381882,1351524.36589,36387119,31771931,9804,71201,13593625,20331426,12307,12288,0,4096,4096,0,0,19401024,6341382,1310720,131072,35948",
+    "stateful_relocated_proto.txt": "PASS single_detail_wire_equivalence=2313 mixed_oneof_discards_tls=true parallel_preserves_both=true"
+  },
+  "source_and_CSV_validation": "PASS via summarize.py",
+  "full_performance_not_repeated_after_relocation": true
+}

@@ -1,0 +1,10 @@
+{
+  "binary_sha256": "c3eecf938c1eaf3d9f50050ad65c132e0afc72358cdd3e5096999c4cc739ee47",
+  "symbols": [
+    "_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb",
+    "_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0"
+  ],
+  "tzcnt_in_text": true,
+  "source": "same executable as main measurements",
+  "note": "Disassembly is evidence of emitted instructions, not measured cache/prefetch causality."
+}

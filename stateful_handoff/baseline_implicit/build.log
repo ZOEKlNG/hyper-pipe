@@ -1,0 +1,12 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/work/stateful/build
+[ 14%] Built target events
+[ 28%] Built target bench
+[ 42%] Built target proto_bench
+[ 57%] Built target store_audit
+[ 71%] Built target semantics_demo
+[ 78%] Building CXX object CMakeFiles/allocator_scaling.dir/allocator_scaling.cpp.o
+[ 85%] Linking CXX executable allocator_scaling
+[ 85%] Built target allocator_scaling
+[100%] Built target proto_alloc

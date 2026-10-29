@@ -1,0 +1,30 @@
+[
+  {
+    "binary": "proto_bench",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "binary": "proto_alloc",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "binary": "store_audit",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "binary": "allocator_scaling",
+    "cpu_stat_delta": {
+      "nr_throttled": 39,
+      "throttled_usec": 67198
+    }
+  }
+]

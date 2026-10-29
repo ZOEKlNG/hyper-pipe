@@ -1,0 +1,29 @@
+[
+  {
+    "binary": "mixed_bench",
+    "command": [
+      "./build-extras/mixed_bench"
+    ],
+    "wall_s": 9.430850115000794,
+    "return_code": 0,
+    "expected_rows": 60
+  },
+  {
+    "binary": "proto_mixed",
+    "command": [
+      "./build-extras/proto_mixed"
+    ],
+    "wall_s": 11.275972243001888,
+    "return_code": 0,
+    "expected_rows": 120
+  },
+  {
+    "binary": "proto_mixed_alloc",
+    "command": [
+      "./build-extras/proto_mixed_alloc"
+    ],
+    "wall_s": 0.3705800050011021,
+    "return_code": 0,
+    "expected_rows": 120
+  }
+]

@@ -1,0 +1,24 @@
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/work/stateful_reuse/build-extras
+[ 11%] Building CXX object CMakeFiles/mixed_bench.dir/mixed_bench.cpp.o
+[ 22%] Building CXX object CMakeFiles/mixed_bench.dir/workspace/work/stateful_reuse/events.pb.cc.o
+[ 33%] Linking CXX executable mixed_bench
+[ 33%] Built target mixed_bench
+[ 44%] Building CXX object CMakeFiles/proto_mixed.dir/proto_mixed.cpp.o
+[ 55%] Building CXX object CMakeFiles/proto_mixed.dir/workspace/work/stateful_reuse/events.pb.cc.o
+[ 66%] Linking CXX executable proto_mixed
+[ 66%] Built target proto_mixed
+[ 77%] Building CXX object CMakeFiles/proto_mixed_alloc.dir/proto_mixed.cpp.o
+[ 88%] Building CXX object CMakeFiles/proto_mixed_alloc.dir/workspace/work/stateful_reuse/events.pb.cc.o
+[100%] Linking CXX executable proto_mixed_alloc
+[100%] Built target proto_mixed_alloc

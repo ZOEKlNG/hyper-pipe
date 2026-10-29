@@ -1,5 +1,8 @@
 # 本次双核容量结果
 
+**后续核查修正（2026-10-29）：** 本轮3.21.12的`set_bytes(ptr,len)`会构造临时`std::string`，旧计时保留，但载荷复制账本须多计这一层；`mutable_bytes()->assign(...)`可避免它。详见[生成代码/API核查与重测](../stateful_handoff/PROTOBUF_3_21_NOTES.zh-CN.md)。
+
+
 2026-10-29 UTC 运行，400个保留样本（80配置各5次），最短0.302390202秒，功能错误0，测量源文件与二进制SHA前后一致。墙钟212.611秒，cgroup未发生CPU配额节流（nr_throttled/throttled_usec增量0）。CPU0为Worker、CPU1为Logger。
 
 下表是tail256B、queue256、队列batch32时的5次运行中位数，单位百万条/秒。它是完整双核容量，不能当Worker服务成本或网络性能。

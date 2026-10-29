@@ -1,0 +1,27 @@
+syntax = "proto3";
+package statefulpb;
+message Module {
+ fixed64 value0=1; fixed64 value1=2;
+ bytes text0=3; bytes text1=4; bytes text2=5; bytes text3=6;
+}
+message ParallelEvent {
+ fixed64 event_id=1;
+ optional Module common=2; optional Module tls=3; optional Module http=4; optional Module dns=5;
+ optional Module waf=6; optional Module risk=7; optional Module extra6=8; optional Module extra7=9;
+ bytes xff=20;
+}
+message OneofEvent {
+ fixed64 event_id=1;
+ optional Module common=2;
+ oneof detail {
+  Module tls=3; Module http=4; Module dns=5; Module waf=6;
+  Module risk=7; Module extra6=8; Module extra7=9;
+ }
+ bytes xff=20;
+}
+message ImplicitEvent {
+ fixed64 event_id=1;
+ Module common=2; Module tls=3; Module http=4; Module dns=5;
+ Module waf=6; Module risk=7; Module extra6=8; Module extra7=9;
+ bytes xff=20;
+}

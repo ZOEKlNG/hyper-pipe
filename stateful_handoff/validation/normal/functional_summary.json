@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "cases": 97,
+  "offered": 4769587,
+  "full_field_payload_errors": 0,
+  "elapsed_s": 6.274169814001652,
+  "binary": "/workspace/work/stateful_reuse/build/bench",
+  "note": "Real two-thread FIFO, 4096 active flow slots, four changing emissions/session, forced Logger startup pause, partial final cycle and poison-on-recycle. Empirical safety checks, not a proof for all schedules."
+}

@@ -1,0 +1,2558 @@
+[
+  {
+    "order": 0,
+    "config_id": 34,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.7155501209999784,
+    "stderr": ""
+  },
+  {
+    "order": 1,
+    "config_id": 118,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "3",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.061579424997035,
+    "stderr": ""
+  },
+  {
+    "order": 2,
+    "config_id": 55,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "48",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.7338280040021345,
+    "stderr": ""
+  },
+  {
+    "order": 3,
+    "config_id": 45,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "2",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.452456645001803,
+    "stderr": ""
+  },
+  {
+    "order": 4,
+    "config_id": 19,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.5782575229968643,
+    "stderr": ""
+  },
+  {
+    "order": 5,
+    "config_id": 29,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.082134287997178,
+    "stderr": ""
+  },
+  {
+    "order": 6,
+    "config_id": 105,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "1",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.77413558400076,
+    "stderr": ""
+  },
+  {
+    "order": 7,
+    "config_id": 4,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "48",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0406173920018773,
+    "stderr": ""
+  },
+  {
+    "order": 8,
+    "config_id": 122,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "15",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.945500415000424,
+    "stderr": ""
+  },
+  {
+    "order": 9,
+    "config_id": 7,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.389944075999665,
+    "stderr": ""
+  },
+  {
+    "order": 10,
+    "config_id": 58,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 2.9572151050015236,
+    "stderr": ""
+  },
+  {
+    "order": 11,
+    "config_id": 48,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.940419718001067,
+    "stderr": ""
+  },
+  {
+    "order": 12,
+    "config_id": 110,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "2",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.7733320510014892,
+    "stderr": ""
+  },
+  {
+    "order": 13,
+    "config_id": 100,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "0",
+      "0",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.4940504879996297,
+    "stderr": ""
+  },
+  {
+    "order": 14,
+    "config_id": 93,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "3",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.867017055999895,
+    "stderr": ""
+  },
+  {
+    "order": 15,
+    "config_id": 132,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "5",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.284688534000452,
+    "stderr": ""
+  },
+  {
+    "order": 16,
+    "config_id": 90,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.2291912299988326,
+    "stderr": ""
+  },
+  {
+    "order": 17,
+    "config_id": 6,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.582691095998598,
+    "stderr": ""
+  },
+  {
+    "order": 18,
+    "config_id": 119,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "3",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.166501767002046,
+    "stderr": ""
+  },
+  {
+    "order": 19,
+    "config_id": 3,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "32",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0336896350017923,
+    "stderr": ""
+  },
+  {
+    "order": 20,
+    "config_id": 86,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "32",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.980487719996745,
+    "stderr": ""
+  },
+  {
+    "order": 21,
+    "config_id": 20,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.8670033980015432,
+    "stderr": ""
+  },
+  {
+    "order": 22,
+    "config_id": 2,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "16",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.6025787520011363,
+    "stderr": ""
+  },
+  {
+    "order": 23,
+    "config_id": 41,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "1",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.197428466999554,
+    "stderr": ""
+  },
+  {
+    "order": 24,
+    "config_id": 104,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "1",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.555349797999952,
+    "stderr": ""
+  },
+  {
+    "order": 25,
+    "config_id": 101,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "0",
+      "0",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.5377698699994653,
+    "stderr": ""
+  },
+  {
+    "order": 26,
+    "config_id": 84,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "15",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.246661963999941,
+    "stderr": ""
+  },
+  {
+    "order": 27,
+    "config_id": 82,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.339190107999457,
+    "stderr": ""
+  },
+  {
+    "order": 28,
+    "config_id": 78,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.247903355000744,
+    "stderr": ""
+  },
+  {
+    "order": 29,
+    "config_id": 24,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.90012563900018,
+    "stderr": ""
+  },
+  {
+    "order": 30,
+    "config_id": 107,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "1",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.105971845001477,
+    "stderr": ""
+  },
+  {
+    "order": 31,
+    "config_id": 75,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.9927322789990285,
+    "stderr": ""
+  },
+  {
+    "order": 32,
+    "config_id": 88,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0437870329988073,
+    "stderr": ""
+  },
+  {
+    "order": 33,
+    "config_id": 8,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.341608921000443,
+    "stderr": ""
+  },
+  {
+    "order": 34,
+    "config_id": 26,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.146553975002462,
+    "stderr": ""
+  },
+  {
+    "order": 35,
+    "config_id": 63,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "128",
+      "5",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.142847859999165,
+    "stderr": ""
+  },
+  {
+    "order": 36,
+    "config_id": 102,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "1",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.8913394459996198,
+    "stderr": ""
+  },
+  {
+    "order": 37,
+    "config_id": 61,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "128",
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9741290590027347,
+    "stderr": ""
+  },
+  {
+    "order": 38,
+    "config_id": 52,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "15",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9403408489997673,
+    "stderr": ""
+  },
+  {
+    "order": 39,
+    "config_id": 91,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "3",
+      "4",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.959354726001038,
+    "stderr": ""
+  },
+  {
+    "order": 40,
+    "config_id": 9,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.8954517660022248,
+    "stderr": ""
+  },
+  {
+    "order": 41,
+    "config_id": 73,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.199842558002274,
+    "stderr": ""
+  },
+  {
+    "order": 42,
+    "config_id": 68,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "12",
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 5.386297504999675,
+    "stderr": ""
+  },
+  {
+    "order": 43,
+    "config_id": 70,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.16794380400097,
+    "stderr": ""
+  },
+  {
+    "order": 44,
+    "config_id": 114,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "3",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 5.6990034930022375,
+    "stderr": ""
+  },
+  {
+    "order": 45,
+    "config_id": 38,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "1",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.7971119419999013,
+    "stderr": ""
+  },
+  {
+    "order": 46,
+    "config_id": 14,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.635807159000251,
+    "stderr": ""
+  },
+  {
+    "order": 47,
+    "config_id": 87,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "48",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 5.1589174260006985,
+    "stderr": ""
+  },
+  {
+    "order": 48,
+    "config_id": 43,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "2",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.041405152001971,
+    "stderr": ""
+  },
+  {
+    "order": 49,
+    "config_id": 0,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 6.06123068099987,
+    "stderr": ""
+  },
+  {
+    "order": 50,
+    "config_id": 140,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "5",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0356167840000126,
+    "stderr": ""
+  },
+  {
+    "order": 51,
+    "config_id": 18,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "64",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 3.145612684002117,
+    "stderr": ""
+  },
+  {
+    "order": 52,
+    "config_id": 123,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "16",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.526287353000953,
+    "stderr": ""
+  },
+  {
+    "order": 53,
+    "config_id": 111,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "2",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9242358159972355,
+    "stderr": ""
+  },
+  {
+    "order": 54,
+    "config_id": 44,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "2",
+      "128",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 1.9526333339999837,
+    "stderr": ""
+  },
+  {
+    "order": 55,
+    "config_id": 103,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "1",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.853283222000755,
+    "stderr": ""
+  },
+  {
+    "order": 56,
+    "config_id": 141,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "5",
+      "4",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.136417955996876,
+    "stderr": ""
+  },
+  {
+    "order": 57,
+    "config_id": 85,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "16",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.977481699999771,
+    "stderr": ""
+  },
+  {
+    "order": 58,
+    "config_id": 94,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "3",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.097499217001314,
+    "stderr": ""
+  },
+  {
+    "order": 59,
+    "config_id": 49,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.3975417479996395,
+    "stderr": ""
+  },
+  {
+    "order": 60,
+    "config_id": 97,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "0",
+      "0",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.8378098720022535,
+    "stderr": ""
+  },
+  {
+    "order": 61,
+    "config_id": 30,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9657073070011393,
+    "stderr": ""
+  },
+  {
+    "order": 62,
+    "config_id": 28,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.047285179996834,
+    "stderr": ""
+  },
+  {
+    "order": 63,
+    "config_id": 33,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "64",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 4.675005139000859,
+    "stderr": ""
+  },
+  {
+    "order": 64,
+    "config_id": 126,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.8558384490024764,
+    "stderr": ""
+  },
+  {
+    "order": 65,
+    "config_id": 67,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "12",
+      "1",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.986752016000537,
+    "stderr": ""
+  },
+  {
+    "order": 66,
+    "config_id": 11,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "64",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 4.1698464040018735,
+    "stderr": ""
+  },
+  {
+    "order": 67,
+    "config_id": 47,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "12",
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.975510577998648,
+    "stderr": ""
+  },
+  {
+    "order": 68,
+    "config_id": 21,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0452189040006488,
+    "stderr": ""
+  },
+  {
+    "order": 69,
+    "config_id": 99,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "0",
+      "0",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9334610670011898,
+    "stderr": ""
+  },
+  {
+    "order": 70,
+    "config_id": 71,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "12",
+      "5",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.974728927001706,
+    "stderr": ""
+  },
+  {
+    "order": 71,
+    "config_id": 128,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.7443165139993653,
+    "stderr": ""
+  },
+  {
+    "order": 72,
+    "config_id": 92,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "3",
+      "4",
+      "3",
+      "32",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9463771390001057,
+    "stderr": ""
+  },
+  {
+    "order": 73,
+    "config_id": 42,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "2",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9421548720019928,
+    "stderr": ""
+  },
+  {
+    "order": 74,
+    "config_id": 127,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.749282687997038,
+    "stderr": ""
+  },
+  {
+    "order": 75,
+    "config_id": 96,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "0",
+      "0",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.962602326002525,
+    "stderr": ""
+  },
+  {
+    "order": 76,
+    "config_id": 36,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.199244880997867,
+    "stderr": ""
+  },
+  {
+    "order": 77,
+    "config_id": 80,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "128",
+      "8",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.4474122940009693,
+    "stderr": ""
+  },
+  {
+    "order": 78,
+    "config_id": 65,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.2662559780001175,
+    "stderr": ""
+  },
+  {
+    "order": 79,
+    "config_id": 5,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.998046904001967,
+    "stderr": ""
+  },
+  {
+    "order": 80,
+    "config_id": 76,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "128",
+      "1",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.431109496999852,
+    "stderr": ""
+  },
+  {
+    "order": 81,
+    "config_id": 95,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "3",
+      "4",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.653214827001648,
+    "stderr": ""
+  },
+  {
+    "order": 82,
+    "config_id": 1,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "15",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 5.225989610000397,
+    "stderr": ""
+  },
+  {
+    "order": 83,
+    "config_id": 138,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "5",
+      "4",
+      "3",
+      "32",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.4817615729989484,
+    "stderr": ""
+  },
+  {
+    "order": 84,
+    "config_id": 51,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "12",
+      "8",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.127801623999403,
+    "stderr": ""
+  },
+  {
+    "order": 85,
+    "config_id": 60,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "128",
+      "1",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 5.584568712001783,
+    "stderr": ""
+  },
+  {
+    "order": 86,
+    "config_id": 79,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "128",
+      "5",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.683294771999499,
+    "stderr": ""
+  },
+  {
+    "order": 87,
+    "config_id": 139,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "5",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.909501692000049,
+    "stderr": ""
+  },
+  {
+    "order": 88,
+    "config_id": 77,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "128",
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.16124407100142,
+    "stderr": ""
+  },
+  {
+    "order": 89,
+    "config_id": 54,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "32",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0087197559987544,
+    "stderr": ""
+  },
+  {
+    "order": 90,
+    "config_id": 131,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "5",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.26976577700043,
+    "stderr": ""
+  },
+  {
+    "order": 91,
+    "config_id": 124,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "32",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.566245316000277,
+    "stderr": ""
+  },
+  {
+    "order": 92,
+    "config_id": 16,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.875717180002539,
+    "stderr": ""
+  },
+  {
+    "order": 93,
+    "config_id": 53,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "16",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.867013027000212,
+    "stderr": ""
+  },
+  {
+    "order": 94,
+    "config_id": 129,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.2330378369988466,
+    "stderr": ""
+  },
+  {
+    "order": 95,
+    "config_id": 62,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.023295868999412,
+    "stderr": ""
+  },
+  {
+    "order": 96,
+    "config_id": 83,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.9246548829978565,
+    "stderr": ""
+  },
+  {
+    "order": 97,
+    "config_id": 27,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "64",
+      "3",
+      "1",
+      "2",
+      "0"
+    ],
+    "wall_s": 1.888989635001053,
+    "stderr": ""
+  },
+  {
+    "order": 98,
+    "config_id": 116,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "3",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0090023140000994,
+    "stderr": ""
+  },
+  {
+    "order": 99,
+    "config_id": 39,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "1",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.2188394719996722,
+    "stderr": ""
+  },
+  {
+    "order": 100,
+    "config_id": 23,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.011619316999713,
+    "stderr": ""
+  },
+  {
+    "order": 101,
+    "config_id": 12,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9932919750026485,
+    "stderr": ""
+  },
+  {
+    "order": 102,
+    "config_id": 15,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.962002766002115,
+    "stderr": ""
+  },
+  {
+    "order": 103,
+    "config_id": 125,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "48",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.987761659998796,
+    "stderr": ""
+  },
+  {
+    "order": 104,
+    "config_id": 130,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.1979560680010763,
+    "stderr": ""
+  },
+  {
+    "order": 105,
+    "config_id": 106,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "1",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.2003697709988046,
+    "stderr": ""
+  },
+  {
+    "order": 106,
+    "config_id": 109,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "2",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9551728059996094,
+    "stderr": ""
+  },
+  {
+    "order": 107,
+    "config_id": 50,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "12",
+      "5",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9134303470018494,
+    "stderr": ""
+  },
+  {
+    "order": 108,
+    "config_id": 56,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.1655336750009155,
+    "stderr": ""
+  },
+  {
+    "order": 109,
+    "config_id": 25,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "64",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 3.55500752199805,
+    "stderr": ""
+  },
+  {
+    "order": 110,
+    "config_id": 35,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "64",
+      "3",
+      "1",
+      "2",
+      "0"
+    ],
+    "wall_s": 1.878894636000041,
+    "stderr": ""
+  },
+  {
+    "order": 111,
+    "config_id": 81,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.2266239750024397,
+    "stderr": ""
+  },
+  {
+    "order": 112,
+    "config_id": 40,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "1",
+      "128",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 2.0040088770001603,
+    "stderr": ""
+  },
+  {
+    "order": 113,
+    "config_id": 10,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.3309352489995945,
+    "stderr": ""
+  },
+  {
+    "order": 114,
+    "config_id": 31,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0055225579999387,
+    "stderr": ""
+  },
+  {
+    "order": 115,
+    "config_id": 98,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "0",
+      "0",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.643172547002905,
+    "stderr": ""
+  },
+  {
+    "order": 116,
+    "config_id": 13,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.1802497819990094,
+    "stderr": ""
+  },
+  {
+    "order": 117,
+    "config_id": 115,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "3",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9769848180003464,
+    "stderr": ""
+  },
+  {
+    "order": 118,
+    "config_id": 121,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9576046360016335,
+    "stderr": ""
+  },
+  {
+    "order": 119,
+    "config_id": 74,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "64",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 2.044924946996616,
+    "stderr": ""
+  },
+  {
+    "order": 120,
+    "config_id": 120,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 5.301053314997262,
+    "stderr": ""
+  },
+  {
+    "order": 121,
+    "config_id": 134,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "5",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9674353339978552,
+    "stderr": ""
+  },
+  {
+    "order": 122,
+    "config_id": 135,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "5",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.813076252998144,
+    "stderr": ""
+  },
+  {
+    "order": 123,
+    "config_id": 32,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.98154452900053,
+    "stderr": ""
+  },
+  {
+    "order": 124,
+    "config_id": 17,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.8863258169985784,
+    "stderr": ""
+  },
+  {
+    "order": 125,
+    "config_id": 64,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "128",
+      "8",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.5635038889995485,
+    "stderr": ""
+  },
+  {
+    "order": 126,
+    "config_id": 112,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "2",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.076676934000716,
+    "stderr": ""
+  },
+  {
+    "order": 127,
+    "config_id": 59,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.942988974002219,
+    "stderr": ""
+  },
+  {
+    "order": 128,
+    "config_id": 133,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "5",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9859616499998083,
+    "stderr": ""
+  },
+  {
+    "order": 129,
+    "config_id": 37,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.238450495999132,
+    "stderr": ""
+  },
+  {
+    "order": 130,
+    "config_id": 66,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.9747199720004573,
+    "stderr": ""
+  },
+  {
+    "order": 131,
+    "config_id": 69,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9396744630030298,
+    "stderr": ""
+  },
+  {
+    "order": 132,
+    "config_id": 22,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9935943720010982,
+    "stderr": ""
+  },
+  {
+    "order": 133,
+    "config_id": 108,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "2",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.8377585469970654,
+    "stderr": ""
+  },
+  {
+    "order": 134,
+    "config_id": 137,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "5",
+      "4",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.3787512499984587,
+    "stderr": ""
+  },
+  {
+    "order": 135,
+    "config_id": 46,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "12",
+      "1",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.915913771998021,
+    "stderr": ""
+  },
+  {
+    "order": 136,
+    "config_id": 72,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "12",
+      "8",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.58873612699972,
+    "stderr": ""
+  },
+  {
+    "order": 137,
+    "config_id": 117,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "3",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.8724561280032503,
+    "stderr": ""
+  },
+  {
+    "order": 138,
+    "config_id": 89,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.8463963429967407,
+    "stderr": ""
+  },
+  {
+    "order": 139,
+    "config_id": 57,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "1"
+    ],
+    "wall_s": 2.091113222999411,
+    "stderr": ""
+  },
+  {
+    "order": 140,
+    "config_id": 113,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "2",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.1474119939994125,
+    "stderr": ""
+  },
+  {
+    "order": 141,
+    "config_id": 136,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "5",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.5387759700024617,
+    "stderr": ""
+  }
+]

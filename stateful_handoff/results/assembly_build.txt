@@ -1,0 +1,1306 @@
+
+build/bench:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .text:
+
+00000000000379c0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb>:
+   379c0:	push   %rbp
+   379c1:	mov    %rsp,%rbp
+   379c4:	push   %r15
+   379c6:	push   %r14
+   379c8:	push   %r13
+   379ca:	push   %r12
+   379cc:	push   %rbx
+   379cd:	mov    %rdx,%r12
+   379d0:	mov    %ecx,%edx
+   379d2:	and    $0xffffffffffffffc0,%rsp
+   379d6:	mov    %rdi,%rbx
+   379d9:	mov    %rsi,%r14
+   379dc:	mov    %r8,%r13
+   379df:	add    $0xffffffffffffff80,%rsp
+   379e3:	mov    0x10(%rbp),%eax
+   379e6:	movzbl 0x20(%r8),%r11d
+   379eb:	mov    %r9,0x50(%rsp)
+   379f0:	mov    %eax,0x48(%rsp)
+   379f4:	mov    0x8(%r12),%rax
+   379f9:	mov    %edx,0x18(%rdi)
+   379fc:	mov    %rax,0x8(%rdi)
+   37a00:	mov    0x18(%r8),%rax
+   37a04:	lea    -0x1(%rdx),%edi
+   37a07:	mov    0x18(%r12),%r10
+   37a0c:	mov    %edi,0x58(%rsp)
+   37a10:	test   %rax,%rax
+   37a13:	je     384f0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xb30>
+   37a19:	cmp    $0x1,%rax
+   37a1d:	je     385b0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xbf0>
+   37a23:	test   %edx,%edx
+   37a25:	lea    -0x2(%rax),%rcx
+   37a29:	lea    -0x1(%rax),%r8
+   37a2d:	setne  %r9b
+   37a31:	cmp    $0xe,%rcx
+   37a35:	jbe    38547 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xb87>
+   37a3b:	mov    $0x8,%esi
+   37a40:	vmovdqa64 0x13b636(%rip),%zmm2        # 173080 <CSWTCH.1597+0x20>
+   37a4a:	vmovdqa32 0x13b66c(%rip),%zmm14        # 1730c0 <CSWTCH.1597+0x60>
+   37a54:	mov    %r8,%rdi
+   37a57:	mov    %r9d,%ecx
+   37a5a:	neg    %ecx
+   37a5c:	vpbroadcastq %rsi,%zmm13
+   37a62:	mov    $0x10,%esi
+   37a67:	kmovb  %ecx,%k0
+   37a6b:	vpxor  %xmm3,%xmm3,%xmm3
+   37a6f:	shr    $0x4,%rdi
+   37a73:	vpbroadcastq %rsi,%zmm12
+   37a79:	mov    $0x1,%esi
+   37a7e:	xor    %ecx,%ecx
+   37a80:	vpbroadcastq %rsi,%zmm11
+   37a86:	mov    $0x2,%esi
+   37a8b:	vpbroadcastq %rsi,%zmm10
+   37a91:	mov    $0x3f,%esi
+   37a96:	vpbroadcastq %rsi,%zmm9
+   37a9c:	mov    $0xf,%esi
+   37aa1:	vpbroadcastq %rsi,%zmm8
+   37aa7:	mov    $0xffffffff,%esi
+   37aac:	vpbroadcastq %rsi,%zmm7
+   37ab2:	vmovdqa64 %zmm2,%zmm0
+   37ab8:	vpaddq %zmm13,%zmm2,%zmm6
+   37abe:	inc    %rcx
+   37ac1:	vpaddq %zmm12,%zmm2,%zmm2
+   37ac7:	vpcmpleuq %zmm11,%zmm6,%k1
+   37ace:	korb   %k0,%k1,%k1
+   37ad2:	vpcmpeqq %zmm10,%zmm6,%k3{%k1}
+   37ad9:	vpblendmq %zmm9,%zmm8,%zmm4{%k3}
+   37adf:	vmovdqa32 %zmm0,%zmm1
+   37ae5:	vpcmpleuq %zmm11,%zmm0,%k2
+   37aec:	korb   %k0,%k2,%k2
+   37af0:	vpcmpeqq %zmm10,%zmm0,%k4{%k2}
+   37af7:	vpblendmq %zmm9,%zmm8,%zmm5{%k4}
+   37afd:	vpermt2d %zmm6,%zmm14,%zmm1
+   37b03:	vpslld $0x1,%zmm1,%zmm0
+   37b0a:	vpaddd %zmm1,%zmm0,%zmm0
+   37b10:	vpslld $0x1,%zmm0,%zmm0
+   37b17:	vextracti32x8 $0x1,%zmm0,%ymm1
+   37b1e:	vpmovzxdq %ymm1,%zmm1
+   37b24:	vpmovzxdq %ymm0,%zmm0
+   37b2a:	vpandq %zmm7,%zmm1,%zmm1
+   37b30:	vpsllvq %zmm1,%zmm4,%zmm1
+   37b36:	vmovdqa64 %zmm3,%zmm4
+   37b3c:	vpandq %zmm7,%zmm0,%zmm0
+   37b42:	vpsllvq %zmm0,%zmm5,%zmm0
+   37b48:	vporq  %zmm3,%zmm0,%zmm4{%k2}
+   37b4e:	vmovdqa64 %zmm4,%zmm3
+   37b54:	vporq  %zmm1,%zmm4,%zmm3{%k1}
+   37b5a:	cmp    %rcx,%rdi
+   37b5d:	jne    37ab2 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xf2>
+   37b63:	vextracti64x4 $0x1,%zmm3,%ymm0
+   37b6a:	mov    %r8,%r15
+   37b6d:	vporq  %ymm3,%ymm0,%ymm0
+   37b73:	and    $0xfffffffffffffff0,%r15
+   37b77:	vextracti64x2 $0x1,%ymm0,%xmm1
+   37b7e:	vporq  %xmm0,%xmm1,%xmm1
+   37b84:	lea    0x1(%r15),%rcx
+   37b88:	vpsrldq $0x8,%xmm1,%xmm2
+   37b8d:	vporq  %xmm2,%xmm1,%xmm1
+   37b93:	vmovq  %xmm1,%rsi
+   37b98:	vmovdqa %ymm0,%ymm1
+   37b9c:	mov    %rsi,%rdi
+   37b9f:	or     $0x3,%rdi
+   37ba3:	and    $0xf,%r8d
+   37ba7:	je     38480 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xac0>
+   37bad:	mov    %rax,%rsi
+   37bb0:	sub    %r15,%rsi
+   37bb3:	lea    -0x1(%rsi),%r8
+   37bb7:	sub    $0x2,%rsi
+   37bbb:	cmp    $0x6,%rsi
+   37bbf:	jbe    37cf5 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x335>
+   37bc5:	vpbroadcastq %rcx,%ymm3
+   37bcb:	vpaddq 0x1461cd(%rip),%ymm3,%ymm6        # 17dda0 <_ZTSSt19_Sp_counted_deleterIPN2sf7SessionEZNS0_6Engine7acquireEmEUlS2_E_SaIvELN9__gnu_cxx12_Lock_policyE2EE+0x80>
+   37bd3:	vpaddq 0x13b545(%rip),%ymm3,%ymm3        # 173120 <CSWTCH.1597+0xc0>
+   37bdb:	mov    $0x1,%edi
+   37be0:	vpbroadcastq %rdi,%ymm0
+   37be6:	mov    %r9d,%esi
+   37be9:	vmovdqa 0x13b4cf(%rip),%ymm4        # 1730c0 <CSWTCH.1597+0x60>
+   37bf1:	neg    %esi
+   37bf3:	and    $0xf,%esi
+   37bf6:	vpcmpleuq %ymm0,%ymm3,%k7
+   37bfd:	vpcmpleuq %ymm0,%ymm6,%k6
+   37c04:	kmovb  %k7,%edi
+   37c08:	kmovb  %k6,%r15d
+   37c0c:	vpermi2d %ymm3,%ymm6,%ymm4
+   37c12:	or     %esi,%r15d
+   37c15:	or     %esi,%edi
+   37c17:	mov    $0x2,%esi
+   37c1c:	kmovb  %edi,%k5
+   37c20:	kmovb  %r15d,%k6
+   37c25:	vpbroadcastq %rsi,%ymm0
+   37c2b:	mov    $0xf,%esi
+   37c30:	and    $0xf,%r15d
+   37c34:	and    $0xf,%edi
+   37c37:	vpcmpeqq %ymm0,%ymm3,%k1{%k5}
+   37c3e:	vpcmpeqq %ymm0,%ymm6,%k2{%k6}
+   37c45:	kmovb  %r15d,%k7
+   37c4a:	kmovb  %edi,%k5
+   37c4e:	vpbroadcastq %rsi,%ymm0
+   37c54:	mov    $0x3f,%esi
+   37c59:	mov    %r8,%r15
+   37c5c:	vmovdqa %ymm0,%ymm5
+   37c60:	vmovdqa %ymm0,%ymm2
+   37c64:	vpslld $0x1,%ymm4,%ymm0
+   37c69:	vpaddd %ymm4,%ymm0,%ymm0
+   37c6d:	vpbroadcastq %rsi,%ymm5{%k2}
+   37c73:	vpbroadcastq %rsi,%ymm2{%k1}
+   37c79:	mov    $0xffffffff,%esi
+   37c7e:	vpslld $0x1,%ymm0,%ymm0
+   37c83:	vpbroadcastq %rsi,%ymm4
+   37c89:	vextracti32x4 $0x1,%ymm0,%xmm3
+   37c90:	vpmovzxdq %xmm3,%ymm3
+   37c95:	and    $0xfffffffffffffff8,%r15
+   37c99:	vpandq %ymm4,%ymm3,%ymm3
+   37c9f:	vpmovzxdq %xmm0,%ymm0
+   37ca4:	add    %r15,%rcx
+   37ca7:	vpsllvq %ymm3,%ymm2,%ymm2
+   37cac:	vpandq %ymm4,%ymm0,%ymm0
+   37cb2:	vmovdqa %ymm1,%ymm3
+   37cb6:	vpsllvq %ymm0,%ymm5,%ymm0
+   37cbb:	vporq  %ymm1,%ymm0,%ymm3{%k7}
+   37cc1:	vporq  %ymm3,%ymm2,%ymm3{%k5}
+   37cc7:	vextracti64x2 $0x1,%ymm3,%xmm0
+   37cce:	vporq  %xmm3,%xmm0,%xmm0
+   37cd4:	vpsrldq $0x8,%xmm0,%xmm1
+   37cd9:	vporq  %xmm1,%xmm0,%xmm0
+   37cdf:	vmovq  %xmm0,%rsi
+   37ce4:	mov    %rsi,%rdi
+   37ce7:	or     $0x3,%rdi
+   37ceb:	and    $0x7,%r8d
+   37cef:	je     38480 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xac0>
+   37cf5:	cmp    $0x1,%rcx
+   37cf9:	jbe    37dd0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x410>
+   37cff:	test   %r9b,%r9b
+   37d02:	jne    37dd0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x410>
+   37d08:	lea    0x1(%rcx),%rsi
+   37d0c:	cmp    %rax,%rsi
+   37d0f:	jae    38450 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xa90>
+   37d15:	lea    0x2(%rcx),%rsi
+   37d19:	cmp    %rax,%rsi
+   37d1c:	jae    38400 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xa40>
+   37d22:	lea    0x3(%rcx),%rsi
+   37d26:	cmp    %rax,%rsi
+   37d29:	jae    37d4e <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x38e>
+   37d2b:	lea    0x4(%rcx),%rsi
+   37d2f:	cmp    %rax,%rsi
+   37d32:	jae    37d4e <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x38e>
+   37d34:	lea    0x5(%rcx),%rsi
+   37d38:	cmp    %rax,%rsi
+   37d3b:	jae    38320 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x960>
+   37d41:	add    $0x6,%rcx
+   37d45:	cmp    %rax,%rcx
+   37d48:	jae    38320 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x960>
+   37d4e:	test   %r11b,%r11b
+   37d51:	jne    382f0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x930>
+   37d57:	cmp    $0x3,%edx
+   37d5a:	je     382f5 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x935>
+   37d60:	mov    %r10,%rax
+   37d63:	movl   $0x0,0x24(%rbx)
+   37d6a:	movq   $0x0,0x1c(%rbx)
+   37d72:	mov    %r12,0x30(%rbx)
+   37d76:	and    %rdi,%rax
+   37d79:	mov    %rax,0x10(%rbx)
+   37d7d:	jns    37da6 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x3e6>
+   37d7f:	cmpl   $0x1,0x4(%r13)
+   37d84:	je     384b0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xaf0>
+   37d8a:	mov    0x50(%rsp),%rdi
+   37d8f:	vmovdqu8 (%rdi),%ymm0
+   37d95:	movl   $0x20,0x20(%rbx)
+   37d9c:	vmovdqu8 %ymm0,0x48(%rbx)
+   37da6:	cmpl   $0x4,0x4(%r13)
+   37dab:	ja     37f96 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x5d6>
+   37db1:	mov    0x4(%r13),%edx
+   37db5:	lea    0x13d334(%rip),%rcx        # 1750f0 <CSWTCH.1597+0x2090>
+   37dbc:	movslq (%rcx,%rdx,4),%rdx
+   37dc0:	add    %rcx,%rdx
+   37dc3:	jmp    *%rdx
+   37dc5:	mov    $0x1,%ecx
+   37dca:	mov    $0x3,%edi
+   37dcf:	nop
+   37dd0:	lea    (%rcx,%rcx,2),%r8
+   37dd4:	mov    $0xf,%esi
+   37dd9:	add    %r8,%r8
+   37ddc:	shlx   %r8,%rsi,%rsi
+   37de1:	or     %rsi,%rdi
+   37de4:	lea    0x1(%rcx),%rsi
+   37de8:	cmp    %rax,%rsi
+   37deb:	jae    38400 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xa40>
+   37df1:	test   %edx,%edx
+   37df3:	je     382d0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x910>
+   37df9:	mov    $0xf,%r8d
+   37dff:	cmp    $0x2,%rsi
+   37e03:	jne    37e10 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x450>
+   37e05:	mov    $0x1,%ecx
+   37e0a:	mov    $0x3f,%r8d
+   37e10:	lea    (%rsi,%rsi,2),%rsi
+   37e14:	add    %rsi,%rsi
+   37e17:	shlx   %rsi,%r8,%r8
+   37e1c:	lea    0x2(%rcx),%rsi
+   37e20:	or     %r8,%rdi
+   37e23:	cmp    %rax,%rsi
+   37e26:	jae    38400 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xa40>
+   37e2c:	lea    (%rsi,%rsi,2),%rsi
+   37e30:	mov    $0xf,%r8d
+   37e36:	add    %rsi,%rsi
+   37e39:	shlx   %rsi,%r8,%rsi
+   37e3e:	or     %rsi,%rdi
+   37e41:	lea    0x3(%rcx),%rsi
+   37e45:	cmp    %rax,%rsi
+   37e48:	jae    38320 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x960>
+   37e4e:	lea    (%rsi,%rsi,2),%rsi
+   37e52:	add    %rsi,%rsi
+   37e55:	shlx   %rsi,%r8,%rsi
+   37e5a:	or     %rsi,%rdi
+   37e5d:	lea    0x4(%rcx),%rsi
+   37e61:	cmp    %rax,%rsi
+   37e64:	jae    38320 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x960>
+   37e6a:	lea    (%rsi,%rsi,2),%rsi
+   37e6e:	add    %rsi,%rsi
+   37e71:	shlx   %rsi,%r8,%rsi
+   37e76:	or     %rsi,%rdi
+   37e79:	lea    0x5(%rcx),%rsi
+   37e7d:	cmp    %rax,%rsi
+   37e80:	jae    38320 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x960>
+   37e86:	lea    (%rsi,%rsi,2),%rsi
+   37e8a:	add    $0x6,%rcx
+   37e8e:	add    %rsi,%rsi
+   37e91:	shlx   %rsi,%r8,%rsi
+   37e96:	or     %rsi,%rdi
+   37e99:	cmp    %rax,%rcx
+   37e9c:	jae    38320 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x960>
+   37ea2:	lea    (%rcx,%rcx,2),%rax
+   37ea6:	add    %rax,%rax
+   37ea9:	shlx   %rax,%r8,%r8
+   37eae:	or     %r8,%rdi
+   37eb1:	cmpl   $0x1,0x58(%rsp)
+   37eb6:	jbe    3832b <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x96b>
+   37ebc:	jmp    37d4e <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x38e>
+   37ec1:	data16 cs nopw 0x0(%rax,%rax,1)
+   37ecc:	nopl   0x0(%rax)
+   37ed0:	mov    0x18(%r13),%rsi
+   37ed4:	xor    %ecx,%ecx
+   37ed6:	xor    %r8d,%r8d
+   37ed9:	movabs $0xffffffff0000ffff,%r10
+   37ee3:	test   %rsi,%rsi
+   37ee6:	jne    37f3c <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x57c>
+   37ee8:	xor    %edx,%edx
+   37eea:	vzeroupper
+   37eed:	jmp    381fa <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x83a>
+   37ef2:	data16 cs nopw 0x0(%rax,%rax,1)
+   37efd:	nopl   (%rax)
+   37f00:	imul   $0x58,%rcx,%rdx
+   37f04:	add    %rdx,%rax
+   37f07:	vmovdqu64 (%rax),%zmm0
+   37f0d:	lea    0x80(%r14,%rsi,1),%rdx
+   37f15:	vmovdqu64 %zmm0,(%rdx)
+   37f1b:	vmovdqu 0x38(%rax),%ymm0
+   37f20:	vmovdqu %ymm0,0x38(%rdx)
+   37f25:	mov    0x18(%r13),%rsi
+   37f29:	incl   0x24(%rbx)
+   37f2c:	inc    %rcx
+   37f2f:	cmp    %rsi,%rcx
+   37f32:	jae    38440 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xa80>
+   37f38:	mov    0x10(%rbx),%rax
+   37f3c:	lea    (%rcx,%rcx,2),%edx
+   37f3f:	add    %edx,%edx
+   37f41:	shrx   %rdx,%rax,%rax
+   37f46:	and    $0x3f,%eax
+   37f49:	mov    %rax,%rdi
+   37f4c:	je     37f2c <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x56c>
+   37f4e:	mov    0x24(%rbx),%edx
+   37f51:	mov    %r8,%rax
+   37f54:	mov    %cx,%ax
+   37f57:	and    %r10,%rax
+   37f5a:	imul   $0x58,%edx,%esi
+   37f5d:	shl    $0x4,%rdx
+   37f61:	movzwl %si,%esi
+   37f64:	mov    %rdi,0x8(%r14,%rdx,1)
+   37f69:	mov    %rsi,%r9
+   37f6c:	shl    $0x10,%r9
+   37f70:	or     %r9,%rax
+   37f73:	mov    %rax,(%r14,%rdx,1)
+   37f77:	mov    0x58(%r12),%rax
+   37f7c:	test   %rax,%rax
+   37f7f:	jne    37f00 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x540>
+   37f85:	imul   $0x98,%rcx,%rax
+   37f8c:	add    0x28(%r12),%rax
+   37f91:	jmp    37f07 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x547>
+   37f96:	mov    0x18(%r13),%rcx
+   37f9a:	test   %rcx,%rcx
+   37f9d:	je     37ee8 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x528>
+   37fa3:	xor    %edi,%edi
+   37fa5:	cmpb   $0x0,0x48(%rsp)
+   37faa:	jne    38195 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x7d5>
+   37fb0:	jmp    38014 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x654>
+   37fb2:	data16 cs nopw 0x0(%rax,%rax,1)
+   37fbd:	nopl   (%rax)
+   37fc0:	imul   %rdx,%rcx
+   37fc4:	mov    %rax,0x68(%rsp)
+   37fc9:	mov    0x24(%rbx),%eax
+   37fcc:	movq   $0x0,0x60(%rsp)
+   37fd5:	mov    %di,0x60(%rsp)
+   37fda:	vmovdqa 0x60(%rsp),%xmm0
+   37fe0:	add    %rdi,%rcx
+   37fe3:	inc    %rdi
+   37fe6:	imul   $0x58,%rcx,%rcx
+   37fea:	add    0x40(%r12),%rcx
+   37fef:	lea    (%rax,%rax,2),%rax
+   37ff3:	lea    (%r14,%rax,8),%rax
+   37ff7:	vmovdqu %xmm0,(%rax)
+   37ffb:	mov    %rcx,0x10(%rax)
+   37fff:	mov    %rcx,0x70(%rsp)
+   38004:	mov    0x18(%r13),%rcx
+   38008:	incl   0x24(%rbx)
+   3800b:	cmp    %rcx,%rdi
+   3800e:	jae    38030 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x670>
+   38010:	mov    0x10(%rbx),%rax
+   38014:	lea    (%rdi,%rdi,2),%esi
+   38017:	add    %esi,%esi
+   38019:	shrx   %rsi,%rax,%rax
+   3801e:	and    $0x3f,%eax
+   38021:	jne    37fc0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x600>
+   38023:	inc    %rdi
+   38026:	cmp    %rcx,%rdi
+   38029:	jb     38010 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x650>
+   3802b:	nopl   0x0(%rax,%rax,1)
+   38030:	mov    0x24(%rbx),%eax
+   38033:	lea    (%rax,%rax,2),%edx
+   38036:	shl    $0x3,%edx
+   38039:	vzeroupper
+   3803c:	jmp    381fa <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x83a>
+   38041:	data16 cs nopw 0x0(%rax,%rax,1)
+   3804c:	nopl   0x0(%rax)
+   38050:	btr    $0x3f,%rax
+   38055:	xor    %r15d,%r15d
+   38058:	mov    $0xaaaaaaab,%r9d
+   3805e:	mov    %rax,%r8
+   38061:	test   %rax,%rax
+   38064:	je     38587 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xbc7>
+   3806a:	mov    %r13,%rax
+   3806d:	mov    %rbx,0x38(%rsp)
+   38072:	mov    %r12,%r13
+   38075:	mov    %r15,%rbx
+   38078:	mov    %r8,%r12
+   3807b:	mov    %r14,%rcx
+   3807e:	mov    %rax,%r8
+   38081:	vzeroupper
+   38084:	jmp    380d1 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x711>
+   38086:	cs nopw 0x0(%rax,%rax,1)
+   38090:	mov    %rdi,%rax
+   38093:	shl    $0x4,%rax
+   38097:	lea    -0x8(%rdx,%rax,1),%r11
+   3809c:	add    %r14,%rdx
+   3809f:	test   %r14,%r14
+   380a2:	je     383a0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x9e0>
+   380a8:	mov    0x4(%r8),%eax
+   380ac:	shl    $0x4,%rdi
+   380b0:	mov    -0x8(%rdi,%rdx,1),%r14
+   380b5:	mov    (%rdi,%rdx,1),%r15
+   380b9:	test   %eax,%eax
+   380bb:	je     38350 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x990>
+   380c1:	mov    %r14,(%rcx,%r11,1)
+   380c5:	mov    %r15,0x8(%rcx,%r11,1)
+   380ca:	blsr   %r12,%r12
+   380cf:	je     3811a <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x75a>
+   380d1:	tzcnt  %r12,%rax
+   380d6:	mov    0x58(%r13),%r14
+   380da:	mov    %rax,%rdx
+   380dd:	imul   %r9,%rdx
+   380e1:	shr    $0x22,%rdx
+   380e5:	mov    %edx,%esi
+   380e7:	lea    (%rdx,%rdx,2),%edx
+   380ea:	add    %edx,%edx
+   380ec:	sub    %edx,%eax
+   380ee:	imul   $0x58,%rsi,%rdx
+   380f2:	mov    %eax,%edi
+   380f4:	cmp    $0x1,%eax
+   380f7:	ja     38090 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x6d0>
+   380f9:	lea    0x8(%rdx,%rdi,8),%rax
+   380fe:	add    %r14,%rdx
+   38101:	test   %r14,%r14
+   38104:	je     383f0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xa30>
+   3810a:	mov    0x8(%rdx,%rdi,8),%rdx
+   3810f:	blsr   %r12,%r12
+   38114:	mov    %rdx,(%rcx,%rax,1)
+   38118:	jne    380d1 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x711>
+   3811a:	mov    %rbx,%r15
+   3811d:	mov    %rcx,%r14
+   38120:	mov    0x38(%rsp),%rbx
+   38125:	mov    %r15d,%edx
+   38128:	jmp    381fa <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x83a>
+   3812d:	nopl   (%rax)
+   38130:	imul   $0x58,%rdi,%r8
+   38134:	add    %r8,%rcx
+   38137:	vmovdqu64 (%rcx),%zmm0
+   3813d:	movq   $0x0,0x60(%rsp)
+   38146:	mov    %rsi,0x68(%rsp)
+   3814b:	mov    %di,0x60(%rsp)
+   38150:	mov    %rax,0x70(%rsp)
+   38155:	vmovdqu64 %zmm0,(%rax)
+   3815b:	vmovdqu 0x38(%rcx),%ymm0
+   38160:	mov    0x24(%rbx),%ecx
+   38163:	lea    (%rcx,%rcx,2),%rcx
+   38167:	vmovdqu %ymm0,0x38(%rax)
+   3816c:	vmovdqa 0x60(%rsp),%xmm0
+   38172:	lea    (%r14,%rcx,8),%rcx
+   38176:	mov    %rax,0x10(%rcx)
+   3817a:	vmovdqu %xmm0,(%rcx)
+   3817e:	mov    0x18(%r13),%rcx
+   38182:	incl   0x24(%rbx)
+   38185:	inc    %rdi
+   38188:	cmp    %rcx,%rdi
+   3818b:	jae    38030 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x670>
+   38191:	mov    0x10(%rbx),%rax
+   38195:	lea    (%rdi,%rdi,2),%esi
+   38198:	add    %esi,%esi
+   3819a:	shrx   %rsi,%rax,%rax
+   3819f:	and    $0x3f,%eax
+   381a2:	mov    %rax,%rsi
+   381a5:	je     38185 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x7c5>
+   381a7:	imul   %rdx,%rcx
+   381ab:	lea    (%rcx,%rdi,1),%rax
+   381af:	mov    0x58(%r12),%rcx
+   381b4:	imul   $0x58,%rax,%rax
+   381b8:	add    0x40(%r12),%rax
+   381bd:	test   %rcx,%rcx
+   381c0:	jne    38130 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x770>
+   381c6:	imul   $0x98,%rdi,%rcx
+   381cd:	add    0x28(%r12),%rcx
+   381d2:	jmp    38137 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x777>
+   381d7:	nopw   0x0(%rax,%rax,1)
+   381e0:	vzeroupper
+   381e3:	mov    0x58(%r12),%rsi
+   381e8:	mov    $0x2c0,%edx
+   381ed:	mov    %r14,%rdi
+   381f0:	call   f3b0 <memcpy@plt>
+   381f5:	mov    $0x2c0,%edx
+   381fa:	mov    %edx,0x1c(%rbx)
+   381fd:	lea    -0x28(%rbp),%rsp
+   38201:	pop    %rbx
+   38202:	pop    %r12
+   38204:	pop    %r13
+   38206:	pop    %r14
+   38208:	pop    %r15
+   3820a:	pop    %rbp
+   3820b:	ret
+   3820c:	nopl   0x0(%rax)
+   38210:	mov    %rax,%rcx
+   38213:	btr    $0x3f,%rcx
+   38218:	test   %rcx,%rcx
+   3821b:	je     38591 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xbd1>
+   38221:	mov    %r14,%rdx
+   38224:	mov    $0xffffffab,%esi
+   38229:	jmp    38260 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x8a0>
+   3822b:	nopl   0x0(%rax,%rax,1)
+   38230:	test   %rax,%rax
+   38233:	je     383b0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x9f0>
+   38239:	imul   $0x58,%r8,%r8
+   3823d:	add    %r8,%rax
+   38240:	shl    $0x4,%r9
+   38244:	add    %r9,%rax
+   38247:	add    $0xd,%rdx
+   3824b:	mov    -0x8(%rax),%rdi
+   3824f:	mov    (%rax),%rax
+   38252:	mov    %rdi,-0x8(%rdx)
+   38256:	mov    %eax,-0xc(%rdx)
+   38259:	blsr   %rcx,%rcx
+   3825e:	je     382b3 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x8f3>
+   38260:	tzcnt  %rcx,%rdi
+   38265:	mov    %edi,%eax
+   38267:	mov    %edi,%r10d
+   3826a:	mov    %dil,(%rdx)
+   3826d:	mul    %sil
+   38270:	shr    $0xa,%ax
+   38274:	movzbl %al,%r8d
+   38278:	lea    (%rax,%rax,2),%eax
+   3827b:	add    %eax,%eax
+   3827d:	sub    %eax,%r10d
+   38280:	mov    0x58(%r12),%rax
+   38285:	movzbl %r10b,%r9d
+   38289:	cmp    $0x1,%r10b
+   3828d:	ja     38230 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x870>
+   3828f:	test   %rax,%rax
+   38292:	je     383d0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xa10>
+   38298:	imul   $0x58,%r8,%r8
+   3829c:	add    %r8,%rax
+   3829f:	mov    0x8(%rax,%r9,8),%rax
+   382a4:	add    $0x9,%rdx
+   382a8:	mov    %rax,-0x8(%rdx)
+   382ac:	blsr   %rcx,%rcx
+   382b1:	jne    38260 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x8a0>
+   382b3:	mov    0x10(%rbx),%rax
+   382b7:	test   %rax,%rax
+   382ba:	js     384c4 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xb04>
+   382c0:	vzeroupper
+   382c3:	sub    %r14d,%edx
+   382c6:	jmp    381fa <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x83a>
+   382cb:	nopl   0x0(%rax,%rax,1)
+   382d0:	lea    0x2(%rcx),%rsi
+   382d4:	cmp    %rax,%rsi
+   382d7:	jb     37d22 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x362>
+   382dd:	test   %r11b,%r11b
+   382e0:	je     37d60 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x3a0>
+   382e6:	cs nopw 0x0(%rax,%rax,1)
+   382f0:	test   %rdi,%rdi
+   382f3:	js     3833e <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x97e>
+   382f5:	mov    %r10,%rax
+   382f8:	and    %rdi,%rax
+   382fb:	and    $0x4103,%eax
+   38300:	mov    %rax,0x10(%rbx)
+   38304:	movl   $0x0,0x24(%rbx)
+   3830b:	movq   $0x0,0x1c(%rbx)
+   38313:	mov    %r12,0x30(%rbx)
+   38317:	jmp    37da6 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x3e6>
+   3831c:	nopl   0x0(%rax)
+   38320:	cmpl   $0x1,0x58(%rsp)
+   38325:	ja     37d4e <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x38e>
+   3832b:	bts    $0x3f,%rdi
+   38330:	cmp    $0x2,%edx
+   38333:	je     3833e <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x97e>
+   38335:	test   %r11b,%r11b
+   38338:	je     37d60 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x3a0>
+   3833e:	movabs $0x8000000000004101,%rax
+   38348:	and    %rax,%rdi
+   3834b:	jmp    37d60 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x3a0>
+   38350:	lea    0x2c0(%rcx,%rbx,1),%rdi
+   38358:	mov    %r15,%rdx
+   3835b:	mov    %r14,%rsi
+   3835e:	mov    %r8,0x40(%rsp)
+   38363:	mov    %r11,0x48(%rsp)
+   38368:	mov    %rcx,0x50(%rsp)
+   3836d:	mov    %r15,0x58(%rsp)
+   38372:	call   f3b0 <memcpy@plt>
+   38377:	mov    0x58(%rsp),%rdx
+   3837c:	mov    0x40(%rsp),%r8
+   38381:	mov    %rax,%r14
+   38384:	mov    $0xaaaaaaab,%r9d
+   3838a:	mov    0x48(%rsp),%r11
+   3838f:	mov    0x50(%rsp),%rcx
+   38394:	add    %rdx,%rbx
+   38397:	jmp    380c1 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x701>
+   3839c:	nopl   0x0(%rax)
+   383a0:	imul   $0x98,%rsi,%rdx
+   383a7:	add    0x28(%r13),%rdx
+   383ab:	jmp    380a8 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x6e8>
+   383b0:	imul   $0x98,%r8,%rax
+   383b7:	add    0x28(%r12),%rax
+   383bc:	jmp    38240 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x880>
+   383c1:	data16 cs nopw 0x0(%rax,%rax,1)
+   383cc:	nopl   0x0(%rax)
+   383d0:	imul   $0x98,%r8,%rax
+   383d7:	add    0x28(%r12),%rax
+   383dc:	jmp    3829f <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x8df>
+   383e1:	data16 cs nopw 0x0(%rax,%rax,1)
+   383ec:	nopl   0x0(%rax)
+   383f0:	imul   $0x98,%rsi,%rdx
+   383f7:	add    0x28(%r13),%rdx
+   383fb:	jmp    3810a <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x74a>
+   38400:	cmpl   $0x1,0x58(%rsp)
+   38405:	ja     38450 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xa90>
+   38407:	bts    $0x3f,%rdi
+   3840c:	cmp    $0x2,%edx
+   3840f:	je     3841a <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xa5a>
+   38411:	test   %r11b,%r11b
+   38414:	je     37d60 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x3a0>
+   3841a:	movabs $0x8000000000000141,%rcx
+   38424:	cmp    $0x2,%rax
+   38428:	je     3857f <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xbbf>
+   3842e:	jmp    3833e <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x97e>
+   38433:	data16 cs nopw 0x0(%rax,%rax,1)
+   3843e:	xchg   %ax,%ax
+   38440:	imul   $0x68,0x24(%rbx),%edx
+   38444:	vzeroupper
+   38447:	jmp    381fa <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x83a>
+   3844c:	nopl   0x0(%rax)
+   38450:	test   %r11b,%r11b
+   38453:	jne    3855f <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xb9f>
+   38459:	cmp    $0x3,%edx
+   3845c:	jne    37d60 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x3a0>
+   38462:	cmp    $0x2,%rax
+   38466:	jne    382f5 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x935>
+   3846c:	mov    %r10,%rax
+   3846f:	and    %rdi,%rax
+   38472:	and    $0x103,%eax
+   38477:	jmp    38300 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x940>
+   3847c:	nopl   0x0(%rax)
+   38480:	cmpl   $0x1,0x58(%rsp)
+   38485:	ja     37d4e <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x38e>
+   3848b:	movabs $0x8000000000000003,%rdi
+   38495:	or     %rsi,%rdi
+   38498:	cmp    $0x2,%edx
+   3849b:	jne    38335 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x975>
+   384a1:	jmp    3833e <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x97e>
+   384a6:	cs nopw 0x0(%rax,%rax,1)
+   384b0:	btr    $0x3f,%rax
+   384b5:	mov    %r14,%rdx
+   384b8:	mov    %rax,%rcx
+   384bb:	test   %rax,%rax
+   384be:	jne    38221 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x861>
+   384c4:	mov    0x50(%rsp),%rax
+   384c9:	movb   $0x3f,(%rdx)
+   384cc:	movl   $0x80000020,0x1(%rdx)
+   384d3:	add    $0x25,%rdx
+   384d7:	vmovdqu8 (%rax),%ymm0
+   384dd:	vmovdqu8 %ymm0,-0x20(%rdx)
+   384e4:	vzeroupper
+   384e7:	jmp    382c3 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x903>
+   384ec:	nopl   0x0(%rax)
+   384f0:	cmpl   $0x1,0x58(%rsp)
+   384f5:	jbe    385a1 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xbe1>
+   384fb:	test   %r11b,%r11b
+   384fe:	jne    38300 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x940>
+   38504:	cmp    $0x3,%edx
+   38507:	je     38300 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x940>
+   3850d:	cmpl   $0x4,0x4(%r8)
+   38512:	movq   $0x0,0x10(%rbx)
+   3851a:	movl   $0x0,0x24(%rbx)
+   38521:	movq   $0x0,0x1c(%rbx)
+   38529:	mov    %r12,0x30(%rbx)
+   3852d:	ja     37f96 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x5d6>
+   38533:	mov    0x4(%r8),%edx
+   38537:	lea    0x13cbc6(%rip),%rcx        # 175104 <CSWTCH.1597+0x20a4>
+   3853e:	movslq (%rcx,%rdx,4),%rdx
+   38542:	add    %rcx,%rdx
+   38545:	jmp    *%rdx
+   38547:	cmp    $0x6,%rcx
+   3854b:	jbe    37dc5 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x405>
+   38551:	mov    $0x1,%ecx
+   38556:	vpxor  %xmm1,%xmm1,%xmm1
+   3855a:	jmp    37bc5 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x205>
+   3855f:	cmp    $0x2,%rax
+   38563:	jne    382f0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x930>
+   38569:	test   %rdi,%rdi
+   3856c:	movabs $0x8000000000000141,%rax
+   38576:	mov    $0x143,%ecx
+   3857b:	cmovs  %rax,%rcx
+   3857f:	and    %rcx,%rdi
+   38582:	jmp    37d60 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x3a0>
+   38587:	vzeroupper
+   3858a:	xor    %edx,%edx
+   3858c:	jmp    381fa <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x83a>
+   38591:	mov    %r14,%rdx
+   38594:	jmp    382b7 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x8f7>
+   38599:	mov    %r14,%rdx
+   3859c:	jmp    382c3 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x903>
+   385a1:	movabs $0x8000000000000000,%rdi
+   385ab:	jmp    37d60 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x3a0>
+   385b0:	mov    %r10,%rax
+   385b3:	and    $0x3,%eax
+   385b6:	cmp    $0x1,%edi
+   385b9:	ja     38300 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x940>
+   385bf:	cmp    $0x2,%edx
+   385c2:	je     385d7 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0xc17>
+   385c4:	movabs $0x8000000000000003,%rdi
+   385ce:	test   %r11b,%r11b
+   385d1:	je     37d60 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x3a0>
+   385d7:	movabs $0x8000000000000001,%rdi
+   385e1:	jmp    37d60 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb+0x3a0>
+
+Disassembly of section .fini:
+
+
+build/bench:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .text:
+
+0000000000028180 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0>:
+   28180:	push   %rbp
+   28181:	mov    %rsp,%rbp
+   28184:	push   %r15
+   28186:	push   %r14
+   28188:	push   %r13
+   2818a:	push   %r12
+   2818c:	push   %rbx
+   2818d:	mov    %rdx,%r12
+   28190:	mov    %rdi,%rbx
+   28193:	and    $0xffffffffffffffc0,%rsp
+   28197:	mov    %rsi,%r14
+   2819a:	mov    %rcx,%r13
+   2819d:	movabs $0x8000000000000000,%r15
+   281a7:	add    $0xffffffffffffff80,%rsp
+   281ab:	mov    0x8(%rdx),%rax
+   281af:	movzbl 0x20(%rcx),%r10d
+   281b4:	movl   $0x1,0x18(%rdi)
+   281bb:	mov    %r9d,0x58(%rsp)
+   281c0:	mov    %rax,0x8(%rdi)
+   281c4:	mov    0x18(%rdx),%r9
+   281c8:	mov    0x18(%rcx),%rdx
+   281cc:	test   %rdx,%rdx
+   281cf:	je     284e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x360>
+   281d5:	cmp    $0x1,%rdx
+   281d9:	je     28b9e <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0xa1e>
+   281df:	lea    -0x2(%rdx),%rax
+   281e3:	lea    -0x1(%rdx),%rsi
+   281e7:	cmp    $0xe,%rax
+   281eb:	jbe    28af0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x970>
+   281f1:	vmovdqa64 0x14ae85(%rip),%zmm2        # 173080 <CSWTCH.1597+0x20>
+   281fb:	vmovdqa32 0x14aebb(%rip),%zmm12        # 1730c0 <CSWTCH.1597+0x60>
+   28205:	mov    $0x8,%ecx
+   2820a:	mov    $0xf,%edi
+   2820f:	mov    %rsi,%r11
+   28212:	xor    %eax,%eax
+   28214:	shr    $0x4,%r11
+   28218:	vpbroadcastq %rcx,%zmm11
+   2821e:	vpbroadcastq %rdi,%zmm9
+   28224:	mov    $0x10,%ecx
+   28229:	vpbroadcastq %rcx,%zmm10
+   2822f:	mov    $0x2,%ecx
+   28234:	vpxor  %xmm5,%xmm5,%xmm5
+   28238:	vpbroadcastq %rcx,%zmm8
+   2823e:	mov    $0x3f,%ecx
+   28243:	vpbroadcastq %rcx,%zmm7
+   28249:	mov    $0xffffffff,%ecx
+   2824e:	vpbroadcastq %rcx,%zmm6
+   28254:	vmovdqa64 %zmm2,%zmm1
+   2825a:	vpaddq %zmm11,%zmm2,%zmm0
+   28260:	inc    %rax
+   28263:	vpaddq %zmm10,%zmm2,%zmm2
+   28269:	vpcmpeqq %zmm8,%zmm1,%k1
+   28270:	vpermt2d %zmm0,%zmm12,%zmm1
+   28276:	vpblendmq %zmm7,%zmm9,%zmm4{%k1}
+   2827c:	vpcmpeqq %zmm8,%zmm0,%k1
+   28283:	vpslld $0x1,%zmm1,%zmm0
+   2828a:	vpblendmq %zmm7,%zmm9,%zmm3{%k1}
+   28290:	vpaddd %zmm1,%zmm0,%zmm0
+   28296:	vpslld $0x1,%zmm0,%zmm0
+   2829d:	vpmovzxdq %ymm0,%zmm1
+   282a3:	vextracti32x8 $0x1,%zmm0,%ymm0
+   282aa:	vpmovzxdq %ymm0,%zmm0
+   282b0:	vpandq %zmm6,%zmm1,%zmm1
+   282b6:	vpsllvq %zmm1,%zmm4,%zmm1
+   282bc:	vpandq %zmm6,%zmm0,%zmm0
+   282c2:	vpsllvq %zmm0,%zmm3,%zmm0
+   282c8:	vpternlogq $0xfe,%zmm1,%zmm0,%zmm5
+   282cf:	cmp    %r11,%rax
+   282d2:	jne    28254 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0xd4>
+   282d4:	vextracti64x4 $0x1,%zmm5,%ymm0
+   282db:	mov    %rsi,%r11
+   282de:	vporq  %ymm5,%ymm0,%ymm0
+   282e4:	and    $0xfffffffffffffff0,%r11
+   282e8:	and    $0xf,%esi
+   282eb:	vextracti64x2 $0x1,%ymm0,%xmm1
+   282f2:	vporq  %xmm0,%xmm1,%xmm1
+   282f8:	lea    0x1(%r11),%rcx
+   282fc:	vpsrldq $0x8,%xmm1,%xmm2
+   28301:	vporq  %xmm2,%xmm1,%xmm1
+   28307:	vmovq  %xmm1,%r15
+   2830c:	je     28b30 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x9b0>
+   28312:	mov    %rdx,%rax
+   28315:	sub    %r11,%rax
+   28318:	lea    -0x1(%rax),%rsi
+   2831c:	sub    $0x2,%rax
+   28320:	cmp    $0x6,%rax
+   28324:	jbe    286e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x560>
+   2832a:	vpbroadcastq %rcx,%ymm3
+   28330:	vmovdqa 0x14ad88(%rip),%ymm4        # 1730c0 <CSWTCH.1597+0x60>
+   28338:	vpaddq 0x155a60(%rip),%ymm3,%ymm6        # 17dda0 <_ZTSSt19_Sp_counted_deleterIPN2sf7SessionEZNS0_6Engine7acquireEmEUlS2_E_SaIvELN9__gnu_cxx12_Lock_policyE2EE+0x80>
+   28340:	vpaddq 0x14add8(%rip),%ymm3,%ymm3        # 173120 <CSWTCH.1597+0xc0>
+   28348:	mov    $0xf,%edi
+   2834d:	mov    $0x2,%eax
+   28352:	mov    %rsi,%r11
+   28355:	vpbroadcastq %rdi,%ymm1
+   2835b:	vpbroadcastq %rax,%ymm2
+   28361:	mov    $0x3f,%eax
+   28366:	and    $0xfffffffffffffff8,%r11
+   2836a:	vmovdqa %ymm1,%ymm5
+   2836e:	add    %r11,%rcx
+   28371:	vpermi2d %ymm3,%ymm6,%ymm4
+   28377:	vpcmpeqq %ymm2,%ymm6,%k1
+   2837e:	vpbroadcastq %rax,%ymm5{%k1}
+   28384:	vpcmpeqq %ymm2,%ymm3,%k1
+   2838b:	vmovdqa %ymm1,%ymm2
+   2838f:	vpslld $0x1,%ymm4,%ymm1
+   28394:	vpaddd %ymm4,%ymm1,%ymm1
+   28398:	vpbroadcastq %rax,%ymm2{%k1}
+   2839e:	mov    $0xffffffff,%eax
+   283a3:	vpslld $0x1,%ymm1,%ymm1
+   283a8:	vpmovzxdq %xmm1,%ymm3
+   283ad:	vpbroadcastq %rax,%ymm4
+   283b3:	vextracti32x4 $0x1,%ymm1,%xmm1
+   283ba:	vpmovzxdq %xmm1,%ymm1
+   283bf:	vpandq %ymm4,%ymm3,%ymm3
+   283c5:	vpandq %ymm4,%ymm1,%ymm1
+   283cb:	vpsllvq %ymm1,%ymm2,%ymm1
+   283d0:	vpsllvq %ymm3,%ymm5,%ymm3
+   283d5:	vpternlogq $0xfe,%ymm3,%ymm1,%ymm0
+   283dc:	vextracti64x2 $0x1,%ymm0,%xmm1
+   283e3:	vporq  %xmm0,%xmm1,%xmm0
+   283e9:	vpsrldq $0x8,%xmm0,%xmm1
+   283ee:	vporq  %xmm1,%xmm0,%xmm0
+   283f4:	vmovq  %xmm0,%rax
+   283f9:	mov    %rax,%r15
+   283fc:	or     $0x3,%r15
+   28400:	and    $0x7,%esi
+   28403:	je     28ad0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x950>
+   28409:	lea    (%rcx,%rcx,2),%rsi
+   2840d:	add    %rsi,%rsi
+   28410:	shlx   %rsi,%rdi,%rax
+   28415:	or     %rax,%r15
+   28418:	lea    0x1(%rcx),%rax
+   2841c:	cmp    %rdx,%rax
+   2841f:	jae    28720 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x5a0>
+   28425:	cmp    $0x2,%rax
+   28429:	je     28820 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x6a0>
+   2842f:	add    $0x6,%rsi
+   28433:	lea    0x2(%rcx),%rax
+   28437:	shlx   %rsi,%rdi,%rdi
+   2843c:	or     %rdi,%r15
+   2843f:	cmp    %rdx,%rax
+   28442:	jae    28720 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x5a0>
+   28448:	add    $0x6,%rsi
+   2844c:	mov    $0xf,%eax
+   28451:	shlx   %rsi,%rax,%rax
+   28456:	or     %rax,%r15
+   28459:	lea    0x3(%rcx),%rax
+   2845d:	cmp    %rdx,%rax
+   28460:	jae    28720 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x5a0>
+   28466:	lea    0x6(%rsi),%rax
+   2846a:	mov    $0xf,%edi
+   2846f:	shlx   %rax,%rdi,%rax
+   28474:	or     %rax,%r15
+   28477:	lea    0x4(%rcx),%rax
+   2847b:	cmp    %rdx,%rax
+   2847e:	jae    28720 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x5a0>
+   28484:	lea    0xc(%rsi),%rax
+   28488:	shlx   %rax,%rdi,%rax
+   2848d:	or     %rax,%r15
+   28490:	lea    0x5(%rcx),%rax
+   28494:	cmp    %rdx,%rax
+   28497:	jae    28720 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x5a0>
+   2849d:	lea    0x12(%rsi),%rax
+   284a1:	add    $0x6,%rcx
+   284a5:	shlx   %rax,%rdi,%rax
+   284aa:	or     %r15,%rax
+   284ad:	cmp    %rdx,%rcx
+   284b0:	jae    28b60 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x9e0>
+   284b6:	add    $0x18,%rsi
+   284ba:	shlx   %rsi,%rdi,%r15
+   284bf:	or     %rax,%r15
+   284c2:	bts    $0x3f,%r15
+   284c7:	test   %r10b,%r10b
+   284ca:	je     284e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x360>
+   284cc:	movabs $0x8000000000004101,%rax
+   284d6:	and    %rax,%r15
+   284d9:	nopl   0x0(%rax)
+   284e0:	and    %r9,%r15
+   284e3:	movl   $0x0,0x24(%rbx)
+   284ea:	movq   $0x0,0x1c(%rbx)
+   284f2:	mov    %r12,0x30(%rbx)
+   284f6:	mov    %r15,%rcx
+   284f9:	mov    %r15,0x10(%rbx)
+   284fd:	js     28740 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x5c0>
+   28503:	cmpl   $0x4,0x4(%r13)
+   28508:	ja     28767 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x5e7>
+   2850e:	mov    0x4(%r13),%eax
+   28512:	lea    0x14ab27(%rip),%rdx        # 173040 <_IO_stdin_used+0x40>
+   28519:	movslq (%rdx,%rax,4),%rax
+   2851d:	add    %rdx,%rax
+   28520:	jmp    *%rax
+   28522:	data16 cs nopw 0x0(%rax,%rax,1)
+   2852d:	nopl   (%rax)
+   28530:	btr    $0x3f,%r15
+   28535:	test   %r15,%r15
+   28538:	je     28b50 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x9d0>
+   2853e:	xor    %ecx,%ecx
+   28540:	mov    $0xaaaaaaab,%r10d
+   28546:	vzeroupper
+   28549:	jmp    28591 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x411>
+   2854b:	nopl   0x0(%rax,%rax,1)
+   28550:	mov    %rdi,%rax
+   28553:	shl    $0x4,%rax
+   28557:	lea    -0x8(%rdx,%rax,1),%r11
+   2855c:	add    %r8,%rdx
+   2855f:	test   %r8,%r8
+   28562:	je     28a00 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x880>
+   28568:	mov    0x4(%r13),%eax
+   2856c:	shl    $0x4,%rdi
+   28570:	mov    -0x8(%rdi,%rdx,1),%r8
+   28575:	mov    (%rdi,%rdx,1),%r9
+   28579:	test   %eax,%eax
+   2857b:	je     289a0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x820>
+   28581:	mov    %r8,(%r14,%r11,1)
+   28585:	mov    %r9,0x8(%r14,%r11,1)
+   2858a:	blsr   %r15,%r15
+   2858f:	je     285db <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x45b>
+   28591:	tzcnt  %r15,%rax
+   28596:	mov    0x58(%r12),%r8
+   2859b:	mov    %rax,%rdx
+   2859e:	imul   %r10,%rdx
+   285a2:	shr    $0x22,%rdx
+   285a6:	mov    %edx,%esi
+   285a8:	lea    (%rdx,%rdx,2),%edx
+   285ab:	add    %edx,%edx
+   285ad:	sub    %edx,%eax
+   285af:	imul   $0x58,%rsi,%rdx
+   285b3:	mov    %eax,%edi
+   285b5:	cmp    $0x1,%eax
+   285b8:	ja     28550 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x3d0>
+   285ba:	lea    0x8(%rdx,%rdi,8),%rax
+   285bf:	add    %r8,%rdx
+   285c2:	test   %r8,%r8
+   285c5:	je     28a60 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x8e0>
+   285cb:	mov    0x8(%rdx,%rdi,8),%rdx
+   285d0:	blsr   %r15,%r15
+   285d5:	mov    %rdx,(%r14,%rax,1)
+   285d9:	jne    28591 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x411>
+   285db:	mov    %ecx,%edx
+   285dd:	jmp    286ca <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x54a>
+   285e2:	data16 cs nopw 0x0(%rax,%rax,1)
+   285ed:	nopl   (%rax)
+   285f0:	mov    0x18(%r13),%rsi
+   285f4:	xor    %edx,%edx
+   285f6:	xor    %ecx,%ecx
+   285f8:	movabs $0xffffffff0000ffff,%r10
+   28602:	test   %rsi,%rsi
+   28605:	jne    2864c <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x4cc>
+   28607:	vzeroupper
+   2860a:	jmp    286ca <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x54a>
+   2860f:	nop
+   28610:	imul   $0x58,%rdx,%rsi
+   28614:	add    %rsi,%rax
+   28617:	vmovdqu64 (%rax),%zmm0
+   2861d:	lea    0x80(%r14,%r8,1),%rsi
+   28625:	vmovdqu64 %zmm0,(%rsi)
+   2862b:	vmovdqu 0x38(%rax),%ymm0
+   28630:	vmovdqu %ymm0,0x38(%rsi)
+   28635:	mov    0x18(%r13),%rsi
+   28639:	incl   0x24(%rbx)
+   2863c:	inc    %rdx
+   2863f:	cmp    %rsi,%rdx
+   28642:	jae    28a80 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x900>
+   28648:	mov    0x10(%rbx),%r15
+   2864c:	lea    (%rdx,%rdx,2),%eax
+   2864f:	add    %eax,%eax
+   28651:	shrx   %rax,%r15,%rax
+   28656:	and    $0x3f,%eax
+   28659:	je     2863c <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x4bc>
+   2865b:	mov    0x24(%rbx),%edi
+   2865e:	mov    %rcx,%rsi
+   28661:	mov    %dx,%si
+   28664:	and    %r10,%rsi
+   28667:	imul   $0x58,%edi,%r8d
+   2866b:	shl    $0x4,%rdi
+   2866f:	movzwl %r8w,%r8d
+   28673:	mov    %rax,0x8(%r14,%rdi,1)
+   28678:	mov    %r8,%r9
+   2867b:	shl    $0x10,%r9
+   2867f:	or     %r9,%rsi
+   28682:	mov    %rsi,(%r14,%rdi,1)
+   28686:	mov    0x58(%r12),%rax
+   2868b:	test   %rax,%rax
+   2868e:	jne    28610 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x490>
+   28690:	imul   $0x98,%rdx,%rax
+   28697:	add    0x28(%r12),%rax
+   2869c:	jmp    28617 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x497>
+   286a1:	data16 cs nopw 0x0(%rax,%rax,1)
+   286ac:	nopl   0x0(%rax)
+   286b0:	mov    0x58(%r12),%rsi
+   286b5:	mov    $0x2c0,%edx
+   286ba:	mov    %r14,%rdi
+   286bd:	vzeroupper
+   286c0:	call   f3b0 <memcpy@plt>
+   286c5:	mov    $0x2c0,%edx
+   286ca:	mov    %edx,0x1c(%rbx)
+   286cd:	lea    -0x28(%rbp),%rsp
+   286d1:	pop    %rbx
+   286d2:	pop    %r12
+   286d4:	pop    %r13
+   286d6:	pop    %r14
+   286d8:	pop    %r15
+   286da:	pop    %rbp
+   286db:	ret
+   286dc:	nopl   0x0(%rax)
+   286e0:	lea    (%rcx,%rcx,2),%rax
+   286e4:	or     $0x3,%r15
+   286e8:	lea    (%rax,%rax,1),%rsi
+   286ec:	shlx   %rsi,%rdi,%rax
+   286f1:	or     %rax,%r15
+   286f4:	lea    0x2(%r11),%rax
+   286f8:	cmp    %rdx,%rax
+   286fb:	jae    28720 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x5a0>
+   286fd:	add    $0x6,%rsi
+   28701:	add    $0x3,%r11
+   28705:	shlx   %rsi,%rdi,%rdi
+   2870a:	or     %rdi,%r15
+   2870d:	cmp    %rdx,%r11
+   28710:	jb     28448 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x2c8>
+   28716:	cs nopw 0x0(%rax,%rax,1)
+   28720:	bts    $0x3f,%r15
+   28725:	test   %r10b,%r10b
+   28728:	je     284e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x360>
+   2872e:	jmp    284cc <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x34c>
+   28733:	data16 cs nopw 0x0(%rax,%rax,1)
+   2873e:	xchg   %ax,%ax
+   28740:	cmpl   $0x1,0x4(%r13)
+   28745:	je     28a90 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x910>
+   2874b:	vmovdqu8 (%r8),%ymm0
+   28751:	movl   $0x20,0x20(%rbx)
+   28758:	vmovdqu8 %ymm0,0x48(%rbx)
+   28762:	jmp    28503 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x383>
+   28767:	mov    0x18(%r13),%rax
+   2876b:	test   %rax,%rax
+   2876e:	je     28b50 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x9d0>
+   28774:	xor    %ecx,%ecx
+   28776:	cmpb   $0x0,0x58(%rsp)
+   2877b:	jne    288a5 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x725>
+   28781:	jmp    287e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x660>
+   28783:	data16 cs nopw 0x0(%rax,%rax,1)
+   2878e:	xchg   %ax,%ax
+   28790:	mov    %rdx,0x68(%rsp)
+   28795:	mov    0x24(%rbx),%edx
+   28798:	add    %rcx,%rax
+   2879b:	movq   $0x0,0x60(%rsp)
+   287a4:	mov    %cx,0x60(%rsp)
+   287a9:	vmovdqa 0x60(%rsp),%xmm0
+   287af:	imul   $0x58,%rax,%rax
+   287b3:	add    0x40(%r12),%rax
+   287b8:	inc    %rcx
+   287bb:	lea    (%rdx,%rdx,2),%rdx
+   287bf:	lea    (%r14,%rdx,8),%rdx
+   287c3:	mov    %rax,0x70(%rsp)
+   287c8:	vmovdqu %xmm0,(%rdx)
+   287cc:	mov    %rax,0x10(%rdx)
+   287d0:	mov    0x18(%r13),%rax
+   287d4:	incl   0x24(%rbx)
+   287d7:	cmp    %rax,%rcx
+   287da:	jae    28800 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x680>
+   287dc:	mov    0x10(%rbx),%r15
+   287e0:	lea    (%rcx,%rcx,2),%edx
+   287e3:	add    %edx,%edx
+   287e5:	shrx   %rdx,%r15,%rdx
+   287ea:	and    $0x3f,%edx
+   287ed:	jne    28790 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x610>
+   287ef:	inc    %rcx
+   287f2:	cmp    %rax,%rcx
+   287f5:	jb     287dc <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x65c>
+   287f7:	nopw   0x0(%rax,%rax,1)
+   28800:	mov    0x24(%rbx),%eax
+   28803:	lea    (%rax,%rax,2),%edx
+   28806:	shl    $0x3,%edx
+   28809:	vzeroupper
+   2880c:	jmp    286ca <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x54a>
+   28811:	data16 cs nopw 0x0(%rax,%rax,1)
+   2881c:	nopl   0x0(%rax)
+   28820:	or     $0x3ff000,%r15
+   28827:	mov    $0x1,%ecx
+   2882c:	mov    $0x12,%esi
+   28831:	jmp    28466 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x2e6>
+   28836:	cs nopw 0x0(%rax,%rax,1)
+   28840:	imul   $0x58,%rcx,%rdi
+   28844:	add    %rdi,%rsi
+   28847:	vmovdqu64 (%rsi),%zmm0
+   2884d:	mov    %rdx,0x68(%rsp)
+   28852:	mov    0x24(%rbx),%edx
+   28855:	movq   $0x0,0x60(%rsp)
+   2885e:	mov    %cx,0x60(%rsp)
+   28863:	mov    %rax,0x70(%rsp)
+   28868:	lea    (%rdx,%rdx,2),%rdx
+   2886c:	lea    (%r14,%rdx,8),%rdx
+   28870:	vmovdqu64 %zmm0,(%rax)
+   28876:	vmovdqu 0x38(%rsi),%ymm0
+   2887b:	vmovdqu %ymm0,0x38(%rax)
+   28880:	vmovdqa 0x60(%rsp),%xmm0
+   28886:	mov    %rax,0x10(%rdx)
+   2888a:	vmovdqu %xmm0,(%rdx)
+   2888e:	mov    0x18(%r13),%rax
+   28892:	incl   0x24(%rbx)
+   28895:	inc    %rcx
+   28898:	cmp    %rax,%rcx
+   2889b:	jae    28800 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x680>
+   288a1:	mov    0x10(%rbx),%r15
+   288a5:	lea    (%rcx,%rcx,2),%edx
+   288a8:	add    %edx,%edx
+   288aa:	shrx   %rdx,%r15,%rdx
+   288af:	and    $0x3f,%edx
+   288b2:	je     28895 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x715>
+   288b4:	mov    0x58(%r12),%rsi
+   288b9:	add    %rcx,%rax
+   288bc:	imul   $0x58,%rax,%rax
+   288c0:	add    0x40(%r12),%rax
+   288c5:	test   %rsi,%rsi
+   288c8:	jne    28840 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x6c0>
+   288ce:	imul   $0x98,%rcx,%rsi
+   288d5:	add    0x28(%r12),%rsi
+   288da:	jmp    28847 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x6c7>
+   288df:	nop
+   288e0:	btr    $0x3f,%r15
+   288e5:	test   %r15,%r15
+   288e8:	je     28b76 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x9f6>
+   288ee:	mov    %r14,%rdx
+   288f1:	mov    $0xffffffab,%ecx
+   288f6:	jmp    28930 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x7b0>
+   288f8:	nopl   0x0(%rax,%rax,1)
+   28900:	test   %rax,%rax
+   28903:	je     28a20 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x8a0>
+   28909:	imul   $0x58,%r9,%r9
+   2890d:	add    %r9,%rax
+   28910:	shl    $0x4,%rdi
+   28914:	add    %rdi,%rax
+   28917:	add    $0xd,%rdx
+   2891b:	mov    -0x8(%rax),%rsi
+   2891f:	mov    (%rax),%rax
+   28922:	mov    %rsi,-0x8(%rdx)
+   28926:	mov    %eax,-0xc(%rdx)
+   28929:	blsr   %r15,%r15
+   2892e:	je     28982 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x802>
+   28930:	tzcnt  %r15,%rsi
+   28935:	mov    %esi,%eax
+   28937:	mov    %esi,%r10d
+   2893a:	mov    %sil,(%rdx)
+   2893d:	mul    %cl
+   2893f:	shr    $0xa,%ax
+   28943:	movzbl %al,%r9d
+   28947:	lea    (%rax,%rax,2),%eax
+   2894a:	add    %eax,%eax
+   2894c:	sub    %eax,%r10d
+   2894f:	mov    0x58(%r12),%rax
+   28954:	movzbl %r10b,%edi
+   28958:	cmp    $0x1,%r10b
+   2895c:	ja     28900 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x780>
+   2895e:	test   %rax,%rax
+   28961:	je     28a40 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x8c0>
+   28967:	imul   $0x58,%r9,%r9
+   2896b:	add    %r9,%rax
+   2896e:	mov    0x8(%rax,%rdi,8),%rax
+   28973:	add    $0x9,%rdx
+   28977:	mov    %rax,-0x8(%rdx)
+   2897b:	blsr   %r15,%r15
+   28980:	jne    28930 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x7b0>
+   28982:	mov    0x10(%rbx),%rcx
+   28986:	test   %rcx,%rcx
+   28989:	js     28ab0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x930>
+   2898f:	sub    %r14d,%edx
+   28992:	vzeroupper
+   28995:	jmp    286ca <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x54a>
+   2899a:	nopw   0x0(%rax,%rax,1)
+   289a0:	mov    %r9,%rdx
+   289a3:	lea    0x2c0(%r14,%rcx,1),%rdi
+   289ab:	mov    %r8,%rsi
+   289ae:	mov    %r11,0x38(%rsp)
+   289b3:	mov    %rcx,0x50(%rsp)
+   289b8:	mov    %r8,0x40(%rsp)
+   289bd:	mov    %r9,0x48(%rsp)
+   289c2:	mov    %r9,0x58(%rsp)
+   289c7:	call   f3b0 <memcpy@plt>
+   289cc:	mov    0x58(%rsp),%rdx
+   289d1:	mov    0x50(%rsp),%rcx
+   289d6:	mov    0x48(%rsp),%r9
+   289db:	mov    0x38(%rsp),%r11
+   289e0:	mov    %rax,%r8
+   289e3:	mov    $0xaaaaaaab,%r10d
+   289e9:	add    %rdx,%rcx
+   289ec:	jmp    28581 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x401>
+   289f1:	data16 cs nopw 0x0(%rax,%rax,1)
+   289fc:	nopl   0x0(%rax)
+   28a00:	imul   $0x98,%rsi,%rdx
+   28a07:	add    0x28(%r12),%rdx
+   28a0c:	jmp    28568 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x3e8>
+   28a11:	data16 cs nopw 0x0(%rax,%rax,1)
+   28a1c:	nopl   0x0(%rax)
+   28a20:	imul   $0x98,%r9,%rax
+   28a27:	add    0x28(%r12),%rax
+   28a2c:	jmp    28910 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x790>
+   28a31:	data16 cs nopw 0x0(%rax,%rax,1)
+   28a3c:	nopl   0x0(%rax)
+   28a40:	imul   $0x98,%r9,%rax
+   28a47:	add    0x28(%r12),%rax
+   28a4c:	jmp    2896e <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x7ee>
+   28a51:	data16 cs nopw 0x0(%rax,%rax,1)
+   28a5c:	nopl   0x0(%rax)
+   28a60:	imul   $0x98,%rsi,%rdx
+   28a67:	add    0x28(%r12),%rdx
+   28a6c:	jmp    285cb <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x44b>
+   28a71:	data16 cs nopw 0x0(%rax,%rax,1)
+   28a7c:	nopl   0x0(%rax)
+   28a80:	imul   $0x68,0x24(%rbx),%edx
+   28a84:	vzeroupper
+   28a87:	jmp    286ca <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x54a>
+   28a8c:	nopl   0x0(%rax)
+   28a90:	btr    $0x3f,%r15
+   28a95:	mov    %r14,%rdx
+   28a98:	test   %r15,%r15
+   28a9b:	jne    288ee <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x76e>
+   28aa1:	data16 cs nopw 0x0(%rax,%rax,1)
+   28aac:	nopl   0x0(%rax)
+   28ab0:	movb   $0x3f,(%rdx)
+   28ab3:	movl   $0x80000020,0x1(%rdx)
+   28aba:	vmovdqu8 (%r8),%ymm0
+   28ac0:	add    $0x25,%rdx
+   28ac4:	vmovdqu8 %ymm0,-0x20(%rdx)
+   28acb:	jmp    2898f <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x80f>
+   28ad0:	movabs $0x8000000000000003,%rdx
+   28ada:	or     %rdx,%rax
+   28add:	mov    %rax,%r15
+   28ae0:	test   %r10b,%r10b
+   28ae3:	je     284e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x360>
+   28ae9:	jmp    284cc <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x34c>
+   28aee:	xchg   %ax,%ax
+   28af0:	mov    $0x1,%ecx
+   28af5:	vpxor  %xmm0,%xmm0,%xmm0
+   28af9:	cmp    $0x6,%rax
+   28afd:	ja     2832a <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x1aa>
+   28b03:	cmp    $0x2,%rdx
+   28b07:	je     28b7e <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x9fe>
+   28b09:	cmp    $0x3,%rdx
+   28b0d:	je     28bb3 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0xa33>
+   28b13:	cmp    $0x4,%rdx
+   28b17:	je     28bcb <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0xa4b>
+   28b1d:	mov    $0x12,%esi
+   28b22:	mov    $0x3ff3c3,%r15d
+   28b28:	jmp    28466 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x2e6>
+   28b2d:	nopl   (%rax)
+   28b30:	movabs $0x8000000000000003,%rax
+   28b3a:	or     %rax,%r15
+   28b3d:	test   %r10b,%r10b
+   28b40:	je     284e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x360>
+   28b46:	jmp    284cc <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x34c>
+   28b4b:	nopl   0x0(%rax,%rax,1)
+   28b50:	xor    %edx,%edx
+   28b52:	jmp    28607 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x487>
+   28b57:	nopw   0x0(%rax,%rax,1)
+   28b60:	bts    $0x3f,%rax
+   28b65:	mov    %rax,%r15
+   28b68:	test   %r10b,%r10b
+   28b6b:	je     284e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x360>
+   28b71:	jmp    284cc <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x34c>
+   28b76:	mov    %r14,%rdx
+   28b79:	jmp    28986 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x806>
+   28b7e:	test   %r10b,%r10b
+   28b81:	movabs $0x8000000000000141,%r15
+   28b8b:	movabs $0x80000000000003c3,%rax
+   28b95:	cmove  %rax,%r15
+   28b99:	jmp    284e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x360>
+   28b9e:	inc    %r15
+   28ba1:	test   %r10b,%r10b
+   28ba4:	jne    284e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x360>
+   28baa:	add    $0x2,%r15
+   28bae:	jmp    284e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x360>
+   28bb3:	movabs $0x800000000003f3c3,%r15
+   28bbd:	test   %r10b,%r10b
+   28bc0:	je     284e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x360>
+   28bc6:	jmp    284cc <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x34c>
+   28bcb:	movabs $0x80000000003ff3c3,%r15
+   28bd5:	test   %r10b,%r10b
+   28bd8:	je     284e0 <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x360>
+   28bde:	jmp    284cc <_ZN2sf5buildERNS_6HeaderEPSt4byteRNS_7SessionEjRKNS_6ConfigERKSt5arrayIcLm32EEb.constprop.0+0x34c>
+
+Disassembly of section .fini:

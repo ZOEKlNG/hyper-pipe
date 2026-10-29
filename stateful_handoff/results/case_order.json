@@ -1,0 +1,3126 @@
+[
+  {
+    "order": 0,
+    "config_id": 34,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.905882319999364,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 1,
+    "config_id": 118,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "3",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.143581299998914,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 2,
+    "config_id": 55,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "48",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9834402490014327,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 3,
+    "config_id": 45,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "2",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.9946196189994225,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 4,
+    "config_id": 19,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9050000050010567,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 5,
+    "config_id": 29,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.5742187809992174,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 6,
+    "config_id": 105,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "1",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 6.28139489500245,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 7,
+    "config_id": 4,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "48",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9766855640009453,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 8,
+    "config_id": 122,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "15",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 6.066501994999271,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 9,
+    "config_id": 7,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.324876451999444,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 10,
+    "config_id": 58,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 8.09473216799961,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 11,
+    "config_id": 48,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.55821267400097,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 12,
+    "config_id": 110,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "2",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.3661758369999006,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 13,
+    "config_id": 100,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "0",
+      "0",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.060671123999782,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 14,
+    "config_id": 93,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "3",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.043884465001611,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 15,
+    "config_id": 132,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "5",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9705035189981572,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 16,
+    "config_id": 90,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 5.09890797800108,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 17,
+    "config_id": 6,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0749214999996184,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 18,
+    "config_id": 119,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "3",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.4519718720002857,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 19,
+    "config_id": 3,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "32",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.219574435999675,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 20,
+    "config_id": 86,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "32",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.6508000909998373,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 21,
+    "config_id": 20,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.238165566999669,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 22,
+    "config_id": 2,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "16",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.2383959899998445,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 23,
+    "config_id": 41,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "1",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.590693657999509,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 24,
+    "config_id": 104,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "1",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.3058121370013396,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 25,
+    "config_id": 101,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "0",
+      "0",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.746354759001406,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 26,
+    "config_id": 84,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "15",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 10.76311756799987,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 27,
+    "config_id": 82,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.1791543959989212,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 28,
+    "config_id": 78,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 8.527204891997826,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 29,
+    "config_id": 24,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9335928799991962,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 30,
+    "config_id": 107,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "1",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 5.284402951001539,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 31,
+    "config_id": 75,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 7.684440093999001,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 32,
+    "config_id": 88,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.082696274999762,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 33,
+    "config_id": 8,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 7.76223404099801,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 34,
+    "config_id": 26,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 9.281967727001756,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 35,
+    "config_id": 63,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "128",
+      "5",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 7.81025986700115,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 36,
+    "config_id": 102,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "1",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.960468496999965,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 37,
+    "config_id": 61,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "128",
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 9.11693894400014,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 38,
+    "config_id": 52,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "15",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.8813259550006478,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 39,
+    "config_id": 91,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "3",
+      "4",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9369086980004795,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 40,
+    "config_id": 9,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 8.55978805199993,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 41,
+    "config_id": 73,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 10.833562350002467,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 42,
+    "config_id": 68,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "12",
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9632026450017293,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 43,
+    "config_id": 70,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.1402637620012683,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 44,
+    "config_id": 114,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "3",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.029908237997006,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 45,
+    "config_id": 38,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "1",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.7932129709988658,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 46,
+    "config_id": 14,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.1423954000019876,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 47,
+    "config_id": 87,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "48",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.5247170879993064,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 48,
+    "config_id": 43,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "2",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9523421049998433,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 49,
+    "config_id": 0,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9323760900006164,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 50,
+    "config_id": 140,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "5",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.067667221999727,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 51,
+    "config_id": 18,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "64",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 1.9373086529994907,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 52,
+    "config_id": 123,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "16",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9248115269983828,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 53,
+    "config_id": 111,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "2",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 6.27959815000213,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 54,
+    "config_id": 44,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "2",
+      "128",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 5.762701601001027,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 55,
+    "config_id": 103,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "1",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.889475964999292,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 56,
+    "config_id": 141,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "5",
+      "4",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.175328923000052,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 57,
+    "config_id": 85,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "16",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 8.832056601000659,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 58,
+    "config_id": 94,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "3",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 5.368165804000455,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 59,
+    "config_id": 49,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 10.301663482998265,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 60,
+    "config_id": 97,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "0",
+      "0",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 6.170884267001384,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 61,
+    "config_id": 30,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.632934731002024,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 62,
+    "config_id": 28,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.8314531549985986,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 63,
+    "config_id": 33,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "64",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 2.3734012439999788,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 64,
+    "config_id": 126,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.8307611840027675,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 65,
+    "config_id": 67,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "12",
+      "1",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 10.189221419001115,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 66,
+    "config_id": 11,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "64",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 9.834160784001142,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 67,
+    "config_id": 47,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "12",
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.7737620160005463,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 68,
+    "config_id": 21,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.264398237999558,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 69,
+    "config_id": 99,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "0",
+      "0",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.5531893669976853,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 70,
+    "config_id": 71,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "12",
+      "5",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.1572168260026956,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 71,
+    "config_id": 128,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 6.707020770998497,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 72,
+    "config_id": 92,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "3",
+      "4",
+      "3",
+      "32",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.175142824002251,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 73,
+    "config_id": 42,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "2",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9481890570023097,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 74,
+    "config_id": 127,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.089904371001467,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 75,
+    "config_id": 96,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "0",
+      "0",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 5.187868397999409,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 76,
+    "config_id": 36,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.3975058409996564,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 77,
+    "config_id": 80,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "128",
+      "8",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.201284704002319,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 78,
+    "config_id": 65,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.3457335620005324,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 79,
+    "config_id": 5,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0361018719995627,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 80,
+    "config_id": 76,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "128",
+      "1",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.8658144469991385,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 81,
+    "config_id": 95,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "3",
+      "4",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.389882879000652,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 82,
+    "config_id": 1,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "0",
+      "4",
+      "3",
+      "15",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.994689714996639,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 83,
+    "config_id": 138,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "5",
+      "4",
+      "3",
+      "32",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 6.628202006999345,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 84,
+    "config_id": 51,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "12",
+      "8",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9368944239977282,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 85,
+    "config_id": 60,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "128",
+      "1",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.222531182997045,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 86,
+    "config_id": 79,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "128",
+      "5",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 5.610448941999493,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 87,
+    "config_id": 139,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "5",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.031181229998765,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 88,
+    "config_id": 77,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "128",
+      "2",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0329387049969228,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 89,
+    "config_id": 54,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "32",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 9.85482667999895,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 90,
+    "config_id": 131,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "5",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 6.089656699998159,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 91,
+    "config_id": 124,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "32",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.924411156996939,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 92,
+    "config_id": 16,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9527665569985402,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 93,
+    "config_id": 53,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "16",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.924854074997711,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 94,
+    "config_id": 129,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.070977904000756,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 95,
+    "config_id": 62,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 7.721872000001895,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 96,
+    "config_id": 83,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 9.41389650400015,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 97,
+    "config_id": 27,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "64",
+      "3",
+      "1",
+      "2",
+      "0"
+    ],
+    "wall_s": 4.9987877549974655,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 98,
+    "config_id": 116,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "3",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0195461380026245,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 99,
+    "config_id": 39,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "1",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.5061385139997583,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 100,
+    "config_id": 23,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 7.637431139002729,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 101,
+    "config_id": 12,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9306401170033496,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 102,
+    "config_id": 15,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9536778609981411,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 103,
+    "config_id": 125,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "48",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 9.080065486999956,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 104,
+    "config_id": 130,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.1739388940004574,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 105,
+    "config_id": 106,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "1",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.1313264070013247,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 106,
+    "config_id": 109,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "2",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.682172228000127,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 107,
+    "config_id": 50,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "12",
+      "5",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9874102620015037,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 108,
+    "config_id": 56,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.4319929250013956,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 109,
+    "config_id": 25,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "64",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 4.904746732998319,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 110,
+    "config_id": 35,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "64",
+      "3",
+      "1",
+      "2",
+      "0"
+    ],
+    "wall_s": 1.9697885630012024,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 111,
+    "config_id": 81,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.0835482029979175,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 112,
+    "config_id": 40,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "1",
+      "128",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 5.445033914002124,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 113,
+    "config_id": 10,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9385948189992632,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 114,
+    "config_id": 31,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9036737690003065,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 115,
+    "config_id": 98,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "0",
+      "0",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.413977078998869,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 116,
+    "config_id": 13,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "0",
+      "0",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.18029085300077,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 117,
+    "config_id": 115,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "3",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.046637852999993,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 118,
+    "config_id": 121,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "12",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.934976873999403,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 119,
+    "config_id": 74,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "64",
+      "3",
+      "0",
+      "2",
+      "0"
+    ],
+    "wall_s": 2.1188880640002026,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 120,
+    "config_id": 120,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "4",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 6.541072048999922,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 121,
+    "config_id": 134,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "5",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 7.6215190879993315,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 122,
+    "config_id": 135,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "5",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.1749172399977397,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 123,
+    "config_id": 32,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.979723775999446,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 124,
+    "config_id": 17,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "1",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.7131159029995615,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 125,
+    "config_id": 64,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "128",
+      "8",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.203377679998084,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 126,
+    "config_id": 112,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "2",
+      "3",
+      "512",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.27276590800102,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 127,
+    "config_id": 59,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9645860329983407,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 128,
+    "config_id": 133,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "5",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0176556999977038,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 129,
+    "config_id": 37,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "3",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 3.968194974000653,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 130,
+    "config_id": 66,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.210970912998164,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 131,
+    "config_id": 69,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 10.002430450000247,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 132,
+    "config_id": 22,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "2",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9598204449976038,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 133,
+    "config_id": 108,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "2",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.116159044999222,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 134,
+    "config_id": 137,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "5",
+      "4",
+      "3",
+      "12",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.9648137019976275,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 135,
+    "config_id": 46,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "12",
+      "1",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 1.8587754750005843,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 136,
+    "config_id": 72,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "5",
+      "3",
+      "12",
+      "8",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 6.06668267400164,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 137,
+    "config_id": 117,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "3",
+      "3",
+      "64",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.0375205780001124,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 138,
+    "config_id": 89,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "2",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wall_s": 2.05580455299787,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 139,
+    "config_id": 57,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "1",
+      "4",
+      "3",
+      "64",
+      "3",
+      "0",
+      "1",
+      "1"
+    ],
+    "wall_s": 6.169848126999568,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 140,
+    "config_id": 113,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "2",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.680490217000624,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "order": 141,
+    "config_id": 136,
+    "command": [
+      "./build/bench",
+      "pipeline",
+      "4",
+      "5",
+      "3",
+      "512",
+      "3",
+      "1",
+      "1",
+      "0"
+    ],
+    "wall_s": 4.637227462000737,
+    "stderr": "",
+    "cpu_stat_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  }
+]

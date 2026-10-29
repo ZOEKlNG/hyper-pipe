@@ -1,5 +1,8 @@
 # Worker 与日志线程交接：官方固定宽度 Protobuf 实测
 
+**后续核查修正（2026-10-29）：** 本轮3.21.12的`set_bytes(ptr,len)`会构造临时`std::string`，旧计时保留，但载荷复制账本须多计这一层；`mutable_bytes()->assign(...)`可避免它。详见[生成代码/API核查与重测](../stateful_handoff/PROTOBUF_3_21_NOTES.zh-CN.md)。
+
+
 先读 **[服务成本、完整接力与丢弃实验报告](RESULTS_SERVICE.zh-CN.md)**。本轮重点回答“Worker 已经把字段收集到一块内存，是否与直接编码 PB 成本相近”。Worker 指数据生产线程；Logger 指后台日志线程；slot 是队列槽位；wire 是编码后的线格式；tail 是变长尾部；schema 是消息结构定义；payload 是业务载荷。所有网络发送均为内存 sink（模拟消费端）。
 
 ## 复现
@@ -35,13 +38,13 @@ python3 summarize_service.py
 
 | 模式 | Worker 做什么 | 日志核做什么 | 变长字节经过的拷贝层数 |
 |---|---|---|---:|
-| A_native_slot | 在最终原生队列 slot 中写 scalar 和 3 个 tail span | 从 slot 调官方 PB setter，再序列化到最终 frame | 3 |
-| A_scratch_then_slot | 写私有 scratch native，再复制到最终 slot | 同 A | 4 |
-| B_worker_pb_batch_copy | 官方 PB setter + 序列化到 queue wire slot | 复制已编码 wire 到最终 frame | 3 |
-| B_direct_worker_pb | 同 B | 直接消费 queue 中 wire，不建最终 frame | 2 |
-| D_shared_pb_object | 填当前槽位独占的官方 PB 对象，不序列化 | ByteSizeLong + 序列化该 PB 对象到最终 frame | 2 |
+| A_native_slot | 在最终原生队列 slot 中写 scalar 和 3 个 tail span | 从 slot 调官方 PB setter，再序列化到最终 frame | 4 |
+| A_scratch_then_slot | 写私有 scratch native，再复制到最终 slot | 同 A | 5 |
+| B_worker_pb_batch_copy | 官方 PB setter + 序列化到 queue wire slot | 复制已编码 wire 到最终 frame | 4 |
+| B_direct_worker_pb | 同 B | 直接消费 queue 中 wire，不建最终 frame | 3 |
+| D_shared_pb_object | 填当前槽位独占的官方 PB 对象，不序列化 | ByteSizeLong + 序列化该 PB 对象到最终 frame | 3 |
 
-拷贝数按每个变长业务字节完整经过的存储层计，不是 `memcpy` 调用次数，不含 scalar、长度前缀、队列元数据或网络。A 的官方 PB setter 仍把 slot tail 复制到 PB 自有字符串，因此不是附件声称的“源→slot→最终wire”两遍。D 是同进程内移交对象所有权，不是 DPDK mbuf 引用方案 C，也不能跨进程直接传 PB 对象指针。
+拷贝数按每个变长业务字节完整经过的存储层计，不是 `memcpy` 调用次数，不含 scalar、长度前缀、队列元数据或网络。A 的3.21.12 bytes setter经过临时string，再复制到PB自有字符串；完整路径为四层。D 是同进程内移交对象所有权，不是 DPDK mbuf 引用方案 C，也不能跨进程直接传 PB 对象指针。
 
 `B_direct` 同时绕过 64KiB 聚合 frame 和其中的 4B 记录长度前缀，表示“不聚合、直接移交原 wire”的完整变体，不能作为只改变一条 memcpy 的单变量实验。最终 sink 只消费长度/首尾字节和 compiler escape，没有网络或异步 DMA；若真实网卡/网络线程持有 wire，slot 归还必须延后到发送完成。
 

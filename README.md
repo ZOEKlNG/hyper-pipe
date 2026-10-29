@@ -4,6 +4,12 @@
 
 ## 新增实测（2026-10-29）
 
+**[有状态会话：M1～M4存储、H1～H6交接、L1～L3生命周期、oneof/optional](stateful_handoff/RESULTS.zh-CN.md)** · [方案逐项覆盖](stateful_handoff/COVERAGE.zh-CN.md) · [C++20/CMake复现](stateful_handoff/README.md)
+
+两版各142个完整流水线配置；最终版1980行隔离CPU样本、710行双CPU样本，另有schema/API交叉、混合长度与独立进程复查。生命周期原型两版合计尝试8000万条，实际接收并完整核对约6297万条，均无字段/ASan/UBSan错误。吞吐大幅波动的原始值全部保留，不用峰值承诺生产容量。
+
+**重要修正：[Protobuf 3.21.12隐式/显式presence与bytes API](stateful_handoff/PROTOBUF_3_21_NOTES.zh-CN.md)**。显式optional＋mutable assign可避免隐式子消息Clear销毁与bytes临时string；旧计时保留，旧交接复制账本已修正。
+
 **[三种 JSON 库与官方固定宽度 Protobuf 对比](json_compare/RESULTS.zh-CN.md)** · [源码与复现](json_compare/README.md) · [1600 行原始数据](json_compare/results/benchmark.csv)
 
 nlohmann/json 3.12.0 通用基线、yyjson 0.13.0 和 Glaze 9.1.0 高性能候选，测序列化、解析、完整字段提取、UTF-8 转义及二进制 Base64 完整路径，另报编码大小。三种 JSON 库交叉往返及整数/输入生命周期验证通过。

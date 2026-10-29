@@ -2,6 +2,8 @@
 
 本轮实测采用官方Protobuf3.21.12生成代码、固定宽度标量。没有使用手写PB编码或upb替代。Worker是数据生产线程，Logger是后台日志线程，slot是队列槽位，wire是编码后的线格式，payload/tail是业务载荷/变长尾部，schema是消息结构定义，SPSC是单生产者单消费者队列。本文区分Worker自身服务时间、双逻辑CPU流水线容量和队列过载丢弃。没有真实DPDK网卡、HTTP/DPI业务或网络发送。
 
+**后续核查修正（2026-10-29）：** 本轮3.21.12 bytes指针长度setter会创建临时std::string。原始计时保持，以下复制账本已修正；显式optional与mutable assign重测见[API核查](../stateful_handoff/PROTOBUF_3_21_NOTES.zh-CN.md)。
+
 ## 直接结论
 
 在本轮示例嵌套结构、256B总尾部下，Worker原地填原生槽位约 **19.78ns/事件**，直接生成Protobuf约 **102.89ns/事件**，差 **83.11ns/事件**。这是包括从模拟packet读取已定位字段的隔离服务时间，不包含真实跨核入队与背压。
@@ -68,7 +70,7 @@ Worker CPU0、Logger CPU1，queue256、发布/消费batch32、256B尾部：
 
 容量数字包含生产、排队、自旋、跨CPU缓存一致性、编码、聚合与最终drain。Worker/logger线程总CPU都包含忙等；吞吐倒数不能当Worker自身开销。容量实验满时自旋且drop=0，只用于求此实现的饱和服务能力，生产默认应使用try-enqueue与有界丢弃。
 
-**实际容量排序并不只由Worker服务成本或copy次数决定。** B_direct同时绕过64KiB聚合和4B记录前缀，不能把其全部收益归因于少一条memcpy。D虽然只有两层payload复制，在该实现中流水线吞吐也没有胜过A；未用硬件计数器隔离原因。部分样本出现很大的高吞吐离群，完整范围已保留，不能把中位数当生产容量承诺。
+**实际容量排序并不只由Worker服务成本或copy次数决定。** B_direct同时绕过64KiB聚合和4B记录前缀，不能把其全部收益归因于少一条memcpy。D在该API下为三层payload复制，在该实现中流水线吞吐也没有胜过A；未用硬件计数器隔离原因。部分样本出现很大的高吞吐离群，完整范围已保留，不能把中位数当生产容量承诺。
 
 虚拟机报告CPU0/1共享L1/L2 cache id，CPU2属于另一cache id，但thread_siblings又为单例，不能据此证明物理核关系。另做CPU0/2的10组×5对照，中位吞吐变化约-1.34%～+2.10%；本次主要排序相同，仍不能替代独占物理机验证。[CPU亲和性补测](CPU2_RESULTS.md)
 
@@ -78,13 +80,13 @@ Worker CPU0、Logger CPU1，queue256、发布/消费batch32、256B尾部：
 
 | 方式 | Worker侧 | 日志侧 | 合计 |
 |---|---:|---:|---:|
-| A 原生最终slot | 源→slot，1层 | slot→PB string→最终wire，2层 | 3 |
-| A_scratch | 源→scratch→slot，2层 | 同A，2层 | 4 |
-| B Worker生成wire再聚合 | 源→PB string→队列wire，2层 | 队列wire→最终batch，1层 | 3 |
-| B_direct 独立wire交接 | 同B，2层 | 不复制payload | 2 |
-| D 移交PB对象 | 源→PB string，1层 | PB string→最终wire，1层 | 2 |
+| A 原生最终slot | 源→slot，1层 | slot→临时string→PB string→最终wire，3层 | 4 |
+| A_scratch | 源→scratch→slot，2层 | 同A，3层 | 5 |
+| B Worker生成wire再聚合 | 源→临时string→PB string→队列wire，3层 | 队列wire→最终batch，1层 | 4 |
+| B_direct 独立wire交接 | 同B，3层 | 不复制payload | 3 |
+| D 移交PB对象 | 源→临时string→PB string，2层 | PB string→最终wire，1层 | 3 |
 
-使用普通生成类setter时，A不是附件声称的两层，借用mbuf后日志核set_url＋serialize也仍是两层，不是一层。要进一步消除setter复制，需要另一种明确的借用存储/API，本轮没有偷换成手写编码器。
+在本轮3.21.12 bytes指针长度setter下，A为四层，借用mbuf后日志核set_url＋serialize为三层。改用官方mutable string的assign可避免临时对象层，但仍有拥有式复制；后续实测保留官方编码器，不靠手写wire替代。
 
 固定宽度只固定标量值的编码宽度；bytes及子消息长度仍需前缀。子消息长度也不意味着所有实现都不可能单遍编码，倒写等策略存在，但本轮按选择的官方API测量。[参考技术核查](research_audit.md)
 

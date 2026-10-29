@@ -57,6 +57,8 @@ doc=f'''# 三种 JSON 库与固定宽度 Protobuf：本机实测
 
 本轮采用 nlohmann/json 3.12.0 通用基线、yyjson 0.13.0 与 Glaze 9.1.0 两个高性能候选，并重新运行官方 Protobuf 3.21.12 对照。**C++ 标准库没有官方 JSON 实现；这里的“标准库”按常见通用库理解。** 选择覆盖通用 DOM（文档对象模型）、高性能 DOM、静态类型直接映射三种 API，不是全球库排名。
 
+**后续API核查（2026-10-29）：** 本轮PB对照采用3.21.12的bytes指针长度setter，包含临时std::string成本。原始计时不变，但不代表官方库的最低开销；后续[显式optional＋mutable assign实测](../stateful_handoff/PROTOBUF_3_21_NOTES.zh-CN.md)采用不同schema，不与本表直接拼数值。
+
 ## 结论先看
 
 在本机示例嵌套结构、256B 原始二进制尾部下：

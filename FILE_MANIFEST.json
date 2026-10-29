@@ -6,8 +6,8 @@
   },
   {
     "file": "README.md",
-    "bytes": 6640,
-    "sha256": "98d2edd1b3e241905d53e1d373f821ae781a88393095cb5cb28a50eba75372ad"
+    "bytes": 7501,
+    "sha256": "1353a0c3bec6f474bf237dc9ac4a536842a7b7c708061b0f32603892a4a8abad"
   },
   {
     "file": "assemble_report.py",
@@ -311,18 +311,18 @@
   },
   {
     "file": "core_handoff/README.md",
-    "bytes": 8937,
-    "sha256": "d417691a6b2aeb0f70c04734a588c6ec5c161c86dc48cb334357c30872f59d0c"
+    "bytes": 9213,
+    "sha256": "d535f1a22ec29a905795a1767d56d0d93d83d2f03f681a1e0cb1cb740450de6d"
   },
   {
     "file": "core_handoff/RESULTS.md",
-    "bytes": 2183,
-    "sha256": "b7f3a0bfebc276ce08aed998d763ecf0756c1b7acc4e0bd74267c6a830da32f9"
+    "bytes": 2492,
+    "sha256": "ec97ff6116468042cafe5566656554387a03b4a10cfade674fff344e762707ef"
   },
   {
     "file": "core_handoff/RESULTS_SERVICE.zh-CN.md",
-    "bytes": 10792,
-    "sha256": "1f54090094b22293e64952f92f06cb5d9d4b6130ba09feaf4a3664ce9f42dc24"
+    "bytes": 11114,
+    "sha256": "fbf185b8b74f5a2c330c8dff189f860645a62bff19e4dde813df0af72549a5b4"
   },
   {
     "file": "core_handoff/build.log",
@@ -426,8 +426,8 @@
   },
   {
     "file": "core_handoff/research_audit.md",
-    "bytes": 14117,
-    "sha256": "cc90b639ad785121725dbdb1db7e4bdf1fa82808996f946d41c4266d37f3db76"
+    "bytes": 14426,
+    "sha256": "ecf92e540633119d51233b454f188df2cb24b0a0b1b6b291217ebb3e34caa7ab"
   },
   {
     "file": "core_handoff/results/combined_validation.json",
@@ -601,8 +601,8 @@
   },
   {
     "file": "core_handoff/review.md",
-    "bytes": 16018,
-    "sha256": "a546a71c9f403c590ed140a1a89d40870bc1d0be91d30948c6f7cfe6c93180ff"
+    "bytes": 16327,
+    "sha256": "77695ce70d43816d874ce46ff309ccf7a96f508a5f4b5c6b985f400a0fe6b864"
   },
   {
     "file": "core_handoff/run_cpu2.py",
@@ -631,8 +631,8 @@
   },
   {
     "file": "core_handoff/summarize_service.py",
-    "bytes": 15846,
-    "sha256": "2dab062233b6e52febea49826ce92a9c8e1fc0cc42add102c51e44bc730b3e7a"
+    "bytes": 16168,
+    "sha256": "9a05f934f249b312e0504b2c32b2822be8d83f8a9fdfe61e46355e2fdec06ee0"
   },
   {
     "file": "deps/download_manifest.json",
@@ -661,8 +661,8 @@
   },
   {
     "file": "dynamic_codec/RESULTS.zh-CN.md",
-    "bytes": 9702,
-    "sha256": "2ff0a0247e54d4566d44345a10f22009cd95bab1a8d754ffe178dcadea04ed9c"
+    "bytes": 9939,
+    "sha256": "097849a3fd620fe86d9638a75cb43cc4c1fbd52001549ceca3e9801f70ccfde8"
   },
   {
     "file": "dynamic_codec/alternate_plans.json",
@@ -1301,8 +1301,8 @@
   },
   {
     "file": "json_compare/RESULTS.zh-CN.md",
-    "bytes": 10653,
-    "sha256": "87ae97fea30c88949729099200c22ee96487bd7203188d7639fd2c831c7fed8a"
+    "bytes": 10988,
+    "sha256": "58e37a48488c2e8d0889f0b0f0ed29ae79856fe1b02083fd3a0934f43a3587f9"
   },
   {
     "file": "json_compare/adapter.hpp",
@@ -1451,8 +1451,8 @@
   },
   {
     "file": "json_compare/summarize.py",
-    "bytes": 14178,
-    "sha256": "bfee891fcab63105f4b9d290e4c2f0fb2c401f35896acd32e2e070eece6efbed"
+    "bytes": 14513,
+    "sha256": "9d0aeeb43125dbe0d6395f9edd38d4af96e7b76f2c4edbb70d5e6f7545a98ec5"
   },
   {
     "file": "json_compare/vendor/glaze/LICENSE",
@@ -2993,6 +2993,806 @@
     "file": "sbe/summarize.py",
     "bytes": 850,
     "sha256": "c700bd941f550411d3d76abfca26248e8c3915681a2f0b29038a36c1ba71e93c"
+  },
+  {
+    "file": "stateful_handoff/.gitignore",
+    "bytes": 54,
+    "sha256": "adf6392a0fdccc140204d9ede14a4e18c09dd0df4439975c093666f66746c98c"
+  },
+  {
+    "file": "stateful_handoff/CMakeLists.txt",
+    "bytes": 1981,
+    "sha256": "85f43f3767b9c79a7bb1ed2ef234dda893570282fc55ee591ca91d4790f39f67"
+  },
+  {
+    "file": "stateful_handoff/COVERAGE.zh-CN.md",
+    "bytes": 5218,
+    "sha256": "f0cc90210671354b7f856df64b3fcfaa6bfba79208b3bdd68aa34af40c1123f0"
+  },
+  {
+    "file": "stateful_handoff/PROTOBUF_3_21_NOTES.zh-CN.md",
+    "bytes": 3550,
+    "sha256": "872ea14999f785d4210466be44b81ce07f93eafbde713899e4356fda6e294daf"
+  },
+  {
+    "file": "stateful_handoff/README.md",
+    "bytes": 10197,
+    "sha256": "a52b6b7606162f99c00c2eab814222c3be440f44254787c915370e265afa6220"
+  },
+  {
+    "file": "stateful_handoff/RESULTS.zh-CN.md",
+    "bytes": 29085,
+    "sha256": "8c354461f8b3771bf5d946fe592317c748e5f5f255e161587235db004329f1af"
+  },
+  {
+    "file": "stateful_handoff/allocator_scaling.cpp",
+    "bytes": 1994,
+    "sha256": "7867d78370f0d8548b783bb3663bbf9681b58dae2c9d61ca9b0a576add27325a"
+  },
+  {
+    "file": "stateful_handoff/asan_build.log",
+    "bytes": 769,
+    "sha256": "8681f8ee0ed3da73089b63af96f8fe069408321b71bc114e6b5c95b1e0699c2a"
+  },
+  {
+    "file": "stateful_handoff/asan_functional.log",
+    "bytes": 475,
+    "sha256": "55359c039e15bd7cf9f527166c53252259136ceb124cc22c34e3e1484a1a95d3"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/.gitignore",
+    "bytes": 39,
+    "sha256": "31adbbe6a06699d55acc6f144e01e2a3c7fa7e432551ed58ad972012b96fa520"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/CMakeLists.txt",
+    "bytes": 1981,
+    "sha256": "85f43f3767b9c79a7bb1ed2ef234dda893570282fc55ee591ca91d4790f39f67"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/README.md",
+    "bytes": 1891,
+    "sha256": "ff185a9b50781fa38bb504a5cf95d7dd179f5f29db8be26ad73b39e102138b6a"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/allocator_scaling.cpp",
+    "bytes": 1994,
+    "sha256": "7867d78370f0d8548b783bb3663bbf9681b58dae2c9d61ca9b0a576add27325a"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/asan_build.log",
+    "bytes": 912,
+    "sha256": "38b352f5fd39676b844074bc654ed5d17eee03529decb009af441ac92be971ec"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/asan_functional.log",
+    "bytes": 470,
+    "sha256": "568d43ca6c5e5a0aaa3aabaa7aebbaa5dfee5d909ca6e6999e8e550c20956813"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/bench.cpp",
+    "bytes": 5491,
+    "sha256": "5315304973f89c2022033f60532efe35c87fffccb9d587805607114354cd870a"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/build.log",
+    "bytes": 475,
+    "sha256": "1ed9ec162e9972ecb7f11727ac67ce03cc7bd0e3d5d5c649dec9a614ce384342"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/build.sh",
+    "bytes": 395,
+    "sha256": "75a59f522dfc6eb600496f3d4d349944aed7b110ac9bcc6287253e312cc4e4fc"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/check.py",
+    "bytes": 1948,
+    "sha256": "cdfd8073824d6d2d5b07fc867fe87fb3f6bc816d3ed980d575c10c974ecb68bc"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/encoding.hpp",
+    "bytes": 3158,
+    "sha256": "b116dcfd144383743e03da08114ad20e8e898135fc72dcdf9dfb888620afdbd5"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/engine.hpp",
+    "bytes": 9288,
+    "sha256": "491b0467516076c0f112173ba0bda89a04b5dd29c00d60c44a35d3e2d844ba7d"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/environment.json",
+    "bytes": 4154,
+    "sha256": "462937121ca780fbbabb83936ab114e6a37f573f2561d92634f0480f486e8538"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/events.pb.cc",
+    "bytes": 65758,
+    "sha256": "4fb3981775cbd79925b81b0b0b36cc2676b011ea51aef1ccde5033d10b34e8dd"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/events.pb.h",
+    "bytes": 90850,
+    "sha256": "f38f8cf8d630a77705a659027baaf68d5c0cc8cb62ae57acede173df9c1247fe"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/events.proto",
+    "bytes": 549,
+    "sha256": "166dc03a1bc8350c231ac0089e016ae1486d0edf2524b7599009cae2da9b13e6"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/functional.log",
+    "bytes": 464,
+    "sha256": "976b6619a637fd7a0753c2a32841bd507eb4a455250535d4afd15028c9e00c94"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/matrix.json",
+    "bytes": 51366,
+    "sha256": "61dfd977a813d4b520241b65ab7c1554f6fde626487fdb1b0bcb6754162c57e0"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/proto_bench.cpp",
+    "bytes": 4969,
+    "sha256": "92212fe1e5a375e3d8b6be9ce1f7442a8ca092fbcd14a7c3513161a2d2f791a3"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/reference_manifest.json",
+    "bytes": 538,
+    "sha256": "5c4c1f26eebf6178eeba6a289a6076988a1744dc62a6c3f8376fcc295bcaa9b5"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/affinity_comparison.csv",
+    "bytes": 965,
+    "sha256": "12527b2fa9567a0756062690c760dbe95664df769bad6abfbdb2275c9988ff6a"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/allocator_scaling.csv",
+    "bytes": 5901,
+    "sha256": "1f3563e13375fc9e8ef40978138c3dad6e71e66368e607ae1549c4aff0bb3bf3"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/allocator_scaling_summary.csv",
+    "bytes": 1269,
+    "sha256": "4bf9a24692cca0c5c30c52ac46a2d84c881e76d85a679f59e4ab8972e8359914"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/case_order.json",
+    "bytes": 35675,
+    "sha256": "029030e6ae483466ee9308a57ff37d163dd6f47ba790ccda41d8521f2fb8f8be"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/cpu_after.txt",
+    "bytes": 155,
+    "sha256": "06c992ce3354e6dd8ac9298ad7769dc0424f4e6d8a856ea274efe23aea1eb4bd"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/cpu_before.txt",
+    "bytes": 150,
+    "sha256": "5d75069d5f906a283aa4159bdbc0d2f97b002cb14ea1d4ec80a450d261ec8f5f"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/generated_validation.json",
+    "bytes": 493,
+    "sha256": "db7901b607c3cbdc0057821a79c599589427cd99dd3b75c726df50981548a7f4"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/micro.csv",
+    "bytes": 318832,
+    "sha256": "4b09029c54d1abfa26286dee08aa0ca841e64443c1c295ade3104f5781768040"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/micro_summary.csv",
+    "bytes": 47415,
+    "sha256": "578c2ad3f0b6a3064c2b45ce3d1d62bea939ec013a11b24c5d27859110d50b0e"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/pipeline.csv",
+    "bytes": 183664,
+    "sha256": "fcbda4d85b0161ae324e63437eda9e7445dc80fdaab8a6f67d75261d49973e5d"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/pipeline_summary.csv",
+    "bytes": 32624,
+    "sha256": "dae23f776f7611c58467c1fffc6e35f0c485f581fc10c2291577e444c6f173c4"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/proto.csv",
+    "bytes": 20972,
+    "sha256": "2bf6ff0e5fe7cd11bb95b4eacd0765252724238bb261dd7b0f1a8f4d9a13c905"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/proto_alloc.csv",
+    "bytes": 22152,
+    "sha256": "49580c26cd6cb4b46a730298fc8b8397e473a9e4162a3fe79e0ebe2a4df6ba22"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/proto_summary.csv",
+    "bytes": 4374,
+    "sha256": "e6cab6b43d590ff23ecd105d38f95f74fd5dfa781ced8f31b0096bbd21236872"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/snapshot_after.json",
+    "bytes": 1663,
+    "sha256": "a5baef0f33cbd869246102107459038a32c588d1d4f22af2bf3eae32726f78c5"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/snapshot_before.json",
+    "bytes": 1663,
+    "sha256": "a5baef0f33cbd869246102107459038a32c588d1d4f22af2bf3eae32726f78c5"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/storage_alloc.csv",
+    "bytes": 1761,
+    "sha256": "f77a64b02255186982f8d65303ce30534327009da7d663964aaf3866a927f543"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/timing.json",
+    "bytes": 181,
+    "sha256": "2936f7fbfe4cd522dd98df842a08f21cab7cc12083b586a886ff2be750b84f67"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/results/validation.json",
+    "bytes": 1917,
+    "sha256": "7d75f70156d5afcd5417b927dc07c08c0460714f2b6928f460667c5b9ec447fc"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/run.log",
+    "bytes": 4353,
+    "sha256": "eae4f6686603834b5f8dd623eda1b90bd2127022568d0e2a9c204cb03a0dbcc7"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/run.py",
+    "bytes": 6073,
+    "sha256": "979daf7c807567431f0780281875745a3db0ee08350a9f3cc67fe9bd829730cc"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/semantics_demo.cpp",
+    "bytes": 1132,
+    "sha256": "ae534689d2c584f4b5694138350420fecdbd82c5208d70c1961bd365477073ad"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/slots.hpp",
+    "bytes": 6193,
+    "sha256": "9d9234250589e86afcefbffdcf13a1033ec80f48a78a4cdf86cb0a4a5bb3a684"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/storage.hpp",
+    "bytes": 3935,
+    "sha256": "a215f99a60c2a33c1d18b8a42e9b7b8ce111bdd46c5d65b878d90d1212d68021"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/store_audit.cpp",
+    "bytes": 2535,
+    "sha256": "99d1ac88b2d8bc11963e581ca3cb6c00abd1ce943e8655952b8c7480fdb224a6"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/stress.log",
+    "bytes": 726,
+    "sha256": "1adcf9ac486b918950feafad100ecc8f1a2f9e3cc0f107f4e8dab399b3506c5e"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/stress.py",
+    "bytes": 2012,
+    "sha256": "3e648cdf3f83071a26b56a7faf171dc5767f891a7e480cfc65c587525a0b0eab"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/types.hpp",
+    "bytes": 4387,
+    "sha256": "ac4df0248100d6f85b060fec8b8108493946e5ea13c24f51e841d13ba323f4fa"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/asan/functional.json",
+    "bytes": 31251,
+    "sha256": "65410e4ace2dd3756807b01a23de734a2765bd0579bbc511fe85cf145e5b6857"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/asan/functional_summary.json",
+    "bytes": 406,
+    "sha256": "07ef9372689cbd490b994418a34daa769811323322beec41f19eab672a79e3ff"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/asan_build_inventory.json",
+    "bytes": 1424,
+    "sha256": "04237d18f037d0747e57298c0a378a65541629c4bbacf7163fc03161b8a8aa9b"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/consistency.json",
+    "bytes": 154,
+    "sha256": "1e6040e2758f7cb6d90299798eb2b6a35e4ab1fc65261dd1979da618ef08d6e8"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/cpu02_h5_smoke.txt",
+    "bytes": 172,
+    "sha256": "0f1934fa14b4c2b72e1cc51a8ea990d111da3209db488496c2d466603e03f2e5"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/cpu02_h6_smoke.txt",
+    "bytes": 172,
+    "sha256": "07359eb5c5c7805167eef12512c485e54b012d1967e25499c52fb4018c495651"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/micro_check.csv",
+    "bytes": 355,
+    "sha256": "4ae059f886d86822fa9a6dad2be0cfba39226e386ce6f530113deb5d9cc14134"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/normal/functional.json",
+    "bytes": 30981,
+    "sha256": "36ec6f0c281078492f63819e690fd17587fbd9bec6339dd8102d1a1f66f34e8a"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/normal/functional_summary.json",
+    "bytes": 400,
+    "sha256": "0faeef5b26e29e8d0b3c771f9a8866a0707ce619603889c86e1895b8d05f047c"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/proto_wire.txt",
+    "bytes": 100,
+    "sha256": "64b2fa72c763ac8198104c0a51a84ac78066319104bbb858afebfc4bc3ba9640"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/semantics.json",
+    "bytes": 306,
+    "sha256": "cd91c7fbeb98b6d7a0b06371270133376dff202164549b20aed0c990783777a7"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/stress/runs.json",
+    "bytes": 3040,
+    "sha256": "6e82de8b0169729288ed8061b60ae73d2223e5d82a5b20d880d4c2d87715eecd"
+  },
+  {
+    "file": "stateful_handoff/baseline_implicit/validation/stress/summary.json",
+    "bytes": 530,
+    "sha256": "4a634cf611a83ef0017a26c0639561397b7f10f33ffac98655c91ba4ca57143f"
+  },
+  {
+    "file": "stateful_handoff/bench.cpp",
+    "bytes": 5550,
+    "sha256": "da9e3114d5c140353194e247a7b8efb0ff157287101ee6a239e3e8268897e97e"
+  },
+  {
+    "file": "stateful_handoff/build.log",
+    "bytes": 445,
+    "sha256": "f10096a6cfedd4b8390ab2e024bd5db3274ccbf38ec319f27d857c610d928339"
+  },
+  {
+    "file": "stateful_handoff/build.sh",
+    "bytes": 395,
+    "sha256": "75a59f522dfc6eb600496f3d4d349944aed7b110ac9bcc6287253e312cc4e4fc"
+  },
+  {
+    "file": "stateful_handoff/check.py",
+    "bytes": 1948,
+    "sha256": "cdfd8073824d6d2d5b07fc867fe87fb3f6bc816d3ed980d575c10c974ecb68bc"
+  },
+  {
+    "file": "stateful_handoff/encoding.hpp",
+    "bytes": 3928,
+    "sha256": "0383eca6a0e7b7c285222ff68b7e5beb3a2d9a55f530f36a2819eff61b5d4391"
+  },
+  {
+    "file": "stateful_handoff/engine.hpp",
+    "bytes": 9298,
+    "sha256": "8bca38dc4c1967e85e6b321a03a928c1f302d666258379e8b7adba6e4a04fb28"
+  },
+  {
+    "file": "stateful_handoff/environment.json",
+    "bytes": 4154,
+    "sha256": "acb27c1584da7ecc917883fb7ff4282d895e41f7a414b287887fdd819fc6ddf5"
+  },
+  {
+    "file": "stateful_handoff/events.pb.cc",
+    "bytes": 90504,
+    "sha256": "781e125fad2967545abae7808193b15a1213cacf2a2f209bdb72bfd9d1390615"
+  },
+  {
+    "file": "stateful_handoff/events.pb.h",
+    "bytes": 132499,
+    "sha256": "630b3746a9d5ed4ae0c7efbf8372c4a1d8e56bff7faa627e1ea6a128c9f1647c"
+  },
+  {
+    "file": "stateful_handoff/events.proto",
+    "bytes": 817,
+    "sha256": "a81ab75355f9172ed735a782aaceb3087757ad3c29cdfe6627069edb9d3a30c1"
+  },
+  {
+    "file": "stateful_handoff/extras.log",
+    "bytes": 57,
+    "sha256": "571d95e81908d1ae938ffd3eee5d82c0bab4d7475f79086d336721e52983704b"
+  },
+  {
+    "file": "stateful_handoff/extras/CMakeLists.txt",
+    "bytes": 1074,
+    "sha256": "2fd412fa5258f2c3ce2af756e602ba341a6aecf119629361aaf9b1c93b81eb87"
+  },
+  {
+    "file": "stateful_handoff/extras/mixed_bench.cpp",
+    "bytes": 2679,
+    "sha256": "41341796a517cb66fce70cd2ce899cb00f25209a070085a94fc403c5989146ee"
+  },
+  {
+    "file": "stateful_handoff/extras/proto_mixed.cpp",
+    "bytes": 2445,
+    "sha256": "3022d07a7306b96a49a6902f542731fed6414e3b99e6246b97a4b8b37828c415"
+  },
+  {
+    "file": "stateful_handoff/extras_build.log",
+    "bytes": 1271,
+    "sha256": "043b26718117a277af6c19953238a20d0df0ee76aaddb146e66bf368261747cf"
+  },
+  {
+    "file": "stateful_handoff/figures/protobuf_api.png",
+    "bytes": 63190,
+    "sha256": "eb12f2d6156fa8c9398aef09b2f18b248e69cb620e5d6cdf307f7cfdf686e1f0"
+  },
+  {
+    "file": "stateful_handoff/figures/protobuf_api.svg",
+    "bytes": 47112,
+    "sha256": "ef8fb0f0f061bfe27bd2cc8c2f170024dd81649dfdcb22a12bdf6805fb2f5748"
+  },
+  {
+    "file": "stateful_handoff/figures/storage_worker.png",
+    "bytes": 134446,
+    "sha256": "004eddac6449a7fa0eea0a34cbbab50144a927d9af4728a95474a3ccab05da35"
+  },
+  {
+    "file": "stateful_handoff/figures/storage_worker.svg",
+    "bytes": 71504,
+    "sha256": "476a5f6dce0f76413bc916c03ac9541517b95776696affa4171eff78ffe545f5"
+  },
+  {
+    "file": "stateful_handoff/functional.log",
+    "bytes": 470,
+    "sha256": "de6203d617509767a73b460e6eb86690479d4a38fb4a8724fb6f7224d6be4992"
+  },
+  {
+    "file": "stateful_handoff/matrix.json",
+    "bytes": 51366,
+    "sha256": "61dfd977a813d4b520241b65ab7c1554f6fde626487fdb1b0bcb6754162c57e0"
+  },
+  {
+    "file": "stateful_handoff/plots.py",
+    "bytes": 2782,
+    "sha256": "4cc40886efb721a8ffe4fa204500aae2d40f84e681f5998040e76f6cbf5e49d1"
+  },
+  {
+    "file": "stateful_handoff/proto_bench.cpp",
+    "bytes": 5465,
+    "sha256": "106182def3cd28a16133dd23b8ee5662c5ed04ccaca070ff02768d406925233f"
+  },
+  {
+    "file": "stateful_handoff/recheck.log",
+    "bytes": 186,
+    "sha256": "28735c55e43a80f3a8e0e8b4eea0b75f77dda551197b09a0edfd6f2d3132929c"
+  },
+  {
+    "file": "stateful_handoff/recheck.py",
+    "bytes": 2466,
+    "sha256": "e58393946365c9a1c8452836175879026c4ae568726cd48767f4886b450aa97e"
+  },
+  {
+    "file": "stateful_handoff/reference_manifest.json",
+    "bytes": 538,
+    "sha256": "5c4c1f26eebf6178eeba6a289a6076988a1744dc62a6c3f8376fcc295bcaa9b5"
+  },
+  {
+    "file": "stateful_handoff/report_supplements.py",
+    "bytes": 8775,
+    "sha256": "cdbd8460f98be42cb6e58777386829eb88084819d6e365137733b19ff253f643"
+  },
+  {
+    "file": "stateful_handoff/results/affinity_comparison.csv",
+    "bytes": 957,
+    "sha256": "29e08f9c7fa93004101445d13a01b3b595b497eb864236901ce1999f5152d6c5"
+  },
+  {
+    "file": "stateful_handoff/results/allocator_scaling.csv",
+    "bytes": 5907,
+    "sha256": "33b9af6af46c8e3cd311bdbf10c442a67eb07aaed38e1495939dd1b65301cccf"
+  },
+  {
+    "file": "stateful_handoff/results/allocator_scaling_summary.csv",
+    "bytes": 1253,
+    "sha256": "361154ccb69ffc4d6418b1df211149920a5fb7615eaacb1b613b885eeaa0a0aa"
+  },
+  {
+    "file": "stateful_handoff/results/assembly_build.txt",
+    "bytes": 57289,
+    "sha256": "d8264eca2ead20772468e69d8a707ab645d9ad7d7f6ad1bce840656320f891e2"
+  },
+  {
+    "file": "stateful_handoff/results/assembly_metadata.json",
+    "bytes": 473,
+    "sha256": "9fd79f8f54e8d4d062b98533a9967bf8cc35f472a8a6fd58829fce14e1c98812"
+  },
+  {
+    "file": "stateful_handoff/results/case_order.json",
+    "bytes": 47311,
+    "sha256": "ec2d07f761f36afc32d07398aec5f11b005522bd3db80c148e1bc770cec145ee"
+  },
+  {
+    "file": "stateful_handoff/results/cpu_after.txt",
+    "bytes": 156,
+    "sha256": "20ceb9852d98dc8ed8f8825f17eaa9cea94f2667b6c26528a9566ddcc6e3dd4f"
+  },
+  {
+    "file": "stateful_handoff/results/cpu_before.txt",
+    "bytes": 155,
+    "sha256": "8a4a85b5c10ba7f51bb6d84bec9ebbfb151633a73cda191de3480d8a0b8eeb99"
+  },
+  {
+    "file": "stateful_handoff/results/extras_metadata.json",
+    "bytes": 391,
+    "sha256": "77f2c0d353bcb8dd79fa773bcd871dffa90cc15ee173621c5da18bea4fad0107"
+  },
+  {
+    "file": "stateful_handoff/results/extras_runs.json",
+    "bytes": 547,
+    "sha256": "75912d9f36327cacfe09fea9f2b1d6586fd43a8e1f6afd347b5cbf419f4ae418"
+  },
+  {
+    "file": "stateful_handoff/results/extras_snapshot_after.json",
+    "bytes": 1356,
+    "sha256": "8f5d622475c9aaf98c1c4f09611a715977359c1317ba7b7fe6cb26dfe6a15735"
+  },
+  {
+    "file": "stateful_handoff/results/extras_snapshot_before.json",
+    "bytes": 1356,
+    "sha256": "8f5d622475c9aaf98c1c4f09611a715977359c1317ba7b7fe6cb26dfe6a15735"
+  },
+  {
+    "file": "stateful_handoff/results/generated_validation.json",
+    "bytes": 493,
+    "sha256": "d8aed254eeaebefcae89225ddeac99857ec99409666ff055df0d473551ae2f66"
+  },
+  {
+    "file": "stateful_handoff/results/micro.csv",
+    "bytes": 319054,
+    "sha256": "ded0863e70f6392e74adca2a6d0bd1d2eb55504605b9a6d2b44f11a2fc3ad184"
+  },
+  {
+    "file": "stateful_handoff/results/micro_summary.csv",
+    "bytes": 47458,
+    "sha256": "0819a9a14c39959e74365043a191635dd26844b23d133bfb3b22cd864c5ee327"
+  },
+  {
+    "file": "stateful_handoff/results/mixed_bench.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "stateful_handoff/results/mixed_lengths.csv",
+    "bytes": 6073,
+    "sha256": "ed9d37c6219d6611f04bcba091efe829d6f7a6f0df2f62fe97098f562cbbc6cd"
+  },
+  {
+    "file": "stateful_handoff/results/mixed_lengths_summary.csv",
+    "bytes": 1185,
+    "sha256": "80fb6d36e97ec3c926682acabef2dc5a0265781056a56c55b2db32b75b67fdc2"
+  },
+  {
+    "file": "stateful_handoff/results/phases.json",
+    "bytes": 490,
+    "sha256": "cb097ab09baee1fe652432b380d79003f5896a6a2585d4daa91b40817085a048"
+  },
+  {
+    "file": "stateful_handoff/results/pipeline.csv",
+    "bytes": 184583,
+    "sha256": "a07edf0d1a76fc9c6d61130c5e92d3a049c12e90d16916d59da645b0edba3c9b"
+  },
+  {
+    "file": "stateful_handoff/results/pipeline_summary.csv",
+    "bytes": 32675,
+    "sha256": "26672d2463c5aee59fe29510a3cd008fe03aa953fe9467a4487b05ec0618cf84"
+  },
+  {
+    "file": "stateful_handoff/results/proto.csv",
+    "bytes": 75465,
+    "sha256": "de8dc618636a37b9ceea7f24111efc0ecc4c58c6a675a55c0e042303818429ca"
+  },
+  {
+    "file": "stateful_handoff/results/proto_alloc.csv",
+    "bytes": 76034,
+    "sha256": "1ea22f09e4a25a5f74bfbb7056ead723d26a6c2cdd415959ad1b3a430cd6f00d"
+  },
+  {
+    "file": "stateful_handoff/results/proto_alloc_canonical.csv",
+    "bytes": 87291,
+    "sha256": "d3d27fd7600f4f951d60265688aef51590f2b8d5e02b73471450dbd26e357af0"
+  },
+  {
+    "file": "stateful_handoff/results/proto_canonical.csv",
+    "bytes": 82814,
+    "sha256": "db1f64dd864eb46c46905071d6aafafd0afb45e30e056dfd5aceb0059e0d96c4"
+  },
+  {
+    "file": "stateful_handoff/results/proto_mixed.csv",
+    "bytes": 14840,
+    "sha256": "6c93f52edd0d25ea611b2a6c05eca1b1096975e67600ce4276f67777b7b77e4d"
+  },
+  {
+    "file": "stateful_handoff/results/proto_mixed.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "stateful_handoff/results/proto_mixed_alloc.csv",
+    "bytes": 14967,
+    "sha256": "2e84d805d2d63af4878805722fb75010dfe8ac9891b632c3241b40fa4b0fae88"
+  },
+  {
+    "file": "stateful_handoff/results/proto_mixed_alloc.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "stateful_handoff/results/proto_summary.csv",
+    "bytes": 15168,
+    "sha256": "0689cb30697cec46b1a571abe385296ec6bee90b0659b0226189d7d01752c442"
+  },
+  {
+    "file": "stateful_handoff/results/recheck.csv",
+    "bytes": 13228,
+    "sha256": "436a7531c10fe56fbbf232d4f430e5327411830bd98e27dec762407db5d53376"
+  },
+  {
+    "file": "stateful_handoff/results/recheck_metadata.json",
+    "bytes": 390,
+    "sha256": "a88abfc1224d83c003f270abea5caa225131fc1acb91c08831f8db95361e488c"
+  },
+  {
+    "file": "stateful_handoff/results/recheck_summary.csv",
+    "bytes": 2951,
+    "sha256": "62a5712e5f0c2f46421e9fd922449afac81bcde88bf993e42b35b73f54b106d2"
+  },
+  {
+    "file": "stateful_handoff/results/relocation_validation.json",
+    "bytes": 822,
+    "sha256": "51ead1953dd97dcce26c560b76612d13fab459804a09ae08c579b81a8d170d27"
+  },
+  {
+    "file": "stateful_handoff/results/snapshot_after.json",
+    "bytes": 1663,
+    "sha256": "2c09540d367b8d7ebcec7f3438de75d89c4b1302b9adb430399357f7e2b9c70d"
+  },
+  {
+    "file": "stateful_handoff/results/snapshot_before.json",
+    "bytes": 1663,
+    "sha256": "2c09540d367b8d7ebcec7f3438de75d89c4b1302b9adb430399357f7e2b9c70d"
+  },
+  {
+    "file": "stateful_handoff/results/storage_alloc.csv",
+    "bytes": 1761,
+    "sha256": "f77a64b02255186982f8d65303ce30534327009da7d663964aaf3866a927f543"
+  },
+  {
+    "file": "stateful_handoff/results/timing.json",
+    "bytes": 181,
+    "sha256": "8b7935b3dfc30869da71318af7f284250e29b84d8615a4bddc27f207922ddbce"
+  },
+  {
+    "file": "stateful_handoff/results/validation.json",
+    "bytes": 3421,
+    "sha256": "e5c15d98767bcc7911420070ca6dd732d1820828b1933d27baff35949986cd68"
+  },
+  {
+    "file": "stateful_handoff/run.log",
+    "bytes": 4353,
+    "sha256": "775e3ae9f911ac9fa5a22700992917494be4f3edf499feb428f56822de2f4b0f"
+  },
+  {
+    "file": "stateful_handoff/run.py",
+    "bytes": 6510,
+    "sha256": "59fc7ad32a3e8add3bafeae659bab368a74d52e282fe3320250b4cfb71b5f34b"
+  },
+  {
+    "file": "stateful_handoff/run_extras.py",
+    "bytes": 1903,
+    "sha256": "b292709f6087805db208f95a499a8fa9026f1c4292974c7e05543d272f470708"
+  },
+  {
+    "file": "stateful_handoff/semantics_demo.cpp",
+    "bytes": 1132,
+    "sha256": "ae534689d2c584f4b5694138350420fecdbd82c5208d70c1961bd365477073ad"
+  },
+  {
+    "file": "stateful_handoff/slots.hpp",
+    "bytes": 6193,
+    "sha256": "9d9234250589e86afcefbffdcf13a1033ec80f48a78a4cdf86cb0a4a5bb3a684"
+  },
+  {
+    "file": "stateful_handoff/storage.hpp",
+    "bytes": 3935,
+    "sha256": "a215f99a60c2a33c1d18b8a42e9b7b8ce111bdd46c5d65b878d90d1212d68021"
+  },
+  {
+    "file": "stateful_handoff/store_audit.cpp",
+    "bytes": 2535,
+    "sha256": "99d1ac88b2d8bc11963e581ca3cb6c00abd1ce943e8655952b8c7480fdb224a6"
+  },
+  {
+    "file": "stateful_handoff/stress.log",
+    "bytes": 627,
+    "sha256": "489d20a4590797e27573deabb006ef4708bbff2f23a2b887e2cf2637c5bd5463"
+  },
+  {
+    "file": "stateful_handoff/stress.py",
+    "bytes": 1886,
+    "sha256": "bf5a7758f9a1d5f82f34d4cb254dba67c6d084bff2416d8b1c1b2607211d480a"
+  },
+  {
+    "file": "stateful_handoff/summarize.py",
+    "bytes": 21397,
+    "sha256": "ae6415631eb8b65f22e6643f3f9356b752484fabc212b511e64b7990c24a07b0"
+  },
+  {
+    "file": "stateful_handoff/summary.log",
+    "bytes": 2919,
+    "sha256": "d13d7b8f5f237dd4463a4701ee0f56210997f807dddef5dd11ae014b96885df9"
+  },
+  {
+    "file": "stateful_handoff/types.hpp",
+    "bytes": 4387,
+    "sha256": "ac4df0248100d6f85b060fec8b8108493946e5ea13c24f51e841d13ba323f4fa"
+  },
+  {
+    "file": "stateful_handoff/validation/asan/functional.json",
+    "bytes": 31230,
+    "sha256": "662e32aaa8b9149d0083b337ecd4f55ce37d64e0bac8c7b44a6176accf3059f7"
+  },
+  {
+    "file": "stateful_handoff/validation/asan/functional_summary.json",
+    "bytes": 411,
+    "sha256": "e93b2d59bcd25faf7d5acf989782bcf03d123fe78fdc922795c60e73e9528844"
+  },
+  {
+    "file": "stateful_handoff/validation/asan_build_inventory.json",
+    "bytes": 1424,
+    "sha256": "62f9370845c0a94e0af4c6b16e9935b497e6344a333386a33f7d14a67e3e5313"
+  },
+  {
+    "file": "stateful_handoff/validation/consistency.json",
+    "bytes": 154,
+    "sha256": "1e6040e2758f7cb6d90299798eb2b6a35e4ab1fc65261dd1979da618ef08d6e8"
+  },
+  {
+    "file": "stateful_handoff/validation/cpu02_h5_smoke.txt",
+    "bytes": 175,
+    "sha256": "9ea015e24b4e915f42d244d2b97937a78fc88683e7bb881627cf3dae52c54515"
+  },
+  {
+    "file": "stateful_handoff/validation/cpu02_h6_smoke.txt",
+    "bytes": 175,
+    "sha256": "3793c5a122d858c00c34c9cabe77e4cbb576f1d0dc60e2acb08fe5bc64d24132"
+  },
+  {
+    "file": "stateful_handoff/validation/normal/functional.json",
+    "bytes": 31073,
+    "sha256": "d9e0b70018798a7e1a426f1c3d1c9db2c1cd4b531987dc5c3fab01420aaf6093"
+  },
+  {
+    "file": "stateful_handoff/validation/normal/functional_summary.json",
+    "bytes": 406,
+    "sha256": "5b08e074f4684aedf99ca27d36294748937bd732e649505b8baa898a9d6e2fc0"
+  },
+  {
+    "file": "stateful_handoff/validation/proto_wire.txt",
+    "bytes": 100,
+    "sha256": "64b2fa72c763ac8198104c0a51a84ac78066319104bbb858afebfc4bc3ba9640"
+  },
+  {
+    "file": "stateful_handoff/validation/semantics.json",
+    "bytes": 306,
+    "sha256": "cd91c7fbeb98b6d7a0b06371270133376dff202164549b20aed0c990783777a7"
+  },
+  {
+    "file": "stateful_handoff/validation/stress/runs.json",
+    "bytes": 1833,
+    "sha256": "cdcff526c00d792017483f1c46a3f1128172c9bda93a91ae817e24d0215c6fbc"
+  },
+  {
+    "file": "stateful_handoff/validation/stress/summary.json",
+    "bytes": 530,
+    "sha256": "4140e6abf012eeb54ed70c8a097b2a6bbad498ff822336e7deb8d80564bc88d6"
   },
   {
     "file": "transport/README.md",

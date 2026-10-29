@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "configurations": 142,
+  "pipeline_rows": 710,
+  "micro_rows": 1980,
+  "micro_groups": 396,
+  "proto_rows": 210,
+  "proto_allocation_rows": 210,
+  "storage_allocation_rows": 30,
+  "allocator_scaling_rows": 90,
+  "all_pipeline_full_checks_zero_errors": true,
+  "pipeline_min_wall_s": 0.301458956,
+  "micro_min_wall_ns": 80057793,
+  "snapshots_unchanged": true,
+  "cpu_throttle_delta": {
+    "nr_throttled": 26,
+    "throttled_usec": 39499
+  },
+  "stress": {
+    "status": "PASS",
+    "runs": 5,
+    "offered": 50000000,
+    "accepted_and_fully_verified": 41172110,
+    "dropped": 8827890,
+    "full_payload_errors": 0,
+    "asan_options": "detect_leaks=1:halt_on_error=1",
+    "ubsan_options": "halt_on_error=1",
+    "sanitized_binary_sha256": "f616e5db6a142cf85a0960833adbad72cc91eeb2a37a559950fb516ca5e7e27a",
+    "note": "Poisoned recycle, complete decoded field/content checks, one real Worker and Logger. Finite stress is empirical evidence, not universal proof; ASan/UBSan are not race detectors."
+  },
+  "functional_normal": {
+    "status": "PASS",
+    "cases": 97,
+    "offered": 4769587,
+    "full_field_payload_errors": 0,
+    "elapsed_s": 6.497768399000051,
+    "binary": "/workspace/work/stateful/build/bench",
+    "note": "Real two-thread FIFO, 4096 active flow slots, four changing emissions/session, forced Logger startup pause, partial final cycle and poison-on-recycle. Empirical safety checks, not a proof for all schedules."
+  },
+  "functional_asan": {
+    "status": "PASS",
+    "cases": 97,
+    "offered": 4769587,
+    "full_field_payload_errors": 0,
+    "elapsed_s": 57.335494752998784,
+    "binary": "/workspace/work/stateful/build-asan/bench",
+    "note": "Real two-thread FIFO, 4096 active flow slots, four changing emissions/session, forced Logger startup pause, partial final cycle and poison-on-recycle. Empirical safety checks, not a proof for all schedules."
+  }
+}

@@ -1,0 +1,1 @@
+{"test":"H6_live_pointer_is_not_snapshot","expected_at_emit":1926,"H5_snapshot":1926,"H6_live_after_update":2935,"concurrent_unsafe_code_executed":false}

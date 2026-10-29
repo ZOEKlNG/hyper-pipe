@@ -1,0 +1,5 @@
+functional cases 20
+functional cases 40
+functional cases 60
+functional cases 80
+{"status": "PASS", "cases": 97, "offered": 4769587, "full_field_payload_errors": 0, "elapsed_s": 6.497768399000051, "binary": "/workspace/work/stateful/build/bench", "note": "Real two-thread FIFO, 4096 active flow slots, four changing emissions/session, forced Logger startup pause, partial final cycle and poison-on-recycle. Empirical safety checks, not a proof for all schedules."}

@@ -1,0 +1,59 @@
+[
+  {
+    "label": "L3_reuse_lossless",
+    "command": [
+      "/workspace/work/stateful_reuse/build-asan/bench",
+      "stress_lossless",
+      "1",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1"
+    ],
+    "wall_s": 66.88717033699868,
+    "return_code": 0,
+    "stdout": "pipeline,0,10000000,10000000,0,10000000,0,66.666585392,150000.182868,66662896988,66656137945,934192941,0,4560135680,5928436320,2502656,2498560,0,4096,4096,0,0,10749216,6341382,3932160,131072,516424",
+    "stderr": "",
+    "sanitized_binary_sha256": "f0c3237f61bff3a1fe01b834efe58c7f2792f0004b612fe23cecd39e60c5bfa5"
+  },
+  {
+    "label": "H6_reuse_lossless",
+    "command": [
+      "/workspace/work/stateful_reuse/build-asan/bench",
+      "stress_lossless",
+      "1",
+      "5",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1"
+    ],
+    "wall_s": 66.25243018800029,
+    "return_code": 0,
+    "stdout": "pipeline,0,10000000,10000000,0,10000000,0,66.026164256,151455.11045,66022535489,66015711516,937155200,0,4560135680,5928436320,2502656,2498560,0,4096,4096,0,0,19401024,6341382,1310720,131072,525724",
+    "stderr": "",
+    "sanitized_binary_sha256": "f0c3237f61bff3a1fe01b834efe58c7f2792f0004b612fe23cecd39e60c5bfa5"
+  },
+  {
+    "label": "L3_reuse_drop",
+    "command": [
+      "/workspace/work/stateful_reuse/build-asan/bench",
+      "stress",
+      "1",
+      "4",
+      "3",
+      "128",
+      "3",
+      "0",
+      "1"
+    ],
+    "wall_s": 13.129581190998579,
+    "return_code": 0,
+    "stdout": "pipeline,0,10000000,1796374,8203626,1796374,0,12.909272477,139153.77518,12908110647,12897634525,601989,0,968359515,1213799671,2502656,1361155,1137405,3790,365,0,0,10749216,6341382,3932160,131072,525020",
+    "stderr": "",
+    "sanitized_binary_sha256": "f0c3237f61bff3a1fe01b834efe58c7f2792f0004b612fe23cecd39e60c5bfa5"
+  }
+]

@@ -1,0 +1,4 @@
+L3_reuse_lossless return 0 seconds 66.89
+H6_reuse_lossless return 0 seconds 66.25
+L3_reuse_drop return 0 seconds 13.13
+{"status": "PASS", "runs": 3, "offered": 30000000, "accepted_and_fully_verified": 21796374, "dropped": 8203626, "full_payload_errors": 0, "asan_options": "detect_leaks=1:halt_on_error=1", "ubsan_options": "halt_on_error=1", "sanitized_binary_sha256": "f0c3237f61bff3a1fe01b834efe58c7f2792f0004b612fe23cecd39e60c5bfa5", "note": "Poisoned recycle, complete decoded field/content checks, one real Worker and Logger. Finite stress is empirical evidence, not universal proof; ASan/UBSan are not race detectors."}

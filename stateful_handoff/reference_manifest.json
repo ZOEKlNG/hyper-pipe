@@ -1,0 +1,29 @@
+{
+  "user_attachment_sha256": "291b87fd11745584d3c0273aebcb501504350cf66f083706f871be0bcac1c268",
+  "bytes": 41381,
+  "scheme_ids": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "P1",
+    "P2",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "L1",
+    "L2",
+    "L3"
+  ],
+  "coverage": "COVERAGE.zh-CN.md",
+  "note": "User discussion contains hypotheses and prior figures; new figures come from executed code and retained CSV, with no copied model estimates."
+}

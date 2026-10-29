@@ -1,0 +1,21 @@
+{
+  "kind": "post-run source/build inventory, not an original before-run capture",
+  "sanitizer_binary_sha256": "f616e5db6a142cf85a0960833adbad72cc91eeb2a37a559950fb516ca5e7e27a",
+  "sources": {
+    "store_audit.cpp": "99d1ac88b2d8bc11963e581ca3cb6c00abd1ce943e8655952b8c7480fdb224a6",
+    "events.proto": "166dc03a1bc8350c231ac0089e016ae1486d0edf2524b7599009cae2da9b13e6",
+    "slots.hpp": "9d9234250589e86afcefbffdcf13a1033ec80f48a78a4cdf86cb0a4a5bb3a684",
+    "storage.hpp": "a215f99a60c2a33c1d18b8a42e9b7b8ce111bdd46c5d65b878d90d1212d68021",
+    "types.hpp": "ac4df0248100d6f85b060fec8b8108493946e5ea13c24f51e841d13ba323f4fa",
+    "bench.cpp": "5315304973f89c2022033f60532efe35c87fffccb9d587805607114354cd870a",
+    "allocator_scaling.cpp": "7867d78370f0d8548b783bb3663bbf9681b58dae2c9d61ca9b0a576add27325a",
+    "events.pb.h": "f38f8cf8d630a77705a659027baaf68d5c0cc8cb62ae57acede173df9c1247fe",
+    "semantics_demo.cpp": "ae534689d2c584f4b5694138350420fecdbd82c5208d70c1961bd365477073ad",
+    "events.pb.cc": "4fb3981775cbd79925b81b0b0b36cc2676b011ea51aef1ccde5033d10b34e8dd",
+    "proto_bench.cpp": "92212fe1e5a375e3d8b6be9ce1f7442a8ca092fbcd14a7c3513161a2d2f791a3",
+    "engine.hpp": "491b0467516076c0f112173ba0bda89a04b5dd29c00d60c44a35d3e2d844ba7d",
+    "encoding.hpp": "b116dcfd144383743e03da08114ad20e8e898135fc72dcdf9dfb888620afdbd5"
+  },
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "glibc": "glibc 2.41"
+}
