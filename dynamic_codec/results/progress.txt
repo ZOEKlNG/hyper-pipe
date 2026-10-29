@@ -1,0 +1,7 @@
+fixtures=168 path=results/fixtures.jsonl
+validation passed jobs=91 codecs=15 corpus=4096
+outer repeat 0 complete rows=296
+outer repeat 1 complete rows=592
+outer repeat 2 complete rows=888
+outer repeat 3 complete rows=1184
+outer repeat 4 complete rows=1480

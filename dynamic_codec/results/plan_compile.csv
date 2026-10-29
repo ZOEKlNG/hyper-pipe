@@ -1,0 +1,11 @@
+operation,repeat,iterations,elapsed_ns,ns_per_op,checksum
+json_parse_validate_compile_3_plans,0,24576,131415651,5347.31652832,17909496
+hot_mixed_plan_reference_selection,0,115851264,116409054,1.00481470793,84077810352
+json_parse_validate_compile_3_plans,1,24576,131289792,5342.1953125,17909496
+hot_mixed_plan_reference_selection,1,116424704,116403295,0.99981611291,84493978272
+json_parse_validate_compile_3_plans,2,24576,131098805,5334.42403158,17909496
+hot_mixed_plan_reference_selection,2,115564544,116754113,1.01029354644,83869726392
+json_parse_validate_compile_3_plans,3,24576,130664311,5316.74442546,17909496
+hot_mixed_plan_reference_selection,3,115253248,115766216,1.00445078997,83643806664
+json_parse_validate_compile_3_plans,4,24576,130986024,5329.83496094,17909496
+hot_mixed_plan_reference_selection,4,115564544,116759211,1.01033766031,83869726392

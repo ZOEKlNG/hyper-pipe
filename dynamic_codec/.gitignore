@@ -1,0 +1,10 @@
+/bench
+/optimized_emit
+/aborted/
+/smoke/
+/smoke_final/
+/alternate_validation/
+/build.log
+/*.stderr
+/*.stdout
+__pycache__/

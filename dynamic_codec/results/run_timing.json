@@ -1,0 +1,12 @@
+{
+  "snapshot_consistent": true,
+  "started_utc": "2026-10-29T02:37:32.705462+00:00",
+  "ended_utc": "2026-10-29T02:40:37.441349+00:00",
+  "wall_seconds": 184.73589361699987,
+  "return_code": 0,
+  "user_cpu_s": 184.629879,
+  "system_cpu_s": 0.079867,
+  "max_rss_kib": 155744,
+  "voluntary_context_switches": 2,
+  "involuntary_context_switches": 522
+}

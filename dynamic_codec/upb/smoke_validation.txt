@@ -1,0 +1,1 @@
+PASS official upb v29.3 runtime MiniTable cases=784 full/sparse/default/maxint/binary payload; malformed rejected; alias/copy ownership proved; input wire unchanged; configured size bound enforced

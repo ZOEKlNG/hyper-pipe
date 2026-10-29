@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-29T01:45:12.642258+00:00",
+  "kernel": {
+    "system": "Linux",
+    "node": "b80c2b2faf77",
+    "release": "6.18.55",
+    "version": "#1 SMP Wed Oct 14 19:45:18 UTC 2026",
+    "machine": "x86_64",
+    "processor": ""
+  },
+  "affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cpu_max": "400000 100000",
+  "memory_max": "17179869184",
+  "cpu_stat_start": "usage_usec 8693673\nuser_usec 5228266\nsystem_usec 3465406\nnice_usec 0\nnr_periods 1082\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "g++": "g++ (Debian 14.2.0-19) 14.2.0",
+  "upb": "official protobuf v29.3 C runtime, commit b407e8416e3893036aee5af9a12bd9b6a0e2b2e6",
+  "protobuf_cpp": "3.21.12 rerun baseline",
+  "previous_baseline_note": "2026-10-21 numbers are historical, not mixed into current timing table",
+  "cpu_model": "AMD EPYC 9V74",
+  "run_timing": "results/run_timing.json"
+}

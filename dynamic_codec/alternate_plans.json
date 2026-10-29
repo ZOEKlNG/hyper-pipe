@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "profiles": [
+    {
+      "name": "full",
+      "fields": [
+        "id",
+        "seq",
+        "timestamp",
+        "value0",
+        "value1",
+        "producer",
+        "stream",
+        "type",
+        "flags",
+        "payload"
+      ]
+    },
+    {
+      "name": "subset",
+      "fields": [
+        "value1",
+        "producer",
+        "payload"
+      ]
+    },
+    {
+      "name": "no_payload",
+      "fields": [
+        "id",
+        "seq",
+        "timestamp",
+        "value0",
+        "value1",
+        "producer",
+        "stream",
+        "type",
+        "flags"
+      ]
+    }
+  ]
+}

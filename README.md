@@ -2,6 +2,12 @@
 
 先打开 `研究报告.html`（离线、自带4幅图、可筛选汇总表），或阅读 `研究报告.md`。实测主机、消息定义和所有边界见报告第1节。没有物理双机DPDK/AF_XDP/RDMA测量。
 
+## 新增实测（2026-10-29）
+
+**[动态字段编码实测：Hybrid TV/TLV、ProtoEmitOp、Google upb](dynamic_codec/RESULTS.zh-CN.md)** · [新增源码与复现命令](dynamic_codec/README.md) · [1480行主原始数据](dynamic_codec/results/benchmark.csv) · [90行优化补充](dynamic_codec/results/optimized_encode.csv)
+
+官方Protobuf对照本次重新运行，包含运行时选字段、三计划切换、别名/复制解析与Java互操作验证。旧报告保留在下方，不混用两轮数字。
+
 ## 直接查看
 
 - **[完整研究报告](研究报告.md)**：GitHub 可直接阅读，含实测表、架构建议、模拟与局限。

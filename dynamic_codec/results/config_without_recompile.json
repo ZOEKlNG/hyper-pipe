@@ -1,0 +1,13 @@
+{
+  "binary_sha256_before": "c2facbdd9ba5d79d30e488059ad5560d58e74a3150b85aa58006c528a8a09121",
+  "binary_sha256_after": "c2facbdd9ba5d79d30e488059ad5560d58e74a3150b85aa58006c528a8a09121",
+  "unchanged": true,
+  "alternate_subset": [
+    "value1",
+    "producer",
+    "payload"
+  ],
+  "official_cpp_semantic_validation": "PASS",
+  "cases": "91 jobs x 4096 records",
+  "concurrent_update_safety": "not tested"
+}

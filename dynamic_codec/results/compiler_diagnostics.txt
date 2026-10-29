@@ -1,0 +1,36 @@
+In file included from bench.cpp:3:
+pb_adapters.hpp: In member function ‘size_t dynbench::GeneratedPB<PB, StaticFull>::encode(const dynbench::Event&, const dynbench::Plan&, std::string&)’:
+pb_adapters.hpp:26:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   26 |   if(!msg_.SerializeToString(&out))throw std::runtime_error("protobuf serialize failed");escape(out.data());return out.size();
+      |   ^~
+pb_adapters.hpp:26:90: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   26 |   if(!msg_.SerializeToString(&out))throw std::runtime_error("protobuf serialize failed");escape(out.data());return out.size();
+      |                                                                                          ^~~~~~
+pb_adapters.hpp: In member function ‘virtual size_t dynbench::ReflectionPB::encode(const dynbench::Event&, const dynbench::Plan&, std::string&)’:
+pb_adapters.hpp:57:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   57 |   if(!msg_->SerializeToString(&out))throw std::runtime_error("reflection serialize failed");escape(out.data());return out.size();
+      |   ^~
+pb_adapters.hpp:57:93: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   57 |   if(!msg_->SerializeToString(&out))throw std::runtime_error("reflection serialize failed");escape(out.data());return out.size();
+      |                                                                                             ^~~~~~
+pb_adapters.hpp: In member function ‘virtual uint64_t dynbench::ReflectionPB::decode(std::string_view, bool)’:
+pb_adapters.hpp:62:3: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   62 |   for(int fid:{3,4,5})s+=reflection_->GetUInt64(*msg_,fields_[fid]);for(int fid:{6,7,9})s+=reflection_->GetUInt32(*msg_,fields_[fid]);
+      |   ^~~
+pb_adapters.hpp:62:69: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   62 |   for(int fid:{3,4,5})s+=reflection_->GetUInt64(*msg_,fields_[fid]);for(int fid:{6,7,9})s+=reflection_->GetUInt32(*msg_,fields_[fid]);
+      |                                                                     ^~~
+bench.cpp: In function ‘std::vector<dynbench::Event> make_events(size_t, const std::string&)’:
+bench.cpp:35:3: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   35 |   for(size_t j=0;j<bytes;j++)e.payload[j]=pattern=="random"?char(rng()):text[(i+j)%(sizeof(text)-1)];events.push_back(std::move(e));
+      |   ^~~
+bench.cpp:35:102: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   35 |   for(size_t j=0;j<bytes;j++)e.payload[j]=pattern=="random"?char(rng()):text[(i+j)%(sizeof(text)-1)];events.push_back(std::move(e));
+      |                                                                                                      ^~~~~~
+bench.cpp: In member function ‘const dynbench::Plan& Plans::get(std::string_view, size_t) const’:
+bench.cpp:60:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   60 |  if(profile=="full")return values[full];if(profile=="subset")return values[subset];if(profile=="no_payload")return values[no_payload];throw std::invalid_argument("bad profile");
+      |  ^~
+bench.cpp:60:41: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   60 |  if(profile=="full")return values[full];if(profile=="subset")return values[subset];if(profile=="no_payload")return values[no_payload];throw std::invalid_argument("bad profile");
+      |                                         ^~

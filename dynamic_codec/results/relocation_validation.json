@@ -1,0 +1,9 @@
+{
+  "relocated_repo_build": "PASS",
+  "relocated_cpp_functional_jobs": 91,
+  "corpus_per_job": 4096,
+  "official_java_interop": "PASS",
+  "main_cpp_source_sha256": "fdff52c35826f3e4327d70848af3774994c79f32e9753383a58e03b500096e72",
+  "measured_source_sha256": "fdff52c35826f3e4327d70848af3774994c79f32e9753383a58e03b500096e72",
+  "notes": "Relocation rebuilt the same source without rerunning timing. Measured upb metadata preserved; relocated build metadata stored separately."
+}

@@ -1,0 +1,69 @@
+{
+  "fixtures": 168,
+  "protobuf_fixtures": 156,
+  "hybrid_fixtures": 12,
+  "derived_variant_checks": 324,
+  "standalone_probes": 17,
+  "status": "PASS",
+  "coverage": {
+    "all_zero_defaults": true,
+    "u64_highbit": true,
+    "u64_max": true,
+    "u32_highbit": true,
+    "u32_max": true,
+    "payload_contains_ff": true,
+    "payload_contains_zero": true,
+    "payload_contains_highbit": true,
+    "empty_payload": true,
+    "nonempty_payload": true
+  },
+  "source_fixture": "/workspace/work/dynamic-repo-validation/fixtures.jsonl",
+  "saved_fixture": "/workspace/hyper-pipe/dynamic_codec/interop/results/fixtures.input.jsonl",
+  "source_fixture_sha256": "9a94e1f86b91f41835069528a8bfbcb6154eb177786d1234d0632bf89c9cc46f",
+  "generated_java_sha256": "df06f5333c22a43b0594aac7a46ff37e260a33ac4a3261f975be0f4f16e83c91",
+  "protobuf_jar_sha256": "3f3edbda9286246080f3eaf561dd6b0d5a2b1f1008f6909115c8609ceae9df87",
+  "test_java_sha256": "57dc303d6f81dafb72af876ae89d31054af628ef5a2b43a0fd6b40c46653370e",
+  "compile_command": [
+    "java",
+    "-jar",
+    "/workspace/hyper-pipe/java_flink/ecj.jar",
+    "-17",
+    "-nowarn",
+    "-cp",
+    "/workspace/work/java_flink/m2/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar",
+    "-d",
+    "/workspace/hyper-pipe/dynamic_codec/interop/classes",
+    "/workspace/hyper-pipe/java_flink/generated/bench/EventOuterClass.java",
+    "/workspace/hyper-pipe/dynamic_codec/interop/testsrc/InteropCheck.java"
+  ],
+  "run_command": [
+    "java",
+    "-cp",
+    "/workspace/hyper-pipe/dynamic_codec/interop/classes:/workspace/work/java_flink/m2/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar",
+    "interop.InteropCheck",
+    "/workspace/hyper-pipe/dynamic_codec/interop/results/normalized_fixtures.tsv"
+  ],
+  "codec_counts": {
+    "pb_generated_varint_static_full": 6,
+    "pb_generated_fixed_static_full": 6,
+    "pb_generated_varint_plan_selective": 12,
+    "pb_generated_fixed_plan_selective": 12,
+    "pb_dynamicmessage_varint_reflection_reuse": 12,
+    "pb_dynamicmessage_fixed_reflection_reuse": 12,
+    "custom_hybrid_tv_tlv": 12,
+    "custom_proto_emit_op_varint": 12,
+    "custom_proto_emit_op_fixed": 12,
+    "upb_v29_3_dynamic_minitable_varint_viewinput_decodecopy_prealloc_arena": 12,
+    "upb_v29_3_dynamic_minitable_varint_viewinput_decodealias_prealloc_arena": 12,
+    "upb_v29_3_dynamic_minitable_fixed_viewinput_decodecopy_prealloc_arena": 12,
+    "upb_v29_3_dynamic_minitable_fixed_viewinput_decodealias_prealloc_arena": 12,
+    "upb_v29_3_dynamic_minitable_varint_copyinput_decodecopy_prealloc_arena": 12,
+    "upb_v29_3_dynamic_minitable_fixed_copyinput_decodecopy_prealloc_arena": 12
+  },
+  "plan_counts": {
+    "full": 90,
+    "subset": 39,
+    "no_payload": 39
+  },
+  "measurement": "functional_only_no_performance"
+}

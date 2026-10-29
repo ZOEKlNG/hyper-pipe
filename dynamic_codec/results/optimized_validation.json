@@ -1,0 +1,6 @@
+{
+  "output_boundary": "owning std::string, reused capacity, exact-size computation; includes source reads and payload copy",
+  "seed": 20261029,
+  "semantic_and_byte_identical_cases": 73728,
+  "trusted_plan_boundary": "registry and field operations validated before timing; no generic-schema claim"
+}

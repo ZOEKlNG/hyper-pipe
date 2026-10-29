@@ -1,0 +1,78 @@
+{
+  "checksum_semantics": "few=id+seq+type; all=all present scalar sum+payload length+first+last. Functional official protobuf verification additionally compares every field and all payload bytes.",
+  "codec_init_once_ns": [
+    {
+      "elapsed_ns": 200,
+      "encoder": "pb_generated_varint_static_full"
+    },
+    {
+      "elapsed_ns": 20,
+      "encoder": "pb_generated_fixed_static_full"
+    },
+    {
+      "elapsed_ns": 30,
+      "encoder": "pb_generated_varint_plan_selective"
+    },
+    {
+      "elapsed_ns": 50,
+      "encoder": "pb_generated_fixed_plan_selective"
+    },
+    {
+      "elapsed_ns": 38738,
+      "encoder": "pb_dynamicmessage_varint_reflection_reuse"
+    },
+    {
+      "elapsed_ns": 11227,
+      "encoder": "pb_dynamicmessage_fixed_reflection_reuse"
+    },
+    {
+      "elapsed_ns": 30,
+      "encoder": "custom_hybrid_tv_tlv"
+    },
+    {
+      "elapsed_ns": 40,
+      "encoder": "custom_proto_emit_op_varint"
+    },
+    {
+      "elapsed_ns": 40,
+      "encoder": "custom_proto_emit_op_fixed"
+    },
+    {
+      "elapsed_ns": 15052,
+      "encoder": "upb_v29_3_dynamic_minitable_varint_viewinput_decodecopy_prealloc_arena"
+    },
+    {
+      "elapsed_ns": 2164,
+      "encoder": "upb_v29_3_dynamic_minitable_varint_viewinput_decodealias_prealloc_arena"
+    },
+    {
+      "elapsed_ns": 1662,
+      "encoder": "upb_v29_3_dynamic_minitable_fixed_viewinput_decodecopy_prealloc_arena"
+    },
+    {
+      "elapsed_ns": 2224,
+      "encoder": "upb_v29_3_dynamic_minitable_fixed_viewinput_decodealias_prealloc_arena"
+    },
+    {
+      "elapsed_ns": 2183,
+      "encoder": "upb_v29_3_dynamic_minitable_varint_copyinput_decodecopy_prealloc_arena"
+    },
+    {
+      "elapsed_ns": 1632,
+      "encoder": "upb_v29_3_dynamic_minitable_fixed_copyinput_decodecopy_prealloc_arena"
+    }
+  ],
+  "codecs": 15,
+  "cold_parse_compile_once_ns": 29374,
+  "compiler": "14.2.0",
+  "corpus_n": 4096,
+  "cpu": 0,
+  "jobs": 91,
+  "minimum_run_ns": 100000000,
+  "plan_boundary": "JSON chooses known source registry fields; cannot add arbitrary business fields or offsets. mixed references one of three immutable plans per record, no runtime code compilation.",
+  "plans": 3,
+  "protobuf_version": 3021012,
+  "repeats": 5,
+  "seed_formula": "0x61aba1+payload_bytes (identical to original codec/bench.cpp)",
+  "timing_boundary": "encode includes Clear/set(selected fields)/serialize/output std::string write; output capacity reused. decode includes parsing+field consumption. output owning/alias and Arena policy encoded in codec name/docs."
+}

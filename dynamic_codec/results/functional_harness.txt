@@ -1,0 +1,2 @@
+fixtures=168 path=smoke_final/fixtures.jsonl
+validation passed jobs=91 codecs=15 corpus=4096

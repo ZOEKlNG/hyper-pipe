@@ -1,0 +1,17 @@
+{
+  "kind": "functional_validation_not_benchmark",
+  "status": "PASS",
+  "checks": 138575,
+  "changing_event_records": 512,
+  "official_protobuf_version": "3.21.12",
+  "scalar_comparison": "all nine selected scalar values checked individually",
+  "payload_comparison": "complete selected payload bytes compared",
+  "cross_validation": "custom PB varint/fixed output parsed by official generated Event/FixedEvent; official serializers parsed by checked custom wire view",
+  "sanitizers": {"address": "PASS", "undefined_behavior": "PASS", "leak_detection": "enabled"},
+  "performance_run": false,
+  "notes": [
+    "handwritten benchmark prototypes, not general-purpose codec libraries",
+    "strict decoder subset differs from full Protobuf parser on unsupported groups, wrong known-field wire types and u32 overflow",
+    "view decoder retains a borrowed payload string_view and copies no payload bytes"
+  ]
+}
