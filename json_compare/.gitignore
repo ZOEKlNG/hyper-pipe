@@ -1,0 +1,4 @@
+/.build/
+/bench
+/research_tmp/
+/__pycache__/

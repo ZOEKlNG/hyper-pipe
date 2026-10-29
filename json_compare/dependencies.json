@@ -1,0 +1,26 @@
+[
+  {
+    "name": "yyjson",
+    "version": "0.13.0",
+    "archive_url": "https://codeload.github.com/ibireme/yyjson/tar.gz/refs/tags/0.13.0",
+    "archive_sha256": "34e0f62a2bc11ab20d601e8ca1cc2b2079503aa45119a19133d89d19b94a0fae"
+  },
+  {
+    "name": "Glaze",
+    "version": "v9.1.0",
+    "archive_url": "https://codeload.github.com/stephenberry/glaze/tar.gz/refs/tags/v9.1.0",
+    "archive_sha256": "55f8a675397c505f9bee6c160e1c26b0085868f185d04d7a7727531fdbff4bd4"
+  },
+  {
+    "name": "nlohmann/json",
+    "version": "v3.12.0",
+    "source_url": "https://github.com/nlohmann/json/blob/v3.12.0/single_include/nlohmann/json.hpp",
+    "repo_path": "../deps/root/usr/include/nlohmann/json.hpp",
+    "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"
+  },
+  {
+    "name": "Protobuf",
+    "version": "3.21.12",
+    "source": "Existing official generated C++ files from ../core_handoff/log.proto and pinned development packages in ../deps/"
+  }
+]

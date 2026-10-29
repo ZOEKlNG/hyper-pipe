@@ -1,0 +1,19 @@
+{
+  "command": [
+    "./bench",
+    "--output",
+    "results/benchmark.csv",
+    "--repeats",
+    "5"
+  ],
+  "started_utc": "2026-10-29T08:06:03.492752+00:00",
+  "ended_utc": "2026-10-29T08:09:18.015963+00:00",
+  "wall_seconds": 194.52322714500042,
+  "return_code": 0,
+  "snapshot_consistent": true,
+  "user_cpu_s": 194.364965,
+  "system_cpu_s": 0.12450699999999999,
+  "max_rss_kib": 99384,
+  "voluntary_context_switches": 1,
+  "involuntary_context_switches": 611
+}

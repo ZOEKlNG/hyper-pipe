@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "raw_rows": 1600,
+  "groups": 320,
+  "repeats": 5,
+  "minimum_wall_ns": 80200826,
+  "source_dependency_binary_unchanged_during_run": true,
+  "current_source_dependency_hashes_match": 277,
+  "external_nlohmann_header_match": {
+    "header": "../deps/root/usr/include/nlohmann/json.hpp",
+    "before_run_dependency_manifest_sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+    "post_run_current_sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+    "match": true,
+    "note": "This external single header was recorded in dependencies.json before the run and checked separately afterward; it is outside the vendor snapshot map."
+  },
+  "cpu_quota_delta": {
+    "nr_throttled": 0,
+    "throttled_usec": 0
+  },
+  "functional": {
+    "status": "PASS",
+    "own_roundtrips": 8192,
+    "cross_library_json_roundtrips": 18432,
+    "ownership_checks": 128,
+    "rejected_inputs": 120,
+    "base64_cases": 16,
+    "full_field_and_payload_comparison": true,
+    "note": "Negative JSON schema/type checks include read_back; DOM parse_only is syntax/UTF-8 parsing, not schema validation. Producer records contain every declared field and no duplicate keys."
+  },
+  "notes": "Measurements are isolated batch CPU means; no p99, network or DPDK. Relocated binary hashes need not match original build."
+}

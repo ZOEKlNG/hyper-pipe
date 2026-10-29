@@ -1,0 +1,7 @@
+{
+  "header": "../deps/root/usr/include/nlohmann/json.hpp",
+  "before_run_dependency_manifest_sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+  "post_run_current_sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+  "match": true,
+  "note": "This external single header was recorded in dependencies.json before the run and checked separately afterward; it is outside the vendor snapshot map."
+}

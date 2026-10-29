@@ -1,0 +1,1 @@
+{"status":"PASS","own_roundtrips":8192,"cross_library_json_roundtrips":18432,"ownership_checks":128,"rejected_inputs":120,"base64_cases":16,"full_field_and_payload_comparison":true,"note":"Negative JSON schema/type checks include read_back; DOM parse_only is syntax/UTF-8 parsing, not schema validation. Producer records contain every declared field and no duplicate keys."}

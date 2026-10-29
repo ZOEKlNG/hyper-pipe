@@ -4,6 +4,10 @@
 
 ## 新增实测（2026-10-29）
 
+**[三种 JSON 库与官方固定宽度 Protobuf 对比](json_compare/RESULTS.zh-CN.md)** · [源码与复现](json_compare/README.md) · [1600 行原始数据](json_compare/results/benchmark.csv)
+
+nlohmann/json 3.12.0 通用基线、yyjson 0.13.0 和 Glaze 9.1.0 高性能候选，测序列化、解析、完整字段提取、UTF-8 转义及二进制 Base64 完整路径，另报编码大小。三种 JSON 库交叉往返及整数/输入生命周期验证通过。
+
 **[Worker 填原生槽位，还是直接编码官方固定宽度 Protobuf？](core_handoff/RESULTS_SERVICE.zh-CN.md)** · [源码与复现](core_handoff/README.md) · [560 行服务成本数据](core_handoff/results/micro.csv) · [400 行双逻辑 CPU 接力数据](core_handoff/results/handoff_results.csv)
 
 新增 5 种线程交接方式、平铺/嵌套结构、变长尾部与合成访存压力；另有 50 行 CPU 亲和性补测、36 行有界丢弃实验。区分 Worker 隔离服务成本与包含自旋的流水线吞吐，没有真实 DPDK 收发。
