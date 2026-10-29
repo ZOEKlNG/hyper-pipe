@@ -6,8 +6,8 @@
   },
   {
     "file": "README.md",
-    "bytes": 5613,
-    "sha256": "e87e599bce8e3816d552c802007dae870959abe70ae73fd36cc7c26ae405e6c5"
+    "bytes": 6173,
+    "sha256": "cdf71e4115d46b2f74b55235a14cb0a1f508ad28bb7e95934b6f2636544cb37b"
   },
   {
     "file": "assemble_report.py",
@@ -298,6 +298,341 @@
     "file": "component/wire.hpp",
     "bytes": 1800,
     "sha256": "45c75663c6c5f8a2cad7442302a582d8c87d8a6631b49db323ec4f1d6d7922ca"
+  },
+  {
+    "file": "core_handoff/.gitignore",
+    "bytes": 64,
+    "sha256": "09ed729c928009f8dc0314ef202c7ce5cccbc4584cf7533df07577047d27c1ed"
+  },
+  {
+    "file": "core_handoff/CPU2_RESULTS.md",
+    "bytes": 1741,
+    "sha256": "ee14eb71cbc32b1610518f0b95bc4967ea3e8656fa88d93f427c533ceb1145cd"
+  },
+  {
+    "file": "core_handoff/README.md",
+    "bytes": 8937,
+    "sha256": "d417691a6b2aeb0f70c04734a588c6ec5c161c86dc48cb334357c30872f59d0c"
+  },
+  {
+    "file": "core_handoff/RESULTS.md",
+    "bytes": 2183,
+    "sha256": "b7f3a0bfebc276ce08aed998d763ecf0756c1b7acc4e0bd74267c6a830da32f9"
+  },
+  {
+    "file": "core_handoff/RESULTS_SERVICE.zh-CN.md",
+    "bytes": 10792,
+    "sha256": "1f54090094b22293e64952f92f06cb5d9d4b6130ba09feaf4a3664ce9f42dc24"
+  },
+  {
+    "file": "core_handoff/build.log",
+    "bytes": 1914,
+    "sha256": "d72346b3e05e16a62df5063bd0539be44c57785d4d102d98263113f6051d0da5"
+  },
+  {
+    "file": "core_handoff/build.sh",
+    "bytes": 451,
+    "sha256": "ac1cd009332645f667e8bf00ce137ad243f3a9a3df750cb2d75e31a75b8327ca"
+  },
+  {
+    "file": "core_handoff/build_all.sh",
+    "bytes": 956,
+    "sha256": "8a30b8592907cbc955b009a51e10a0afb8804c5c209e95d52d65023b3d784354"
+  },
+  {
+    "file": "core_handoff/build_cpu2.log",
+    "bytes": 1949,
+    "sha256": "6385fef743790dedfb7380c1caf2e1b1c5b68fed6aa55c1f69c3f231312c909a"
+  },
+  {
+    "file": "core_handoff/build_cpu2.sh",
+    "bytes": 417,
+    "sha256": "32fe55eb308b86fcd4c49c385e916099c05a441a72e0b33d1a11ca0f6472e455"
+  },
+  {
+    "file": "core_handoff/common.hpp",
+    "bytes": 5467,
+    "sha256": "ca0d4cb0ef72173e912bfdc9415e7396e021b02b64035e1c45fa9178bef4ef93"
+  },
+  {
+    "file": "core_handoff/cpu2_generation.json",
+    "bytes": 654,
+    "sha256": "7c6f92f5a51a25466544e5c27618c67b86b4a57aa4010e634184687756c16f44"
+  },
+  {
+    "file": "core_handoff/drop_demo.cpp",
+    "bytes": 4142,
+    "sha256": "a47c6d37e3dbe09aded58aaafe3f548f0dfbac1af75938b4199a334509df4dc8"
+  },
+  {
+    "file": "core_handoff/drop_demo.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "core_handoff/drop_demo.stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "core_handoff/environment.json",
+    "bytes": 4085,
+    "sha256": "58d0da8ecb6713963913b8eefb5493d6fe19e7edd47df0bf94d68ecedc38b98e"
+  },
+  {
+    "file": "core_handoff/handoff.cpp",
+    "bytes": 10830,
+    "sha256": "8733905f5962cb0e7c5381ce3d8915b4872bf1e1f5d735edbc7069c00d4c44e2"
+  },
+  {
+    "file": "core_handoff/handoff_cpu2.cpp",
+    "bytes": 10774,
+    "sha256": "05782ed30b15986fdc8159d487e2c5770536a3b33f80fb933670a649291c9895"
+  },
+  {
+    "file": "core_handoff/log.pb.cc",
+    "bytes": 56628,
+    "sha256": "7b432b8b010d11d0cd110e666544b81112b3e9029a89a78c940533da5fd3bdb7"
+  },
+  {
+    "file": "core_handoff/log.pb.h",
+    "bytes": 54318,
+    "sha256": "5a919890c5fe99fac63e8eb9a1c9956b4a6a1c42ec5ae75099b9ee094baf2269"
+  },
+  {
+    "file": "core_handoff/log.proto",
+    "bytes": 652,
+    "sha256": "0eb7a80f34ae807ed5c499aa04e060b5a19b824b66b46b1ac8ce89af1f9f8772"
+  },
+  {
+    "file": "core_handoff/micro.cpp",
+    "bytes": 6339,
+    "sha256": "02d3e951742a322b3a7239971e1b9a39bd8d548b15284a503a6e83982882b01c"
+  },
+  {
+    "file": "core_handoff/micro.stderr",
+    "bytes": 120,
+    "sha256": "247280fc61cb136a07a9f737abba01bbc6d59d07961c6c2d4385bf17ff4be546"
+  },
+  {
+    "file": "core_handoff/micro.stdout",
+    "bytes": 83,
+    "sha256": "1c295908242b9d237225ac6722ce0a1a3cce0e2c0b7f0f4a04bfda123d6c7608"
+  },
+  {
+    "file": "core_handoff/prepare_cpu2.py",
+    "bytes": 1975,
+    "sha256": "d789cd5f98033f3fcd0cf20e3f59871492504d46e1539a970c511267e64f70c0"
+  },
+  {
+    "file": "core_handoff/research_audit.md",
+    "bytes": 14117,
+    "sha256": "cc90b639ad785121725dbdb1db7e4bdf1fa82808996f946d41c4266d37f3db76"
+  },
+  {
+    "file": "core_handoff/results/combined_validation.json",
+    "bytes": 1575,
+    "sha256": "f2d08c010051f96d9b7f2b5ce97a6cd7b1718661de7f21fa82b86dfcebb5a289"
+  },
+  {
+    "file": "core_handoff/results/drop_demo.csv",
+    "bytes": 3367,
+    "sha256": "1905fcec7eb0857295a14afe07226271f841b380fd241993f1fba537c44114d6"
+  },
+  {
+    "file": "core_handoff/results/drop_demo_cpu_after.txt",
+    "bytes": 148,
+    "sha256": "1176dadba914d7161ff0b107c7819d9cd09eb3cc114c125c1fc26463678293a1"
+  },
+  {
+    "file": "core_handoff/results/drop_demo_cpu_before.txt",
+    "bytes": 148,
+    "sha256": "d4a474498a89e29473fb3837fa9b094b1fda3e62db43f42659725008822b5567"
+  },
+  {
+    "file": "core_handoff/results/dual.stderr",
+    "bytes": 134,
+    "sha256": "3f66ea01b8a8113c06263416871511d97425487cab270a0ff830c2073520e9ef"
+  },
+  {
+    "file": "core_handoff/results/dual.stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "core_handoff/results/dual_cpu_after.txt",
+    "bytes": 148,
+    "sha256": "6e1d05d21c77c3ad01236130694044328a353ee825f76b1e2a2ae7e592eacd56"
+  },
+  {
+    "file": "core_handoff/results/dual_cpu_before.txt",
+    "bytes": 148,
+    "sha256": "45e2487e1ee204450a36ab57915d9bc4c2b6bcd011ab3c9031c7695b7a92e283"
+  },
+  {
+    "file": "core_handoff/results/dual_run_timing.json",
+    "bytes": 715,
+    "sha256": "d151aa510d587bee5f2e06836e7188baa020586fdbeea02661897b8e2ffa0326"
+  },
+  {
+    "file": "core_handoff/results/dual_snapshot_after.json",
+    "bytes": 583,
+    "sha256": "0db8130d705806728964be41dc7069261d286bbefc8323ff52206024842f8ec1"
+  },
+  {
+    "file": "core_handoff/results/dual_snapshot_before.json",
+    "bytes": 583,
+    "sha256": "0db8130d705806728964be41dc7069261d286bbefc8323ff52206024842f8ec1"
+  },
+  {
+    "file": "core_handoff/results/handoff_results.csv",
+    "bytes": 76883,
+    "sha256": "e591d76dbb2286cb49438cc1e443c2a18ccd4b973e390295f4baf745cad6b2c0"
+  },
+  {
+    "file": "core_handoff/results/handoff_summary.csv",
+    "bytes": 15395,
+    "sha256": "4792aa2b4d0060d60bb85788fcdca83e5e7aa333274c4c3ba6f0228f7857d739"
+  },
+  {
+    "file": "core_handoff/results/micro.csv",
+    "bytes": 69946,
+    "sha256": "d8332e36d73a839b877bd0318a3fcd4ee9219c0a8bcf21745879c437f014f43c"
+  },
+  {
+    "file": "core_handoff/results/micro_cpu_after.txt",
+    "bytes": 148,
+    "sha256": "d4a474498a89e29473fb3837fa9b094b1fda3e62db43f42659725008822b5567"
+  },
+  {
+    "file": "core_handoff/results/micro_cpu_before.txt",
+    "bytes": 148,
+    "sha256": "fc85e8408c27b6160e4c19330807d480ba9f8303662513e271f4915f3b8b2304"
+  },
+  {
+    "file": "core_handoff/results/micro_summary.csv",
+    "bytes": 11980,
+    "sha256": "e2eb7381c2f142b6ab168ff89872ef902769e0d5409fac8c1eae735bf28eb9f5"
+  },
+  {
+    "file": "core_handoff/results/relocation_validation.json",
+    "bytes": 621,
+    "sha256": "9b76a4cabbea15e9ac3cae9672bda6af36012d14de890ec33a0e3d6b4c9980c5"
+  },
+  {
+    "file": "core_handoff/results/service_snapshot_after.json",
+    "bytes": 666,
+    "sha256": "4e52b3aab148312d0d0a8a596904244bfd6b1a045600ce30b30d548fad918388"
+  },
+  {
+    "file": "core_handoff/results/service_snapshot_before.json",
+    "bytes": 666,
+    "sha256": "4e52b3aab148312d0d0a8a596904244bfd6b1a045600ce30b30d548fad918388"
+  },
+  {
+    "file": "core_handoff/results/service_timing.json",
+    "bytes": 160,
+    "sha256": "0eecbd8e666b1032e45e8cbb7ae7d49f0d9c526c0c586b62a0f3d6f1d370327f"
+  },
+  {
+    "file": "core_handoff/results_cpu2/affinity_comparison.csv",
+    "bytes": 1663,
+    "sha256": "09682252cd0d76bc89e886a3139dea088d1012ab8908c722f82a299966f8681a"
+  },
+  {
+    "file": "core_handoff/results_cpu2/cpu_after.txt",
+    "bytes": 148,
+    "sha256": "f2d6caec1ad5051c6e621e8755eb1d0fe371158482fa835edd56f73fa1f6cd93"
+  },
+  {
+    "file": "core_handoff/results_cpu2/cpu_before.txt",
+    "bytes": 148,
+    "sha256": "f7756ce2e15d27bd7f2e76680612fac563f288a638f36ad70c879e0b06f47af6"
+  },
+  {
+    "file": "core_handoff/results_cpu2/cpu_delta.json",
+    "bytes": 198,
+    "sha256": "368384885c6dad80cc86896897a2399907dfb5381d58ab598e9ad08d344f8380"
+  },
+  {
+    "file": "core_handoff/results_cpu2/handoff_results.csv",
+    "bytes": 9893,
+    "sha256": "e9e2ff4cc496001ea6c9bd81219a9d97fb62272bf9950248fd567be40b7a2fff"
+  },
+  {
+    "file": "core_handoff/results_cpu2/handoff_summary.csv",
+    "bytes": 2185,
+    "sha256": "5fa9f88320c7cd8ae21c6ddef19a1850c1028eab277dc8fcab6eef19aa4f12e8"
+  },
+  {
+    "file": "core_handoff/results_cpu2/run.stderr",
+    "bytes": 130,
+    "sha256": "1296e0bedc70b2649e9f1a545ba518ce8a37cce2c84146fbdb954ffabfe1f253"
+  },
+  {
+    "file": "core_handoff/results_cpu2/run.stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "core_handoff/results_cpu2/run_timing.json",
+    "bytes": 679,
+    "sha256": "2de69aa07e705187de134e3691850fc3ce3c3fcb0b671f01dd9be4fef5e07f5b"
+  },
+  {
+    "file": "core_handoff/results_cpu2/snapshot_after.json",
+    "bytes": 866,
+    "sha256": "a7ad4ff67623d0f894ecefe941898ad679da561af74e0ede01899c5f127fe3fc"
+  },
+  {
+    "file": "core_handoff/results_cpu2/snapshot_before.json",
+    "bytes": 866,
+    "sha256": "a7ad4ff67623d0f894ecefe941898ad679da561af74e0ede01899c5f127fe3fc"
+  },
+  {
+    "file": "core_handoff/results_cpu2/topology.json",
+    "bytes": 2171,
+    "sha256": "b5f7aea4deb0598cb72ea687a327dfb23fa2c8cb6b7ba6f58f707f2cc1ed62d7"
+  },
+  {
+    "file": "core_handoff/results_cpu2/topology.txt",
+    "bytes": 108,
+    "sha256": "aeb9ed045cb3fc1ffb760c6550d3cd7162bbaa618ffddfd098d8fc35240dfe22"
+  },
+  {
+    "file": "core_handoff/review.md",
+    "bytes": 16018,
+    "sha256": "a546a71c9f403c590ed140a1a89d40870bc1d0be91d30948c6f7cfe6c93180ff"
+  },
+  {
+    "file": "core_handoff/run_cpu2.py",
+    "bytes": 2813,
+    "sha256": "9abc392106177824f5b2b0870ecfc1e256f2911717716dcb16f431667ccdd24b"
+  },
+  {
+    "file": "core_handoff/run_dual.py",
+    "bytes": 1957,
+    "sha256": "658d77f3220502027818fdaa745621b0953aae0b16894de96883d22669fceb89"
+  },
+  {
+    "file": "core_handoff/run_service.py",
+    "bytes": 1694,
+    "sha256": "10a0d774dfc3d9f48d1a172c1c3b669b5d14d6813077a5a7f76c84d390f1ed67"
+  },
+  {
+    "file": "core_handoff/smoke_cpu2.txt",
+    "bytes": 80,
+    "sha256": "ae26008dbf16c6f119892a85b749de72c374286cf3b6c78516e59a049b68047d"
+  },
+  {
+    "file": "core_handoff/summarize.py",
+    "bytes": 2207,
+    "sha256": "fc0940bdb9151859cbe6675279b496363ec0b8fc9575153be26c979c8d3d6f9a"
+  },
+  {
+    "file": "core_handoff/summarize_service.py",
+    "bytes": 15846,
+    "sha256": "2dab062233b6e52febea49826ce92a9c8e1fc0cc42add102c51e44bc730b3e7a"
   },
   {
     "file": "deps/download_manifest.json",

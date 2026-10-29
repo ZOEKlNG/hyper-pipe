@@ -1,0 +1,22 @@
+{
+  "command": [
+    "./handoff_cpu2",
+    "--output",
+    "results_cpu2/handoff_results.csv",
+    "--repeats",
+    "5",
+    "--min-seconds",
+    "0.3"
+  ],
+  "started_utc": "2026-10-29T03:56:18.589970+00:00",
+  "ended_utc": "2026-10-29T03:56:44.952578+00:00",
+  "wall_s": 26.36262793699825,
+  "return_code": 0,
+  "snapshot_consistent": true,
+  "user_cpu_s": 52.432406,
+  "system_cpu_s": 0.008087,
+  "max_rss_kib": 12800,
+  "voluntary_context_switches": 127,
+  "involuntary_context_switches": 553,
+  "cpu_note": "Worker logical CPU0 and Logger logical CPU2. Different reported L1/L2 cache ids do not prove independent physical cores in a VM. CPU columns include busy polling."
+}

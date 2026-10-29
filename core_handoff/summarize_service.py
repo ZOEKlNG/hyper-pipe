@@ -1,0 +1,167 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import csv,json,statistics,collections,hashlib
+ROOT=Path(__file__).resolve().parent
+def read(p):return list(csv.DictReader(p.open()))
+micro=read(ROOT/'results/micro.csv');dual=read(ROOT/'results/handoff_results.csv');drop=read(ROOT/'results/drop_demo.csv');alt=read(ROOT/'results_cpu2/handoff_results.csv')
+assert len(micro)==560 and len(dual)==400 and len(drop)==36 and len(alt)==50
+assert all(int(x['elapsed_ns'])>=80_000_000 for x in micro)
+assert all(float(x['elapsed_s'])>=.3 and int(x['errors'])==0 for x in dual+alt)
+assert all(int(x['offered'])==int(x['accepted'])+int(x['dropped']) and int(x['received'])==int(x['accepted']) and int(x['max_queue'])<=int(x['queue_slots']) for x in drop)
+for rows,keys,n in [(dual,['mode','schema','tail_bytes','batch','queue_slots'],5),(alt,['mode','schema','tail_bytes','batch','queue_slots'],5),(drop,['mode','queue_slots','logger_pause_requested_ms'],3)]:
+ counts=collections.Counter(tuple(x[k] for k in keys) for x in rows)
+ assert all(count==n for count in counts.values())
+frozen_sources={}
+for p in ['results/dual_snapshot_before.json','results/service_snapshot_before.json','results_cpu2/snapshot_before.json']:
+ snapshot=json.loads((ROOT/p).read_text())
+ for name,digest in snapshot.items():
+  if Path(name).suffix in ['.cpp','.hpp','.proto','.cc','.h','.sh','.py']:
+   assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest,name
+   frozen_sources[name]=digest
+primary=collections.defaultdict(list);alternate=collections.defaultdict(list)
+affkeys=['mode','schema','tail_bytes','batch','queue_slots']
+for row in dual:primary[tuple(row[k] for k in affkeys)].append(float(row['msg_per_s'])/1e6)
+for row in alt:alternate[tuple(row[k] for k in affkeys)].append(float(row['msg_per_s'])/1e6)
+affinity=[]
+for key,b in sorted(alternate.items()):
+ a=primary[key];am=statistics.median(a);bm=statistics.median(b)
+ affinity.append(dict(zip(affkeys,key),cpu01_median_Mmsg_s=am,cpu02_median_Mmsg_s=bm,delta_pct=(bm/am-1)*100,cpu01_min_Mmsg_s=min(a),cpu01_max_Mmsg_s=max(a),cpu02_min_Mmsg_s=min(b),cpu02_max_Mmsg_s=max(b)))
+with (ROOT/'results_cpu2/affinity_comparison.csv').open('w',newline='') as f:
+ w=csv.DictWriter(f,fieldnames=list(affinity[0]));w.writeheader();w.writerows(affinity)
+affmin=min(x['delta_pct'] for x in affinity);affmax=max(x['delta_pct'] for x in affinity)
+groups=collections.defaultdict(list)
+for x in micro:groups[(x['schema'],x['tail_bytes'],x['workload'],x['stage'])].append(x)
+summary=[]
+for k,v in sorted(groups.items()):
+ assert len(v)==5
+ a=[float(x['cpu_ns_per_event']) for x in v]
+ summary.append(dict(zip(['schema','tail_bytes','workload','stage'],k),repeats=5,cpu_ns_median=statistics.median(a),cpu_ns_min=min(a),cpu_ns_max=max(a),wall_ns_median=statistics.median(float(x['wall_ns_per_event']) for x in v)))
+with (ROOT/'results/micro_summary.csv').open('w',newline='') as f:
+ w=csv.DictWriter(f,fieldnames=list(summary[0]));w.writeheader();w.writerows(summary)
+def g(stage,shape='nested_http',tail=256,work='hot'):
+ return next(x for x in summary if x['stage']==stage and x['schema']==shape and x['tail_bytes']==str(tail) and x['workload']==work)
+def fmt(x,n=2):return f'{float(x):.{n}f}'
+def table(h,rows):return '\n'.join(['| '+' | '.join(h)+' |','|'+'|'.join(['---']*len(h))+'|']+['| '+' | '.join(map(str,r))+' |' for r in rows])
+worker=[('仅读取已定位字段，公共基线','worker_extract_only'),('原地填最终原生slot','worker_native_direct'),('先填临时结构再复制到slot','worker_native_scratch_copy'),('只填池化PB对象、不生成wire','worker_fill_pb_object'),('填PB对象并生成wire','worker_pb_encode')]
+service=table(['Worker路径','flat CPU ns/事件','nested＋三bytes CPU ns/事件','nested五轮范围'],[[label,fmt(g(st,'flat')['cpu_ns_median']),fmt(g(st)['cpu_ns_median']),f"{fmt(g(st)['cpu_ns_min'])}–{fmt(g(st)['cpu_ns_max'])}"] for label,st in worker])
+payloads=table(['nested尾部总B','原地native ns','完整PB ns','两路径差 ns'],[[n,fmt(g('worker_native_direct',tail=n)['cpu_ns_median']),fmt(g('worker_pb_encode',tail=n)['cpu_ns_median']),fmt(g('worker_pb_encode',tail=n)['cpu_ns_median']-g('worker_native_direct',tail=n)['cpu_ns_median'])] for n in [0,64,256,1024]])
+pressure=table(['路径','含32MiB合成访存CPU ns/事件'],[[label,fmt(g(st,work='synthetic_32MiB_8dependent_reads')['cpu_ns_median'])] for label,st in worker])
+labels={'A_native_slot':'A原生槽位→日志核编码','A_scratch_then_slot':'A先临时构造再拷slot','B_worker_pb_batch_copy':'B Worker编码→日志核聚合','B_direct_worker_pb':'B_direct直接移交wire','D_shared_pb_object':'D交接池化PB对象'}
+ds=read(ROOT/'results/handoff_summary.csv');dr=[]
+for mode,label in labels.items():
+ rows=[next(x for x in ds if x['mode']==mode and x['schema']==s and x['tail_bytes']=='256' and x['batch']=='32' and x['queue_slots']=='256') for s in ['flat','nested_http']]
+ dr.append([label,fmt(rows[0]['median_Mmsg_s'],3),fmt(rows[1]['median_Mmsg_s'],3),f"{fmt(rows[1]['min_Mmsg_s'],3)}–{fmt(rows[1]['max_Mmsg_s'],3)}"])
+capacity=table(['双逻辑CPU流水线','flat Mmsg/s','nested Mmsg/s','nested五轮范围'],dr)
+drop_rows=[]
+for cap in [256,4096]:
+ for pause in [0,10]:
+  for mode in ['A_native_slot','B_worker_pb_batch_copy','D_shared_pb_object']:
+   a=[x for x in drop if x['queue_slots']==str(cap) and x['logger_pause_requested_ms']==str(pause) and x['mode']==mode]
+   d=statistics.median(int(x['dropped']) for x in a)
+   drop_label='B Worker编码→日志核复制消费' if mode=='B_worker_pb_batch_copy' else labels[mode]
+   drop_rows.append([drop_label,cap,pause,int(d),fmt(d/50000*100,3),fmt(statistics.median(float(x['send_seconds']) for x in a)*1000,3)])
+droptable=table(['真实有界drop-new实验','容量','请求暂停ms','丢弃数/50000，中位','丢弃%','输入实际持续ms'],drop_rows)
+cpu_side=[]
+for prefix in ['micro','drop_demo']:
+ def parse(p):return {k:int(v) for k,v in (x.split() for x in p.read_text().splitlines())}
+ a,b=parse(ROOT/f'results/{prefix}_cpu_before.txt'),parse(ROOT/f'results/{prefix}_cpu_after.txt');cpu_side.append({'experiment':prefix,'added_throttled_periods':b['nr_throttled']-a['nr_throttled'],'added_throttled_usec':b['throttled_usec']-a['throttled_usec']})
+assert json.loads((ROOT/'results/service_snapshot_before.json').read_text())==json.loads((ROOT/'results/service_snapshot_after.json').read_text())
+(ROOT/'results/combined_validation.json').write_text(json.dumps({'micro_rows':560,'dual_rows':400,'alternate_affinity_rows':50,'drop_rows':36,'all_repeats':5,'drop_repeats':3,'micro_min_wall_ns':min(int(x['elapsed_ns']) for x in micro),'dual_min_wall_seconds':min(float(x['elapsed_s']) for x in dual),'all_recorded_errors_zero':True,'drop_conservation':'PASS','micro_sources_unchanged':True,'current_measured_sources_match_snapshots':frozen_sources,'cpu_quota_evidence':cpu_side},indent=2)+'\n')
+native=g('worker_native_direct')['cpu_ns_median'];pb=g('worker_pb_encode')['cpu_ns_median'];delta=pb-native
+doc=f'''# Worker与日志核：打包字段，和直接生成Protobuf，究竟差多少？
+
+本轮实测采用官方Protobuf3.21.12生成代码、固定宽度标量。没有使用手写PB编码或upb替代。Worker是数据生产线程，Logger是后台日志线程，slot是队列槽位，wire是编码后的线格式，payload/tail是业务载荷/变长尾部，schema是消息结构定义，SPSC是单生产者单消费者队列。本文区分Worker自身服务时间、双逻辑CPU流水线容量和队列过载丢弃。没有真实DPDK网卡、HTTP/DPI业务或网络发送。
+
+## 直接结论
+
+在本轮示例嵌套结构、256B总尾部下，Worker原地填原生槽位约 **{native:.2f}ns/事件**，直接生成Protobuf约 **{pb:.2f}ns/事件**，差 **{delta:.2f}ns/事件**。这是包括从模拟packet读取已定位字段的隔离服务时间，不包含真实跨核入队与背压。
+
+所以，把字段塞成稳定连续内存，并不等于已经付出了完整PB对象填充、长度计算和线格式写出的成本。但日志线程做PB也不会自动减少官方setter造成的复制；它主要改变CPU工作放在哪一侧。
+
+每Worker若每秒100万条日志，按这组局部路径差值，前台CPU预算差约 **{delta/10:.2f}%的一个逻辑CPU**。这是日志速率而不是抓包速率；只对这套工作负载作线性预算，不能承诺真实DPDK采集吞吐提高相同比例。
+
+## 实验模型
+
+- GCC14.2、O3/C++20/march=native；AMD EPYC 9V74/KVM，5逻辑CPU可见，4CPU cgroup配额。所有阶段串行计时，保存源码/二进制SHA及资源记录。
+- 4096个变化模拟packet，字段及三个payload切片已经定位；extract只从固定位置取9个标量和切片，不是真实HTTP解析。输入预生成，含任意二进制字节。
+- flat：9个fixed32/64标量＋1个bytes；nested：相同9个标量分到CommonHeader和HttpLog，尾部拆url/host/cookie三个bytes，并放入GatewayLogEvent的oneof。后者同时改变了嵌套和bytes字段个数，不能把二者差值全归因于“嵌套”。这是一份等价示例schema，不是用户实际.proto。
+- PB对象、字符串容量和oneof子对象预热重用；不每条Clear父消息导致子对象销毁。每条覆盖所有字段含empty/zero，之后ByteSizeLong再SerializeWithCachedSizesToArray，保证嵌套缓存长度正确。
+- micro共112组×5=560条，计时至少80ms；目标槽位/对象池4096项，无队列和忙等，直接读取线程CPU时钟。双核容量80组×5=400条，每次至少300ms；另50条CPU0/2敏感性；drop-new实验36条。
+- 数值是五次批平均的中位数，不是消息p99。不能把不同实验工作集下的ns相加预测流水线吞吐。
+
+## Worker自身成本
+
+{service}
+
+这些路径都包含公共字段读取和结果消费，且不包含真实enqueue。native_direct直接写最终slot；scratch先写私有临时块，再将实际使用的header+tail复制进最终slot，不复制整个最大容量。
+
+只填PB对象是一个有意义的中间选项：Worker执行setter，日志核执行最终编码。它省掉了原生slot→PB字符串的中转，但涉及对象池和跨核对象树，只适用于同进程内明确的所有权交接，不能跨进程直接传普通PB对象指针。
+
+{payloads}
+
+## 带业务内存压力的敏感性
+
+每事件额外执行32MiB随机数据表上的8次依赖读，游标跨事件延续；以下时间包含这项合成工作：
+
+{pressure}
+
+这些结果不是DPI、流表或ACL的真实实现，也没有采集硬件L1/I-cache miss计数。它说明基础业务工作会改变相对占比；不能从中推出真实网关固定增加多少缓存失效惩罚，也不能把“日志相关段5倍”说成“整条业务快5倍”。
+
+## 两个逻辑CPU的完整接力
+
+Worker CPU0、Logger CPU1，queue256、发布/消费batch32、256B尾部：
+
+{capacity}
+
+容量数字包含生产、排队、自旋、跨CPU缓存一致性、编码、聚合与最终drain。Worker/logger线程总CPU都包含忙等；吞吐倒数不能当Worker自身开销。容量实验满时自旋且drop=0，只用于求此实现的饱和服务能力，生产默认应使用try-enqueue与有界丢弃。
+
+**实际容量排序并不只由Worker服务成本或copy次数决定。** B_direct同时绕过64KiB聚合和4B记录前缀，不能把其全部收益归因于少一条memcpy。D虽然只有两层payload复制，在该实现中流水线吞吐也没有胜过A；未用硬件计数器隔离原因。部分样本出现很大的高吞吐离群，完整范围已保留，不能把中位数当生产容量承诺。
+
+虚拟机报告CPU0/1共享L1/L2 cache id，CPU2属于另一cache id，但thread_siblings又为单例，不能据此证明物理核关系。另做CPU0/2的10组×5对照，中位吞吐变化约{affmin:+.2f}%～{affmax:+.2f}%；本次主要排序相同，仍不能替代独占物理机验证。[CPU亲和性补测](CPU2_RESULTS.md)
+
+## 复制次数：附件的账本需要修正
+
+这里只计每个非空变长内容经过的存储层，不是memcpy调用次数，不含网卡/内核复制：
+
+| 方式 | Worker侧 | 日志侧 | 合计 |
+|---|---:|---:|---:|
+| A 原生最终slot | 源→slot，1层 | slot→PB string→最终wire，2层 | 3 |
+| A_scratch | 源→scratch→slot，2层 | 同A，2层 | 4 |
+| B Worker生成wire再聚合 | 源→PB string→队列wire，2层 | 队列wire→最终batch，1层 | 3 |
+| B_direct 独立wire交接 | 同B，2层 | 不复制payload | 2 |
+| D 移交PB对象 | 源→PB string，1层 | PB string→最终wire，1层 | 2 |
+
+使用普通生成类setter时，A不是附件声称的两层，借用mbuf后日志核set_url＋serialize也仍是两层，不是一层。要进一步消除setter复制，需要另一种明确的借用存储/API，本轮没有偷换成手写编码器。
+
+固定宽度只固定标量值的编码宽度；bytes及子消息长度仍需前缀。子消息长度也不意味着所有实现都不可能单遍编码，倒写等策略存在，但本轮按选择的官方API测量。[参考技术核查](research_audit.md)
+
+## 短停顿与不阻塞生产者
+
+三个代表模式以计划25万条/s提供50000条输入，人为让日志线程起始暂停0/10ms；队列满立即drop-new，最后排空。该演示中B只将每条wire复制到临时缓冲并消费，没有执行主容量实验的64KiB聚合：
+
+{droptable}
+
+每轮都验证offered=accepted+dropped、received=accepted和最大占用不超过容量。4096槽在这些轮次能覆盖停顿，256槽不能。即使未请求暂停，256槽也观测到少量丢弃，不能从平均处理能力推导零丢失。
+
+发送端若调度落后会追赶，实际持续时间和max_source_lateness_ns已保留；它不是保证严格200ms窗口完整注入的流量发生器。这个实验验证边界和丢弃策略，不用于估算Worker服务CPU或生产丢失率。
+
+## 建议的默认实现
+
+以隔离采集Worker为优先目标时：每Worker一条SPSC，先try-reserve最终原生slot，直接写标量和tail，再commit；日志核取slot，用重用的官方PB对象直接编码到最终发送缓冲。避免先构造中间DTO再复制。池或队列满时明确丢弃并计数，不在采集主循环等待日志核。
+
+日志核的数量按总日志速率配置，一个Worker前台很轻不代表一个日志核能处理所有Worker之和。路由/批量/发送及真实业务计算尚需加入完整验证。
+
+若Worker尚有预算且日志核成为瓶颈，B/B_direct是合法备选；若只在同进程运行，也可继续优化D。选择应同时看Worker预算、总吞吐、内存生命周期和发送后端，而不是把Worker编码预先称为反模式。
+
+本轮没有真实rte_mbuf借用测试。若后续引入引用借用，必须验证分段、不可变性、所有者、持有时间和池预算；队列1024项不等于固定1ms，高水位降级也不保证整个RX池永不耗尽。
+
+## 复现与证据
+
+- [双核原始数据](results/handoff_results.csv) · [服务时间原始数据](results/micro.csv) · [服务摘要](results/micro_summary.csv) · [丢弃实验](results/drop_demo.csv)
+- [综合校验](results/combined_validation.json) · [双核时长与资源](results/dual_run_timing.json) · [CPU0/2对照](results_cpu2/affinity_comparison.csv)
+- [源码与构建说明](README.md) · [独立审查](review.md) · [参考核查](research_audit.md)
+
+本轮完整字段及payload功能校验与热性能路径分开；没有在日志核热循环调用ParseFromArray来人为增加瓶颈。
+'''
+(ROOT/'RESULTS_SERVICE.zh-CN.md').write_text(doc)
+print(json.dumps({'worker_nested_native_ns':native,'worker_nested_pb_ns':pb,'difference_ns':delta,'main_rows':len(dual),'service_rows':len(micro),'cpu2_rows':len(alt),'drop_rows':len(drop)}))

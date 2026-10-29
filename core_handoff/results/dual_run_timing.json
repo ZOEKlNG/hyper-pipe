@@ -1,0 +1,22 @@
+{
+  "command": [
+    "./handoff",
+    "--output",
+    "results/handoff_results.csv",
+    "--repeats",
+    "5",
+    "--min-seconds",
+    "0.3"
+  ],
+  "started_utc": "2026-10-29T03:49:08.924688+00:00",
+  "ended_utc": "2026-10-29T03:52:41.536111+00:00",
+  "wall_s": 212.61144753100052,
+  "return_code": 0,
+  "snapshot_consistent": true,
+  "user_cpu_s": 422.818147,
+  "system_cpu_s": 0.12825799999999998,
+  "max_rss_kib": 19504,
+  "voluntary_context_switches": 1028,
+  "involuntary_context_switches": 1900,
+  "cpu_note": "Worker CPU0 and Logger CPU1; per-thread CPU columns include busy polling; spin counters are polls/episodes, not spin duration. Service CPU is measured separately by construction microbenchmark."
+}

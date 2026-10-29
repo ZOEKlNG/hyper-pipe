@@ -1,0 +1,104 @@
+{
+  "lscpu_e": "CPU CORE L1d:L1i:L2:L3\n  0    0 0:0:0:0\n  1    1 0:0:0:0\n  2    2 1:1:1:0\n  3    3 1:1:1:0\n  4    4 2:2:2:0\n",
+  "selected_cpus": [
+    0,
+    2
+  ],
+  "comparison_cpus": [
+    0,
+    1
+  ],
+  "cpu_details": [
+    {
+      "logical_cpu": 0,
+      "thread_siblings_list": "0",
+      "caches": [
+        {
+          "level": "1",
+          "type": "Data",
+          "id": "0",
+          "shared_cpu_list": "0-1"
+        },
+        {
+          "level": "1",
+          "type": "Instruction",
+          "id": "0",
+          "shared_cpu_list": "0-1"
+        },
+        {
+          "level": "2",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-1"
+        },
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-4"
+        }
+      ]
+    },
+    {
+      "logical_cpu": 1,
+      "thread_siblings_list": "1",
+      "caches": [
+        {
+          "level": "1",
+          "type": "Data",
+          "id": "0",
+          "shared_cpu_list": "0-1"
+        },
+        {
+          "level": "1",
+          "type": "Instruction",
+          "id": "0",
+          "shared_cpu_list": "0-1"
+        },
+        {
+          "level": "2",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-1"
+        },
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-4"
+        }
+      ]
+    },
+    {
+      "logical_cpu": 2,
+      "thread_siblings_list": "2",
+      "caches": [
+        {
+          "level": "1",
+          "type": "Data",
+          "id": "1",
+          "shared_cpu_list": "2-3"
+        },
+        {
+          "level": "1",
+          "type": "Instruction",
+          "id": "1",
+          "shared_cpu_list": "2-3"
+        },
+        {
+          "level": "2",
+          "type": "Unified",
+          "id": "1",
+          "shared_cpu_list": "2-3"
+        },
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-4"
+        }
+      ]
+    }
+  ],
+  "caveat": "VM cache topology does not establish independent physical cores."
+}

@@ -1,0 +1,17 @@
+{
+  "original": "handoff.cpp",
+  "original_sha256": "8733905f5962cb0e7c5381ce3d8915b4872bf1e1f5d735edbc7069c00d4c44e2",
+  "generated": "handoff_cpu2.cpp",
+  "generated_sha256": "05782ed30b15986fdc8159d487e2c5770536a3b33f80fb933670a649291c9895",
+  "original_matches_primary_snapshot": true,
+  "edits": [
+    "Logger pin(1) -> pin(2)",
+    "tail matrix -> {256}",
+    "queue batch matrix -> {32}",
+    "remove queue4096 supplementary matrix"
+  ],
+  "configurations": 10,
+  "repeats": 5,
+  "minimum_run_seconds": 0.3,
+  "cpu_note": "Logical CPU0/2 chosen for reported distinct L1/L2 cache ids; this does not establish independent physical cores in a VM."
+}

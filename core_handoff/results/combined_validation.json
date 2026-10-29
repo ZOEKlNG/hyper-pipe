@@ -1,0 +1,38 @@
+{
+  "micro_rows": 560,
+  "dual_rows": 400,
+  "alternate_affinity_rows": 50,
+  "drop_rows": 36,
+  "all_repeats": 5,
+  "drop_repeats": 3,
+  "micro_min_wall_ns": 80090137,
+  "dual_min_wall_seconds": 0.302390202,
+  "all_recorded_errors_zero": true,
+  "drop_conservation": "PASS",
+  "micro_sources_unchanged": true,
+  "current_measured_sources_match_snapshots": {
+    "handoff.cpp": "8733905f5962cb0e7c5381ce3d8915b4872bf1e1f5d735edbc7069c00d4c44e2",
+    "common.hpp": "ca0d4cb0ef72173e912bfdc9415e7396e021b02b64035e1c45fa9178bef4ef93",
+    "log.proto": "0eb7a80f34ae807ed5c499aa04e060b5a19b824b66b46b1ac8ce89af1f9f8772",
+    "log.pb.h": "5a919890c5fe99fac63e8eb9a1c9956b4a6a1c42ec5ae75099b9ee094baf2269",
+    "log.pb.cc": "7b432b8b010d11d0cd110e666544b81112b3e9029a89a78c940533da5fd3bdb7",
+    "build.sh": "ac1cd009332645f667e8bf00ce137ad243f3a9a3df750cb2d75e31a75b8327ca",
+    "micro.cpp": "02d3e951742a322b3a7239971e1b9a39bd8d548b15284a503a6e83982882b01c",
+    "drop_demo.cpp": "a47c6d37e3dbe09aded58aaafe3f548f0dfbac1af75938b4199a334509df4dc8",
+    "handoff_cpu2.cpp": "05782ed30b15986fdc8159d487e2c5770536a3b33f80fb933670a649291c9895",
+    "build_cpu2.sh": "32fe55eb308b86fcd4c49c385e916099c05a441a72e0b33d1a11ca0f6472e455",
+    "prepare_cpu2.py": "d789cd5f98033f3fcd0cf20e3f59871492504d46e1539a970c511267e64f70c0"
+  },
+  "cpu_quota_evidence": [
+    {
+      "experiment": "micro",
+      "added_throttled_periods": 0,
+      "added_throttled_usec": 0
+    },
+    {
+      "experiment": "drop_demo",
+      "added_throttled_periods": 0,
+      "added_throttled_usec": 0
+    }
+  ]
+}

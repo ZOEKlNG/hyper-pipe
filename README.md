@@ -4,6 +4,10 @@
 
 ## 新增实测（2026-10-29）
 
+**[Worker 填原生槽位，还是直接编码官方固定宽度 Protobuf？](core_handoff/RESULTS_SERVICE.zh-CN.md)** · [源码与复现](core_handoff/README.md) · [560 行服务成本数据](core_handoff/results/micro.csv) · [400 行双逻辑 CPU 接力数据](core_handoff/results/handoff_results.csv)
+
+新增 5 种线程交接方式、平铺/嵌套结构、变长尾部与合成访存压力；另有 50 行 CPU 亲和性补测、36 行有界丢弃实验。区分 Worker 隔离服务成本与包含自旋的流水线吞吐，没有真实 DPDK 收发。
+
 **[动态字段编码实测：Hybrid TV/TLV、ProtoEmitOp、Google upb](dynamic_codec/RESULTS.zh-CN.md)** · [新增源码与复现命令](dynamic_codec/README.md) · [1480行主原始数据](dynamic_codec/results/benchmark.csv) · [90行优化补充](dynamic_codec/results/optimized_encode.csv)
 
 官方Protobuf对照本次重新运行，包含运行时选字段、三计划切换、别名/复制解析与Java互操作验证。旧报告保留在下方，不混用两轮数字。

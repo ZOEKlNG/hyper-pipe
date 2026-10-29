@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-10-29T04:09:03.355949+00:00",
+  "build": "DEP_ROOT=/workspace/work/deps/root bash build_all.sh",
+  "build_return_code": 0,
+  "functional_results": {
+    "primary": "PASS configs=80 complete_field_payload_checks=800240 reuse_transition_checks=10",
+    "alternate_affinity": "PASS configs=10 complete_field_payload_checks=100030 reuse_transition_checks=10"
+  },
+  "recorded_csv_rows": 1046,
+  "performance_not_repeated_after_relocation": true,
+  "notes": "Four programs rebuilt in repository. Only functional smoke and CSV/source-hash validation rerun; original benchmark measurements retained."
+}

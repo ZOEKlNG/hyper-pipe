@@ -1,0 +1,19 @@
+syntax = "proto3";
+package handoffpb;
+message CommonHeader {
+ fixed64 id=1; fixed64 seq=2; fixed64 timestamp=3; fixed64 value0=4; fixed64 value1=5;
+ fixed32 producer=6; fixed32 stream=7;
+}
+message HttpLog {
+ fixed32 status=1; fixed32 method=2;
+ bytes url=3; bytes host=4; bytes cookie=5;
+}
+message GatewayLogEvent {
+ CommonHeader common=1;
+ oneof log {HttpLog http=2;}
+}
+// Same nine logical scalar values and same total tail bytes as GatewayLogEvent.
+message FixedEvent {
+ fixed64 id=1; fixed64 seq=2; fixed64 timestamp=3; fixed64 value0=4; fixed64 value1=5;
+ fixed32 producer=6; fixed32 stream=7; fixed32 type=8; fixed32 flags=9; bytes payload=10;
+}

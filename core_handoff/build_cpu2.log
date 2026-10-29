@@ -1,0 +1,22 @@
+In file included from handoff_cpu2.cpp:3:
+common.hpp: In function ‘std::vector<handoff::Packet> handoff::make_corpus(size_t, size_t)’:
+common.hpp:30:3: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   30 |   for(size_t j=0;j<tail_bytes;j++)p.bytes[144+j]=char(rng());out.push_back(std::move(p));
+      |   ^~~
+common.hpp:30:62: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   30 |   for(size_t j=0;j<tail_bytes;j++)p.bytes[144+j]=char(rng());out.push_back(std::move(p));
+      |                                                              ^~~
+handoff_cpu2.cpp: In function ‘Stats run_once(const Config&, const std::vector<handoff::Packet>&, uint64_t)’:
+handoff_cpu2.cpp:96:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   96 |  if(stats.errors)throw std::runtime_error("handoff correctness errors");return stats;
+      |  ^~
+handoff_cpu2.cpp:96:73: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   96 |  if(stats.errors)throw std::runtime_error("handoff correctness errors");return stats;
+      |                                                                         ^~~~~~
+handoff_cpu2.cpp: In function ‘int main(int, char**)’:
+handoff_cpu2.cpp:116:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  116 |     if(&state.nested.http()!=retained_http)throw std::runtime_error("oneof child unexpectedly replaced");++transition_checks;
+      |     ^~
+handoff_cpu2.cpp:116:106: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  116 |     if(&state.nested.http()!=retained_http)throw std::runtime_error("oneof child unexpectedly replaced");++transition_checks;
+      |                                                                                                          ^~
